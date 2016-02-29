@@ -1,0 +1,12 @@
+{
+	"parent": "block/cube", 
+	"textures": { 
+		"down": "sonic-tools-mod:blocks/timeTravelerBlock",
+		"up": "sonic-tools-mod:blocks/timeTravelerBlock",
+		"north": "sonic-tools-mod:blocks/timeTravelerBlock",
+		"south": "sonic-tools-mod:blocks/timeTravelerBlock",
+		"west": "sonic-tools-mod:blocks/timeTravelerBlock",
+		"east": "sonic-tools-mod:blocks/timeTravelerBlock",
+		"particle": "sonic-tools-mod:blocks/timeTravelerBlock"
+	}
+}
