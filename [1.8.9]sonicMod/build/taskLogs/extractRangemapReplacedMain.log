@@ -1,0 +1,20 @@
+Symbol range map extraction starting
+Processing 18 files
+processing com/animcogn/sonicScrewdriverMod/ClientProxy.java
+processing com/animcogn/sonicScrewdriverMod/CommonProxy.java
+processing com/animcogn/sonicScrewdriverMod/Main.java
+processing com/animcogn/sonicScrewdriverMod/MobsDropTimelordFragments.java
+processing com/animcogn/sonicScrewdriverMod/OnRightClick.java
+processing com/animcogn/sonicScrewdriverMod/Pegh.java
+processing com/animcogn/sonicScrewdriverMod/ServerProxy.java
+processing com/animcogn/sonicScrewdriverMod/SonicAxe.java
+processing com/animcogn/sonicScrewdriverMod/SonicPickaxe.java
+processing com/animcogn/sonicScrewdriverMod/SonicScrewdriver.java
+processing com/animcogn/sonicScrewdriverMod/SonicShovel.java
+processing com/animcogn/sonicScrewdriverMod/SonicSword.java
+processing com/animcogn/sonicScrewdriverMod/TimeBlocks.java
+processing com/animcogn/sonicScrewdriverMod/TimeTravelerArmor.java
+processing com/animcogn/sonicScrewdriverMod/TimeTravelerBlock.java
+processing com/animcogn/sonicScrewdriverMod/TimeTravelerReminisce.java
+processing com/animcogn/sonicScrewdriverMod/TimelordFragment.java
+processing com/animcogn/sonicScrewdriverMod/world/WorldGen.java

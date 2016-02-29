@@ -1,0 +1,97 @@
+---- Minecraft Crash Report ----
+// This doesn't make any sense!
+
+Time: 2/23/16 4:39 PM
+Description: Exception initializing level
+
+java.lang.NullPointerException: Exception initializing level
+	at net.minecraft.world.World.setBlockState(World.java:357)
+	at net.minecraft.world.gen.feature.WorldGenMinable.generate(WorldGenMinable.java:79)
+	at com.animcogn.sonicScrewdriverMod.world.WorldGen.runGenerator(WorldGen.java:51)
+	at com.animcogn.sonicScrewdriverMod.world.WorldGen.generate(WorldGen.java:32)
+	at net.minecraftforge.fml.common.registry.GameRegistry.generateWorld(GameRegistry.java:112)
+	at net.minecraft.world.gen.ChunkProviderServer.populate(ChunkProviderServer.java:284)
+	at net.minecraft.world.chunk.Chunk.populateChunk(Chunk.java:1114)
+	at net.minecraft.world.gen.ChunkProviderServer.originalLoadChunk(ChunkProviderServer.java:187)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:129)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:99)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:200)
+	at net.minecraft.world.World.getChunkFromChunkCoords(World.java:336)
+	at net.minecraft.world.World.getChunkFromBlockCoords(World.java:328)
+	at net.minecraft.world.World.getBlockState(World.java:889)
+	at net.minecraft.world.World.isAirBlock(World.java:250)
+	at net.minecraft.world.World.getGroundAboveSeaLevel(World.java:228)
+	at net.minecraft.world.WorldProvider.canCoordinateBeSpawn(WorldProvider.java:86)
+	at net.minecraft.world.WorldServer.createSpawnPosition(WorldServer.java:875)
+	at net.minecraft.world.WorldServer.initialize(WorldServer.java:794)
+	at net.minecraft.server.integrated.IntegratedServer.loadAllWorlds(IntegratedServer.java:90)
+	at net.minecraft.server.integrated.IntegratedServer.startServer(IntegratedServer.java:127)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:508)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.world.World.setBlockState(World.java:357)
+	at net.minecraft.world.gen.feature.WorldGenMinable.generate(WorldGenMinable.java:79)
+	at com.animcogn.sonicScrewdriverMod.world.WorldGen.runGenerator(WorldGen.java:51)
+	at com.animcogn.sonicScrewdriverMod.world.WorldGen.generate(WorldGen.java:32)
+	at net.minecraftforge.fml.common.registry.GameRegistry.generateWorld(GameRegistry.java:112)
+	at net.minecraft.world.gen.ChunkProviderServer.populate(ChunkProviderServer.java:284)
+	at net.minecraft.world.chunk.Chunk.populateChunk(Chunk.java:1114)
+	at net.minecraft.world.gen.ChunkProviderServer.originalLoadChunk(ChunkProviderServer.java:187)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:129)
+	at net.minecraft.world.gen.ChunkProviderServer.loadChunk(ChunkProviderServer.java:99)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:200)
+	at net.minecraft.world.World.getChunkFromChunkCoords(World.java:336)
+	at net.minecraft.world.World.getChunkFromBlockCoords(World.java:328)
+	at net.minecraft.world.World.getBlockState(World.java:889)
+	at net.minecraft.world.World.isAirBlock(World.java:250)
+	at net.minecraft.world.World.getGroundAboveSeaLevel(World.java:228)
+	at net.minecraft.world.WorldProvider.canCoordinateBeSpawn(WorldProvider.java:86)
+	at net.minecraft.world.WorldServer.createSpawnPosition(WorldServer.java:875)
+
+-- Affected level --
+Details:
+	Level name: momioioio
+	All players: 0 total; []
+	Chunk stats: ServerChunkCache: 33 Drop: 0
+	Level seed: -5523245307613855553
+	Level generator: ID 00 - default, ver 1. Features enabled: true
+	Level generator options: 
+	Level spawn location: 0.00,0.00,0.00 - World: (0,0,0), Chunk: (at 0,0,0 in 0,0; contains blocks 0,0,0 to 15,255,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Level time: 0 game time, 0 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.world.WorldServer.initialize(WorldServer.java:794)
+	at net.minecraft.server.integrated.IntegratedServer.loadAllWorlds(IntegratedServer.java:90)
+	at net.minecraft.server.integrated.IntegratedServer.startServer(IntegratedServer.java:127)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:508)
+	at java.lang.Thread.run(Thread.java:745)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.8.9
+	Operating System: Mac OS X (x86_64) version 10.11.3
+	Java Version: 1.8.0_65, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 687945288 bytes (656 MB) / 1038876672 bytes (990 MB) up to 1038876672 bytes (990 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 1, tcache: 1, allocated: 12, tallocated: 94
+	FML: MCP 9.19 Powered by Forge 11.15.1.1747 4 mods loaded, 4 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAAAAA	mcp{9.19} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAAAAA	FML{8.0.99.99} [Forge Mod Loader] (forgeSrc-1.8.9-11.15.1.1747.jar) 
+	UCHIJAAAAAAA	Forge{11.15.1.1747} [Minecraft Forge] (forgeSrc-1.8.9-11.15.1.1747.jar) 
+	UCHIJAAAAAAA	sonic-tools-mod{1.1} [Sonic Tools Mod] (bin) 
+	Loaded coremods (and transformers): 
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 8; []
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
