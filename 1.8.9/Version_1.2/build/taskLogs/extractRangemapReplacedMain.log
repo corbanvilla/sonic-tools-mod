@@ -1,0 +1,25 @@
+Symbol range map extraction starting
+Processing 23 files
+processing com/animcogn/sonicScrewdriverMod/ClientProxy.java
+processing com/animcogn/sonicScrewdriverMod/CommonProxy.java
+processing com/animcogn/sonicScrewdriverMod/Main.java
+processing com/animcogn/sonicScrewdriverMod/ServerProxy.java
+processing com/animcogn/sonicScrewdriverMod/blocks/ModBlocks.java
+processing com/animcogn/sonicScrewdriverMod/blocks/Pegh.java
+processing com/animcogn/sonicScrewdriverMod/blocks/TimeBlocks.java
+processing com/animcogn/sonicScrewdriverMod/blocks/TimeTravelerBlock.java
+processing com/animcogn/sonicScrewdriverMod/client/render/blocks/BlockRenderRegister.java
+processing com/animcogn/sonicScrewdriverMod/client/render/items/ItemRenderRegister.java
+processing com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java
+processing com/animcogn/sonicScrewdriverMod/events/MobsDropTimelordFragments.java
+processing com/animcogn/sonicScrewdriverMod/events/OnRightClick.java
+processing com/animcogn/sonicScrewdriverMod/items/ModItems.java
+processing com/animcogn/sonicScrewdriverMod/items/SonicAxe.java
+processing com/animcogn/sonicScrewdriverMod/items/SonicPickaxe.java
+processing com/animcogn/sonicScrewdriverMod/items/SonicScrewdriver.java
+processing com/animcogn/sonicScrewdriverMod/items/SonicShovel.java
+processing com/animcogn/sonicScrewdriverMod/items/SonicSword.java
+processing com/animcogn/sonicScrewdriverMod/items/TimeTravelerArmor.java
+processing com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java
+processing com/animcogn/sonicScrewdriverMod/items/TimelordFragment.java
+processing com/animcogn/sonicScrewdriverMod/world/WorldGen.java
