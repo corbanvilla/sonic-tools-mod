@@ -3,6 +3,7 @@ package com.animcogn.sonicScrewdriverMod.world;
 import java.util.Random;
 
 import com.animcogn.sonicScrewdriverMod.Main;
+import com.animcogn.sonicScrewdriverMod.blocks.ModBlocks;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.util.BlockPos;
@@ -20,7 +21,7 @@ public class WorldGen implements IWorldGenerator {
 	//@formatter:on
 
 	public WorldGen() {
-		this.gen_timeTravelerOre = new WorldGenMinable(Main.timeTravelerBlock.getDefaultState(), 5);
+		this.gen_timeTravelerOre = new WorldGenMinable(ModBlocks.timeTravelerBlock.getDefaultState(), 5);
 		
 	}
 

@@ -1,0 +1,23 @@
+package com.animcogn.sonicScrewdriverMod.client.render.blocks;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.item.Item;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
+public class BlockRenderRegister {
+
+	public static void registerTextures() {
+		Item peghItem = GameRegistry.findItem("sonic-tools-mod", "pegh");
+		ModelResourceLocation peghModel = 
+			new ModelResourceLocation("sonic-tools-mod:pegh", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(peghItem, 0, peghModel);
+		
+		Item timeTravelerBlockItem = GameRegistry.findItem("sonic-tools-mod", "timeTravelerBlock");
+		ModelResourceLocation timeTravelerBlockModel = 
+			new ModelResourceLocation("sonic-tools-mod:timeTravelerBlock", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(timeTravelerBlockItem, 0, timeTravelerBlockModel);
+	}
+}

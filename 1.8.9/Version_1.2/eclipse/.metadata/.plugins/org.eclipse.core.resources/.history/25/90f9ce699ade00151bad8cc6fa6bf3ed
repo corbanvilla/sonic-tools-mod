@@ -1,0 +1,5 @@
+package com.animcogn.sonicScrewdriverMod.client.render.items;
+
+public class ItemRenderRegister {
+
+}
