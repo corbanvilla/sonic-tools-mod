@@ -1,4 +1,6 @@
-package com.animcogn.sonicScrewdriverMod.items;
+package com.animcogn.sonicScrewdriverMod.armor;
+
+import com.animcogn.sonicScrewdriverMod.items.ModItems;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -12,8 +14,9 @@ public class TimeTravelerArmor extends ItemArmor {
 
 	public TimeTravelerArmor (String unlocalizedName, ArmorMaterial material, int renderIndex, int armorType) {
         super(material, renderIndex, armorType);
-        
         this.setUnlocalizedName(unlocalizedName);
+        this.setCreativeTab(ModItems.tabSonicToolsMod);
+        
 	}
 	
 	@Override

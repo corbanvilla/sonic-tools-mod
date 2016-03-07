@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public final class ModCrafting {
 	public static void initCrafting() {
 		
+//Sonic Tools		
 	GameRegistry.addRecipe(
 			new ItemStack(ModItems.sonicScrewdriver),
 			"pes",
@@ -59,6 +60,8 @@ public final class ModCrafting {
 			'e', Items.emerald,
 			'd', Items.diamond,
 			's', Items.diamond_axe);
+
+//Time Traveler Gear
 	GameRegistry.addRecipe(
 			new ItemStack(ModItems.timetravelerHelmet), 
 			"ttt",
@@ -87,5 +90,19 @@ public final class ModCrafting {
 			"ttt",
 			't', ModItems.timetravelerReminisce,
 			'd', Items.diamond_boots);
+
+//Materials
+	GameRegistry.addShapelessRecipe(
+			new ItemStack(ModItems.timetravelerCluster), 
+			new ItemStack(ModItems.timetravelerReminisce),
+			new ItemStack(ModItems.timetravelerReminisce),
+			new ItemStack(ModItems.timetravelerReminisce));
+	
+	GameRegistry.addShapelessRecipe(
+			new ItemStack(ModItems.unstableTimeEnergy), 
+			new ItemStack(ModItems.stabalizedTimeEnergy),
+			new ItemStack(ModItems.stabalizedTimeEnergy),
+			new ItemStack(ModItems.stabalizedTimeEnergy));
+	
 	}
 }

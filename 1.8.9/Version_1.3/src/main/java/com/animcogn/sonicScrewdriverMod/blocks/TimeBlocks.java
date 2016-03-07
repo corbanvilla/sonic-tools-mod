@@ -2,6 +2,8 @@ package com.animcogn.sonicScrewdriverMod.blocks;
 
 import java.util.Random;
 
+import com.animcogn.sonicScrewdriverMod.items.ModItems;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -23,7 +25,7 @@ public class TimeBlocks extends Block {
 		this.setHardness(10.0f);
 		this.setResistance(15.0f);
 		this.setUnlocalizedName(unlocalizedName);
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(ModItems.tabSonicToolsMod);
 	}
 	
 	protected TimeBlocks(String unlocalizedName, Material mat, Item drop, int least_quantity, int most_quantity) {

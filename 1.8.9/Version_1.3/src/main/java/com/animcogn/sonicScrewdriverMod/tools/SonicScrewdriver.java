@@ -1,4 +1,6 @@
-package com.animcogn.sonicScrewdriverMod.items;
+package com.animcogn.sonicScrewdriverMod.tools;
+
+import com.animcogn.sonicScrewdriverMod.items.ModItems;
 
 import java.util.Set;
 
@@ -14,9 +16,10 @@ import net.minecraft.item.ItemStack;
 
 public class SonicScrewdriver extends ItemPickaxe {
 
-    protected SonicScrewdriver(ToolMaterial material) {
+    public SonicScrewdriver(ToolMaterial material) {
 		super(material);
 		this.setUnlocalizedName("sonicScrewdriver");
+		this.setCreativeTab(ModItems.tabSonicToolsMod);
 	}
     
     @Override

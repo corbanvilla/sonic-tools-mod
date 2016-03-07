@@ -27,7 +27,7 @@ public class TimeTravelerBlock extends Block {
 	public TimeTravelerBlock() {
 		super(Material.iron);
 		this.setUnlocalizedName("timeTravelerBlock");
-		this.setCreativeTab(CreativeTabs.tabBlock);
+		this.setCreativeTab(ModItems.tabSonicToolsMod);
 		this.setResistance(7.5F);
 		this.setHardness(10.F);
 		this.setLightLevel(1.0F);

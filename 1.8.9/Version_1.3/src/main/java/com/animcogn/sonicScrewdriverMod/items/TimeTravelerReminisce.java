@@ -12,7 +12,7 @@ public class TimeTravelerReminisce extends Item {
 	public TimeTravelerReminisce() {
 		super();
 		this.setUnlocalizedName("timetravelerReminisce");
-		this.setCreativeTab(CreativeTabs.tabMisc);
+		this.setCreativeTab(ModItems.tabSonicToolsMod);
 	}
 
 	@Override

@@ -27,6 +27,7 @@ public final class ItemRenderRegister {
 	reg(ModItems.timetravelerHelmet);
 	reg(ModItems.timetravelerLeggings);
 	reg(ModItems.timetravelerReminisce);
+	reg(ModItems.timetravelerCluster);	
 	}
 
 	public static void reg(Item item) {

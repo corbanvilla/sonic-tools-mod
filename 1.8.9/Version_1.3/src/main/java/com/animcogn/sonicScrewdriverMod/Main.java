@@ -26,7 +26,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class Main {
 	
 	public static final String MODID = "sonic-tools-mod";
-	public static final String VERSION = "1.2";
+	public static final String VERSION = "2.0";
 	public static final String NAME = "Sonic Tools Mod";
 	
 	
@@ -42,7 +42,7 @@ public class Main {
 
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		this.proxy.init(event);	
+		this.proxy.init(event);
 
 	}
 	@EventHandler

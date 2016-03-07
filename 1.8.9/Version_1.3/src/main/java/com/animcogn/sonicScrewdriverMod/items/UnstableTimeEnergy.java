@@ -3,10 +3,11 @@ package com.animcogn.sonicScrewdriverMod.items;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class TimelordFragment extends Item {
-	public TimelordFragment() {
+public class UnstableTimeEnergy extends Item {
+
+	public UnstableTimeEnergy() {
 		super();
-		this.setUnlocalizedName("timelordFragment");
+		this.setUnlocalizedName("unstableTimeEnergy");
 		this.setCreativeTab(ModItems.tabSonicToolsMod);
 	}
 }

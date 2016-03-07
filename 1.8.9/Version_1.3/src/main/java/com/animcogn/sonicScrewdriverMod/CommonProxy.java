@@ -2,6 +2,8 @@ package com.animcogn.sonicScrewdriverMod;
 
 import com.animcogn.sonicScrewdriverMod.blocks.ModBlocks;
 import com.animcogn.sonicScrewdriverMod.crafting.ModCrafting;
+import com.animcogn.sonicScrewdriverMod.crafting.ModSmelting;
+import com.animcogn.sonicScrewdriverMod.events.AttackCountdown;
 import com.animcogn.sonicScrewdriverMod.events.MobsDropTimelordFragments;
 import com.animcogn.sonicScrewdriverMod.events.OnRightClick;
 import com.animcogn.sonicScrewdriverMod.items.ModItems;
@@ -22,8 +24,10 @@ public class CommonProxy {
 
     public void init(FMLInitializationEvent e) {
     	ModCrafting.initCrafting();
+    	ModSmelting.initSmelting();
     	MinecraftForge.EVENT_BUS.register(new MobsDropTimelordFragments());
 		MinecraftForge.EVENT_BUS.register(new OnRightClick());
+		MinecraftForge.EVENT_BUS.register(new AttackCountdown());
     	GameRegistry.registerWorldGenerator(new WorldGen(), 0);
     }
 

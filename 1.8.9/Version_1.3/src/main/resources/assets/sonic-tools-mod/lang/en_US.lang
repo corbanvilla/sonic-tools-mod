@@ -10,5 +10,9 @@ item.timetravelerLeggings.name=Time Traveler Leggings
 item.timetravelerBoots.name=Time Traveler Boots
 item.timetravelerSword.name=What you looking at? Im not an easter egggggg.......... (Maybe i am)
 item.timetravelerReminisce.name=Time Traveler Reminisce
+item.timetravelerCluster.name=Time Traveler Cluster
+
 tile.timeTravelerBlock.name=Time Traveler Block
 tile.pegh.name=A Pegh
+
+itemGroup.sonicToolsMod=Sonic Tools Mod
