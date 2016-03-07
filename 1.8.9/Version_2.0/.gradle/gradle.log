@@ -11,39 +11,37 @@ This mapping 'stable_20' was designed for MC 1.8.8! Use at your own peril.This m
 #################################################
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
-:sourceApiJava
-:compileApiJava UP-TO-DATE
-:processApiResources UP-TO-DATE
-:apiClasses UP-TO-DATE
-:sourceMainJava
-:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
-Note: /Users/Corban/Desktop/sonic-tools-mod/1.8.9/Version_1.3/build/sources/main/java/com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java uses unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-1 warning
-
-:processResources
-:classes
-:jar
-:sourceTestJava
-:compileTestJava UP-TO-DATE
-:processTestResources UP-TO-DATE
-:testClasses UP-TO-DATE
-:test UP-TO-DATE
+:getVersionJson
+:extractUserdev
+:extractDependencyATs SKIPPED
 :extractMcpData SKIPPED
 :extractMcpMappings SKIPPED
-:getVersionJson
-:extractUserdev UP-TO-DATE
 :genSrgs SKIPPED
-:reobfJar
-:extractRangemapReplacedMain
-/Users/Corban/Desktop/sonic-tools-mod/1.8.9/Version_1.3/build/sources/main/java
-:retromapReplacedMain
-remapping source...
-:sourceJar
-:assemble
-:check UP-TO-DATE
-:build
+:downloadClient SKIPPED
+:downloadServer SKIPPED
+:splitServerJar SKIPPED
+:mergeJars SKIPPED
+:deobfMcSRG SKIPPED
+:decompileMc SKIPPED
+:fixMcSources SKIPPED
+:applySourcePatches SKIPPED
+:remapMcSources SKIPPED
+:recompileMc SKIPPED
+:extractNatives SKIPPED
+:getAssetIndex UP-TO-DATE
+:getAssets
+Current status: 386/734   52%
+Current status: 508/734   69%
+Current status: 731/734   99%
+:makeStart SKIPPED
+:setupDecompWorkspace
+:eclipseClasspath
+:eclipseJdt
+:eclipseProject
+:makeEclipseCleanRunClient
+:makeEclipseCleanRunServer
+:eclipse
 
 BUILD SUCCESSFUL
 
-Total time: 34.76 secs
+Total time: 33.034 secs
