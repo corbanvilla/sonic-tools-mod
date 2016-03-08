@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.animcogn.sonicScrewdriverMod.items.RestoredTIme&apos; to &apos;RestoredTime&apos;&#x0A;- Original project: &apos;MDKExample&apos;&#x0A;- Original element: &apos;com.animcogn.sonicScrewdriverMod.items.RestoredTIme&apos;&#x0A;- Renamed element: &apos;com.animcogn.sonicScrewdriverMod.items.RestoredTime&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RestoredTIme&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.animcogn.sonicScrewdriverMod.items{RestoredTIme.java[RestoredTIme" matchStrategy="1" name="RestoredTime" qualified="false" references="true" similarDeclarations="false" stamp="1456789983337" textual="false" version="1.0"/>
+</session>

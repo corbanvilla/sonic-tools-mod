@@ -1,0 +1,8 @@
+package com.animcogn.sonicScrewdriverMod.crafting;
+
+public class ModSmelting {
+	
+	public void SmeltingRecipies() {
+		
+	}
+}

@@ -1,0 +1,48 @@
+package com.animcogn.sonicScrewdriverMod.events;
+
+import java.util.Timer;
+import java.util.TimerTask;
+
+import net.minecraftforge.fml.common.FMLCommonHandler;
+
+public class CountDown {
+
+	static Timer timer;
+
+	public CountDown() {
+		return;
+		
+	}
+	
+	public static void start() {
+		
+		DisplayCountdown.seconds = 10;
+		timer = new Timer();
+		timer.schedule(new DisplayCountdown(), 0, 1000);
+		
+	}
+	
+	static class DisplayCountdown extends TimerTask {
+		
+		public static int seconds = 10;
+		
+		public void run() {
+			if (seconds > 0) {
+				System.out.println(seconds);
+				seconds--;
+				AttackCountdown.healthy = false;
+			
+			} else {
+				System.out.println("Countdown finished");
+				System.out.println("player is healthy :)");
+				AttackCountdown.healthy = true;
+				cancel();
+			}
+		}
+	}
+
+	public static void main() {
+		return;
+	}
+}
+

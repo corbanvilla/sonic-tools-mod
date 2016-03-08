@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.crafting.ModCrafting"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.blocks.ModBlocks"/>
+<fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.Main"/>
+<fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.items.ModItems"/>
+<fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.client.render.items.ItemRenderRegister"/>
+<fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.client.render.blocks.BlockRenderRegister"/>
+<fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.OnRightClick"/>
+<fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.MobsDropTimelordFragments"/>
+</qualifiedTypeNameHistroy>

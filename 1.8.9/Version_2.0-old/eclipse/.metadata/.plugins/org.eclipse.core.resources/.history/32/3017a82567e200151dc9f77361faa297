@@ -1,0 +1,23 @@
+package com.animcogn.sonicScrewdriverMod.events;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraftforge.event.entity.living.LivingAttackEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
+public class AttackCountdown {
+
+	public static float timeAfterDmg;
+	
+	@SubscribeEvent
+	public boolean attackCountdown(LivingAttackEvent event) {
+		if(event.entity instanceof EntityPlayer) {
+			if(event.entity.worldObj.isRemote) {
+			CountDown.main();
+			}
+		}	
+	
+		return false;
+		
+	}
+	
+}
