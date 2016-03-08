@@ -12,7 +12,7 @@ This mapping 'stable_20' was designed for MC 1.8.8! Use at your own peril.This m
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
 :getVersionJson
-:extractUserdev UP-TO-DATE
+:extractUserdev
 :extractDependencyATs SKIPPED
 :extractMcpData SKIPPED
 :extractMcpMappings SKIPPED
@@ -30,18 +30,18 @@ This mapping 'stable_20' was designed for MC 1.8.8! Use at your own peril.This m
 :extractNatives SKIPPED
 :getAssetIndex UP-TO-DATE
 :getAssets
-Current status: 418/733   57%
-Current status: 548/733   74%
-Current status: 732/733   99%
+Current status: 364/734   49%
+Current status: 546/734   74%
+Current status: 731/734   99%
 :makeStart SKIPPED
 :setupDecompWorkspace
 :eclipseClasspath
 :eclipseJdt
 :eclipseProject
-:makeEclipseCleanRunClient UP-TO-DATE
-:makeEclipseCleanRunServer UP-TO-DATE
+:makeEclipseCleanRunClient
+:makeEclipseCleanRunServer
 :eclipse
 
 BUILD SUCCESSFUL
 
-Total time: 35.284 secs
+Total time: 34.955 secs
