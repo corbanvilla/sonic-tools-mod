@@ -68,16 +68,37 @@ public class TimelordArmor extends ItemArmor {
 					DisplayInterval.absorbtionInterval = true;
 					CountDown.startInterval();
 				}
+				
+				else if (absorbtion == 1.0F) {
+					player.setAbsorptionAmount(2.0F);
+					DisplayInterval.absorbtionInterval = true;
+					CountDown.startInterval();
+				}
+				
 				else if (absorbtion == 2.0F) {
 					player.setAbsorptionAmount(4.0F);
 					DisplayInterval.absorbtionInterval = true;
 					CountDown.startInterval();
 				}
+				
+				else if (absorbtion == 3.0F) {
+					player.setAbsorptionAmount(4.0F);
+					DisplayInterval.absorbtionInterval = true;
+					CountDown.startInterval();
+				}
+				
 				else if (absorbtion == 4.0F) {
 					player.setAbsorptionAmount(6.0F);
 					DisplayInterval.absorbtionInterval = true;
 					CountDown.startInterval();
 				}
+				
+				if (absorbtion == 5.0F) {
+					player.setAbsorptionAmount(6.0F);
+					DisplayInterval.absorbtionInterval = true;
+					CountDown.startInterval();
+				}
+				
 				else if (absorbtion == 6.0F) {
 					return;
 				}
