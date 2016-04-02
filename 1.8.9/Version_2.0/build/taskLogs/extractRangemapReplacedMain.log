@@ -1,0 +1,35 @@
+Symbol range map extraction starting
+Processing 33 files
+processing com/animcogn/sonicScrewdriverMod/ClientProxy.java
+processing com/animcogn/sonicScrewdriverMod/CommonProxy.java
+processing com/animcogn/sonicScrewdriverMod/Main.java
+processing com/animcogn/sonicScrewdriverMod/ServerProxy.java
+processing com/animcogn/sonicScrewdriverMod/armor/ModArmor.java
+processing com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java
+processing com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java
+processing com/animcogn/sonicScrewdriverMod/armor/TimelordArmor.java
+processing com/animcogn/sonicScrewdriverMod/blocks/ModBlocks.java
+processing com/animcogn/sonicScrewdriverMod/blocks/Pegh.java
+processing com/animcogn/sonicScrewdriverMod/blocks/TimeBlocks.java
+processing com/animcogn/sonicScrewdriverMod/blocks/TimeTravelerBlock.java
+processing com/animcogn/sonicScrewdriverMod/client/render/blocks/BlockRenderRegister.java
+processing com/animcogn/sonicScrewdriverMod/client/render/items/ItemRenderRegister.java
+processing com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java
+processing com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java
+processing com/animcogn/sonicScrewdriverMod/events/AttackCountdown.java
+processing com/animcogn/sonicScrewdriverMod/events/CountDown.java
+processing com/animcogn/sonicScrewdriverMod/events/MobsDropTimelordFragments.java
+processing com/animcogn/sonicScrewdriverMod/events/OnRightClick.java
+processing com/animcogn/sonicScrewdriverMod/items/ModItems.java
+processing com/animcogn/sonicScrewdriverMod/items/StabilizedTimeEnergy.java
+processing com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java
+processing com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java
+processing com/animcogn/sonicScrewdriverMod/items/TimelordFragment.java
+processing com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java
+processing com/animcogn/sonicScrewdriverMod/tools/ModTools.java
+processing com/animcogn/sonicScrewdriverMod/tools/SonicAxe.java
+processing com/animcogn/sonicScrewdriverMod/tools/SonicPickaxe.java
+processing com/animcogn/sonicScrewdriverMod/tools/SonicScrewdriver.java
+processing com/animcogn/sonicScrewdriverMod/tools/SonicShovel.java
+processing com/animcogn/sonicScrewdriverMod/tools/SonicSword.java
+processing com/animcogn/sonicScrewdriverMod/world/WorldGen.java
