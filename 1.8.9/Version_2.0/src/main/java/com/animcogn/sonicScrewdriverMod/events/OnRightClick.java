@@ -1,8 +1,7 @@
 package com.animcogn.sonicScrewdriverMod.events;
 
-import com.animcogn.sonicScrewdriverMod.items.ModItems;
+import com.animcogn.sonicScrewdriverMod.tools.ModTools;
 
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent.Action;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -13,7 +12,7 @@ public class OnRightClick {
 	public void onRightClick(PlayerInteractEvent event) {
 			
 		try {
-			if (event.entityPlayer.getHeldItem().getItem() == ModItems.sonicScrewdriver && event.action == Action.RIGHT_CLICK_AIR) {
+			if (event.entityPlayer.getHeldItem().getItem() == ModTools.sonicScrewdriver && event.action == Action.RIGHT_CLICK_AIR) {
 				event.entityPlayer.playSound("sonic-tools-mod:sonicEffect", 1.0F, 1.0F);
 //				System.out.println("let the geekyness comence"); //Just a friendly debug statement
 		}

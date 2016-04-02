@@ -15,7 +15,7 @@ public class BlockRenderRegister {
 	
 	public static void registerBlockRenderer() {
 		reg(ModBlocks.timeTravelerBlock);	
-		reg(ModBlocks.pegh);
+//		reg(ModBlocks.pegh);
 	}
 	
 	public static String modid = Main.MODID;

@@ -25,35 +25,35 @@ public class TimelordArmor extends ItemArmor {
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
 		
-		if (itemStack.getItem() == ModItems.timelordHelmet) {
+		if (itemStack.getItem() == ModArmor.timelordHelmet) {
 			effectPlayer(player, Potion.nightVision, 1);
 		}
 		
-		if (itemStack.getItem() == ModItems.timelordChestplate) {
+		if (itemStack.getItem() == ModArmor.timelordChestplate) {
 			absorbtion(player);
 			effectPlayer(player, Potion.damageBoost, 0);
 				
 		}
 		
-		if (itemStack.getItem() == ModItems.timelordLeggings) {
+		if (itemStack.getItem() == ModArmor.timelordLeggings) {
 			effectPlayer(player, Potion.moveSpeed, 1);
 			effectPlayer(player, Potion.digSpeed, 0);
 		}
 		
-		if (itemStack.getItem() == ModItems.timelordBoots) {
+		if (itemStack.getItem() == ModArmor.timelordBoots) {
 	        effectPlayer(player, Potion.jump, 1);
 	    }
 		
-	    if (this.isWearingFullSet(player, ModItems.timelordHelmet, ModItems.timelordChestplate, 
-	    		ModItems.timelordLeggings, ModItems.timelordBoots)) {
+	    if (this.isWearingFullSet(player, ModArmor.timelordHelmet, ModArmor.timelordChestplate, 
+	    		ModArmor.timelordLeggings, ModArmor.timelordBoots)) {
 			this.effectPlayer(player, Potion.regeneration, 1);
 	    }
 	}
 	
 	private void effectPlayer(EntityPlayer player, Potion potion, int amplifier) {
 	    //Always effect for 8 seconds, then refresh
-	    if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 1)
-	        player.addPotionEffect(new PotionEffect(potion.id, 159, amplifier, true, true));
+	    if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 12)
+	        player.addPotionEffect(new PotionEffect(potion.id, 400, amplifier, true, true));
 	}
 	
 	private void absorbtion(EntityPlayer player) {
@@ -62,7 +62,10 @@ public class TimelordArmor extends ItemArmor {
 		health = player.getHealth();
 		absorbtion = player.getAbsorptionAmount();
 		
-			if (health == 20.0F && DisplayInterval.absorbtionInterval == false && AttackCountdown.healthy == true) {
+			if (health == 20.0F && DisplayInterval.absorbtionInterval == false 
+				&& AttackCountdown.healthy == true && !player.worldObj.isRemote 
+				&& absorbtion > 6.0) {	
+				
 				if (absorbtion == 0.0F) {
 					player.setAbsorptionAmount(2.0F);
 					DisplayInterval.absorbtionInterval = true;

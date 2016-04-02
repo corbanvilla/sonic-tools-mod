@@ -25,29 +25,29 @@ public class TardisArmor extends ItemArmor {
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
 		
-		if (itemStack.getItem() == ModItems.tardisHelmet) {
+		if (itemStack.getItem() == ModArmor.tardisHelmet) {
 			effectPlayer(player, Potion.nightVision, 2);
 			effectPlayer(player, Potion.resistance, 0);
 		}
 		
-		if (itemStack.getItem() == ModItems.tardisChestplate) {
+		if (itemStack.getItem() == ModArmor.tardisChestplate) {
 			absorbtion(player);
 			effectPlayer(player, Potion.damageBoost, 1);
 				
 		}
 		
-		if (itemStack.getItem() == ModItems.tardisLeggings) {
+		if (itemStack.getItem() == ModArmor.tardisLeggings) {
 			effectPlayer(player, Potion.moveSpeed, 2);
 			effectPlayer(player, Potion.digSpeed, 2);
 		}
 		
-		if (itemStack.getItem() == ModItems.tardisBoots) {
+		if (itemStack.getItem() == ModArmor.tardisBoots) {
 	        effectPlayer(player, Potion.jump, 2);
 	        effectPlayer(player, Potion.fireResistance, 1);
 	    }
 		
-	    if (this.isWearingFullSet(player, ModItems.tardisHelmet, ModItems.tardisChestplate, 
-	    		ModItems.tardisLeggings, ModItems.tardisBoots)) {
+	    if (this.isWearingFullSet(player, ModArmor.tardisHelmet, ModArmor.tardisChestplate, 
+	    		ModArmor.tardisLeggings, ModArmor.tardisBoots)) {
 			this.effectPlayer(player, Potion.regeneration, 1);
 			this.effectPlayer(player, Potion.saturation, 1);
 			this.effectPlayer(player, Potion.waterBreathing, 1);
@@ -56,7 +56,7 @@ public class TardisArmor extends ItemArmor {
 	
 	private void effectPlayer(EntityPlayer player, Potion potion, int amplifier) {
 	    //Always effect for 8 seconds, then refresh
-	    if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 1)
+	    if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 220)
 	        player.addPotionEffect(new PotionEffect(potion.id, 159, amplifier, true, true));
 	}
 	

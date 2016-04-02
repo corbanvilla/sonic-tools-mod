@@ -22,31 +22,31 @@ public class TimeTravelerArmor extends ItemArmor {
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
 		
-		if (itemStack.getItem() == ModItems.timetravelerHelmet) {
+		if (itemStack.getItem() == ModArmor.timetravelerHelmet) {
 			effectPlayer(player, Potion.nightVision, 0);
 		}
 		
-		if (itemStack.getItem() == ModItems.timetravelerChestplate) {
+		if (itemStack.getItem() == ModArmor.timetravelerChestplate) {
 				effectPlayer(player, Potion.absorption, 0);
 		}
 		
-		if (itemStack.getItem() == ModItems.timetravelerLeggings) {
+		if (itemStack.getItem() == ModArmor.timetravelerLeggings) {
 			effectPlayer(player, Potion.moveSpeed, 0);
 		}
 		
-		if (itemStack.getItem() == ModItems.timetravelerBoots) {
+		if (itemStack.getItem() == ModArmor.timetravelerBoots) {
 	        effectPlayer(player, Potion.jump, 0);
 	    }
 		
-	    if (this.isWearingFullSet(player, ModItems.timetravelerHelmet, ModItems.timetravelerChestplate, ModItems.timetravelerLeggings, ModItems.timetravelerBoots)) {
+	    if (this.isWearingFullSet(player, ModArmor.timetravelerHelmet, ModArmor.timetravelerChestplate, ModArmor.timetravelerLeggings, ModArmor.timetravelerBoots)) {
 			this.effectPlayer(player, Potion.regeneration, 0);
 	    }
 	}
 	
 	private void effectPlayer(EntityPlayer player, Potion potion, int amplifier) {
 	    //Always effect for 8 seconds, then refresh
-	    if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 2)
-	        player.addPotionEffect(new PotionEffect(potion.id, 159, amplifier, true, true));
+	    if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 399)
+	        player.addPotionEffect(new PotionEffect(potion.id, 400, amplifier, true, true));
 	}
 	
 	private boolean isWearingFullSet(EntityPlayer player, Item helmet, Item chestplate, Item leggings, Item boots) {

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "sonic-tools-mod",
+  "name": "Sonic Tools Mod",
+  "description": "Adds sonic tools from Doctor Who to Minecraft! :D :D :D \n===============\n   Changelog -> \n===============\nCleaned up and optimized code \n\nWho the boss?: Thats right, its Animcogn :) \n",
+  "version": "2.0 - New Research",
+  "mcversion": "1.8.9",
+  "url": "http://bit.ly/sonic-tools-mod",
+  "updateUrl": "",
+  "authorList": ["Animcogn the AWESOME Mod Creator ;)"],
+  "credits": "Animcogn's First Mod",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
