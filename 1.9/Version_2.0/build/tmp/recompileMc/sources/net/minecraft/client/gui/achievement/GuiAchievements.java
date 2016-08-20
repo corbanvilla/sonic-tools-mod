@@ -113,7 +113,7 @@ public class GuiAchievements extends GuiScreen implements IProgressMeter
      */
     protected void keyTyped(char typedChar, int keyCode) throws IOException
     {
-        if (keyCode == this.mc.gameSettings.keyBindInventory.getKeyCode())
+        if (this.mc.gameSettings.keyBindInventory.isActiveAndMatches(keyCode))
         {
             this.mc.displayGuiScreen((GuiScreen)null);
             this.mc.setIngameFocus();

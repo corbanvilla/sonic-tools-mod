@@ -679,9 +679,9 @@ public class EntityRenderer implements IResourceManagerReloadListener
             IBlockState state = ActiveRenderInfo.getBlockStateAtEntityViewpoint(this.mc.theWorld, entity, partialTicks);
             net.minecraftforge.client.event.EntityViewRenderEvent.CameraSetup event = new net.minecraftforge.client.event.EntityViewRenderEvent.CameraSetup(this, entity, state, partialTicks, yaw, pitch, roll);
             net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(event);
-            GlStateManager.rotate(event.roll, 0.0F, 0.0F, 1.0F);
-            GlStateManager.rotate(event.pitch, 1.0F, 0.0F, 0.0F);
-            GlStateManager.rotate(event.yaw, 0.0F, 1.0F, 0.0F);
+            GlStateManager.rotate(event.getRoll(), 0.0F, 0.0F, 1.0F);
+            GlStateManager.rotate(event.getPitch(), 1.0F, 0.0F, 0.0F);
+            GlStateManager.rotate(event.getYaw(), 0.0F, 1.0F, 0.0F);
         }
 
         GlStateManager.translate(0.0F, -f, 0.0F);
@@ -1908,9 +1908,9 @@ public class EntityRenderer implements IResourceManagerReloadListener
         net.minecraftforge.client.event.EntityViewRenderEvent.FogColors event = new net.minecraftforge.client.event.EntityViewRenderEvent.FogColors(this, entity, iblockstate, partialTicks, this.fogColorRed, this.fogColorGreen, this.fogColorBlue);
         net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(event);
 
-        this.fogColorRed = event.red;
-        this.fogColorGreen = event.green;
-        this.fogColorBlue = event.blue;
+        this.fogColorRed = event.getRed();
+        this.fogColorGreen = event.getGreen();
+        this.fogColorBlue = event.getBlue();
 
         GlStateManager.clearColor(this.fogColorRed, this.fogColorGreen, this.fogColorBlue, 0.0F);
     }

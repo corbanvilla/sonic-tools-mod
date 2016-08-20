@@ -1,5 +1,5 @@
 Symbol range map extraction starting
-Processing 33 files
+Processing 35 files
 processing com/animcogn/sonicScrewdriverMod/ClientProxy.java
 @|com/animcogn/sonicScrewdriverMod/ClientProxy.java|8|40|com.animcogn.sonicScrewdriverMod|package|com.animcogn.sonicScrewdriverMod|(file)
 Class Start: com.animcogn.sonicScrewdriverMod.ClientProxy
@@ -39,46 +39,50 @@ processing com/animcogn/sonicScrewdriverMod/CommonProxy.java
 @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|8|40|com.animcogn.sonicScrewdriverMod|package|com.animcogn.sonicScrewdriverMod|(file)
 Class Start: com.animcogn.sonicScrewdriverMod.CommonProxy
    Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1008|1015|preInit|method|com.animcogn.sonicScrewdriverMod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1016|1041|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1042|1043|e|param|com.animcogn.sonicScrewdriverMod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|e|0
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1049|1057|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1058|1069|createItems|method|com.animcogn.sonicScrewdriverMod.items.ModItems|createItems|()V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1075|1084|ModBlocks|class|com.animcogn.sonicScrewdriverMod.blocks.ModBlocks
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1085|1097|createBlocks|method|com.animcogn.sonicScrewdriverMod.blocks.ModBlocks|createBlocks|()V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1103|1111|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1112|1123|createArmor|method|com.animcogn.sonicScrewdriverMod.armor.ModArmor|createArmor|()V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1129|1137|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1138|1149|createTools|method|com.animcogn.sonicScrewdriverMod.tools.ModTools|createTools|()V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1138|1145|preInit|method|com.animcogn.sonicScrewdriverMod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1146|1171|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1172|1173|e|param|com.animcogn.sonicScrewdriverMod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|e|0
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1179|1187|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1188|1199|createItems|method|com.animcogn.sonicScrewdriverMod.items.ModItems|createItems|()V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1205|1214|ModBlocks|class|com.animcogn.sonicScrewdriverMod.blocks.ModBlocks
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1215|1227|createBlocks|method|com.animcogn.sonicScrewdriverMod.blocks.ModBlocks|createBlocks|()V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1233|1241|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1242|1253|createArmor|method|com.animcogn.sonicScrewdriverMod.armor.ModArmor|createArmor|()V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1259|1267|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1268|1279|createTools|method|com.animcogn.sonicScrewdriverMod.tools.ModTools|createTools|()V
    Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
    Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1176|1180|init|method|com.animcogn.sonicScrewdriverMod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1181|1203|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1204|1205|e|param|com.animcogn.sonicScrewdriverMod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|e|0
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1214|1225|ModCrafting|class|com.animcogn.sonicScrewdriverMod.crafting.ModCrafting
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1226|1238|initCrafting|method|com.animcogn.sonicScrewdriverMod.crafting.ModCrafting|initCrafting|()V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1247|1258|ModSmelting|class|com.animcogn.sonicScrewdriverMod.crafting.ModSmelting
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1259|1271|initSmelting|method|com.animcogn.sonicScrewdriverMod.crafting.ModSmelting|initSmelting|()V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1280|1294|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1295|1304|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1305|1313|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1318|1343|MobsDropTimelordFragments|class|com.animcogn.sonicScrewdriverMod.events.MobsDropTimelordFragments
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1350|1364|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1365|1374|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1375|1383|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1388|1400|OnRightClick|class|com.animcogn.sonicScrewdriverMod.events.OnRightClick
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1407|1421|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1422|1431|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1432|1440|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1445|1460|AttackCountdown|class|com.animcogn.sonicScrewdriverMod.events.AttackCountdown
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1470|1482|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1483|1505|registerWorldGenerator|method|net.minecraftforge.fml.common.registry.GameRegistry|registerWorldGenerator|(Lnet/minecraftforge/fml/common/IWorldGenerator;I)V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1510|1518|WorldGen|class|com.animcogn.sonicScrewdriverMod.world.WorldGen
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1306|1310|init|method|com.animcogn.sonicScrewdriverMod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1311|1333|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1334|1335|e|param|com.animcogn.sonicScrewdriverMod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|e|0
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1344|1357|ArmorCrafting|class|com.animcogn.sonicScrewdriverMod.crafting.ArmorCrafting
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1358|1375|initArmorCrafting|method|com.animcogn.sonicScrewdriverMod.crafting.ArmorCrafting|initArmorCrafting|()V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1384|1397|ArmorSmelting|class|com.animcogn.sonicScrewdriverMod.crafting.ArmorSmelting
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1398|1415|initArmorSmelting|method|com.animcogn.sonicScrewdriverMod.crafting.ArmorSmelting|initArmorSmelting|()V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1424|1436|ToolCrafting|class|com.animcogn.sonicScrewdriverMod.crafting.ToolCrafting
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1437|1453|initToolCrafting|method|com.animcogn.sonicScrewdriverMod.crafting.ToolCrafting|initToolCrafting|()V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1462|1474|ToolSmelting|class|com.animcogn.sonicScrewdriverMod.crafting.ToolSmelting
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1475|1491|initToolSmelting|method|com.animcogn.sonicScrewdriverMod.crafting.ToolSmelting|initToolSmelting|()V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1500|1514|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1515|1524|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1525|1533|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1538|1563|MobsDropTimelordFragments|class|com.animcogn.sonicScrewdriverMod.events.MobsDropTimelordFragments
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1570|1584|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1585|1594|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1595|1603|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1608|1620|OnRightClick|class|com.animcogn.sonicScrewdriverMod.events.OnRightClick
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1627|1641|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1642|1651|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1652|1660|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1665|1680|AttackCountdown|class|com.animcogn.sonicScrewdriverMod.events.AttackCountdown
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1690|1702|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1703|1725|registerWorldGenerator|method|net.minecraftforge.fml.common.registry.GameRegistry|registerWorldGenerator|(Lnet/minecraftforge/fml/common/IWorldGenerator;I)V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1730|1738|WorldGen|class|com.animcogn.sonicScrewdriverMod.world.WorldGen
    Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
    Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1549|1557|postInit|method|com.animcogn.sonicScrewdriverMod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1558|1584|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
-      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1585|1586|e|param|com.animcogn.sonicScrewdriverMod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|e|0
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1769|1777|postInit|method|com.animcogn.sonicScrewdriverMod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1778|1804|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+      @|com/animcogn/sonicScrewdriverMod/CommonProxy.java|1805|1806|e|param|com.animcogn.sonicScrewdriverMod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|e|0
    Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
 Class End  : com.animcogn.sonicScrewdriverMod.CommonProxy
 endProcessing com/animcogn/sonicScrewdriverMod/CommonProxy.java
@@ -386,63 +390,99 @@ Class Start: com.animcogn.sonicScrewdriverMod.armor.TardisArmor
       @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2654|2672|absorbtionInterval|field|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval|absorbtionInterval
       @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2686|2695|CountDown|class|com.animcogn.sonicScrewdriverMod.events.CountDown
       @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2696|2709|startInterval|method|com.animcogn.sonicScrewdriverMod.events.CountDown|startInterval|()V
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2759|2765|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|absorbtion|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2766|2785|setAbsorptionAmount|method|net.minecraft.entity.EntityLivingBase|setAbsorptionAmount|(F)V
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2798|2813|DisplayInterval|class|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2814|2832|absorbtionInterval|field|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval|absorbtionInterval
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2846|2855|CountDown|class|com.animcogn.sonicScrewdriverMod.events.CountDown
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2856|2869|startInterval|method|com.animcogn.sonicScrewdriverMod.events.CountDown|startInterval|()V
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2919|2925|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|absorbtion|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2926|2945|setAbsorptionAmount|method|net.minecraft.entity.EntityLivingBase|setAbsorptionAmount|(F)V
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2958|2973|DisplayInterval|class|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2974|2992|absorbtionInterval|field|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval|absorbtionInterval
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3006|3015|CountDown|class|com.animcogn.sonicScrewdriverMod.events.CountDown
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3016|3029|startInterval|method|com.animcogn.sonicScrewdriverMod.events.CountDown|startInterval|()V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2760|2766|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|absorbtion|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2767|2786|setAbsorptionAmount|method|net.minecraft.entity.EntityLivingBase|setAbsorptionAmount|(F)V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2799|2814|DisplayInterval|class|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2815|2833|absorbtionInterval|field|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval|absorbtionInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2847|2856|CountDown|class|com.animcogn.sonicScrewdriverMod.events.CountDown
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2857|2870|startInterval|method|com.animcogn.sonicScrewdriverMod.events.CountDown|startInterval|()V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2920|2926|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|absorbtion|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2927|2946|setAbsorptionAmount|method|net.minecraft.entity.EntityLivingBase|setAbsorptionAmount|(F)V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2959|2974|DisplayInterval|class|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|2975|2993|absorbtionInterval|field|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval|absorbtionInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3007|3016|CountDown|class|com.animcogn.sonicScrewdriverMod.events.CountDown
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3017|3030|startInterval|method|com.animcogn.sonicScrewdriverMod.events.CountDown|startInterval|()V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3080|3086|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|absorbtion|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3087|3106|setAbsorptionAmount|method|net.minecraft.entity.EntityLivingBase|setAbsorptionAmount|(F)V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3119|3134|DisplayInterval|class|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3135|3153|absorbtionInterval|field|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval|absorbtionInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3167|3176|CountDown|class|com.animcogn.sonicScrewdriverMod.events.CountDown
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3177|3190|startInterval|method|com.animcogn.sonicScrewdriverMod.events.CountDown|startInterval|()V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3240|3246|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|absorbtion|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3247|3266|setAbsorptionAmount|method|net.minecraft.entity.EntityLivingBase|setAbsorptionAmount|(F)V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3279|3294|DisplayInterval|class|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3295|3313|absorbtionInterval|field|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval|absorbtionInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3327|3336|CountDown|class|com.animcogn.sonicScrewdriverMod.events.CountDown
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3337|3350|startInterval|method|com.animcogn.sonicScrewdriverMod.events.CountDown|startInterval|()V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3400|3406|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|absorbtion|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3407|3426|setAbsorptionAmount|method|net.minecraft.entity.EntityLivingBase|setAbsorptionAmount|(F)V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3439|3454|DisplayInterval|class|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3455|3473|absorbtionInterval|field|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval|absorbtionInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3487|3496|CountDown|class|com.animcogn.sonicScrewdriverMod.events.CountDown
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3497|3510|startInterval|method|com.animcogn.sonicScrewdriverMod.events.CountDown|startInterval|()V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3560|3566|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|absorbtion|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3567|3586|setAbsorptionAmount|method|net.minecraft.entity.EntityLivingBase|setAbsorptionAmount|(F)V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3599|3614|DisplayInterval|class|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3615|3633|absorbtionInterval|field|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval|absorbtionInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3647|3656|CountDown|class|com.animcogn.sonicScrewdriverMod.events.CountDown
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3657|3670|startInterval|method|com.animcogn.sonicScrewdriverMod.events.CountDown|startInterval|()V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3720|3726|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|absorbtion|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3727|3746|setAbsorptionAmount|method|net.minecraft.entity.EntityLivingBase|setAbsorptionAmount|(F)V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3759|3774|DisplayInterval|class|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3775|3793|absorbtionInterval|field|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval|absorbtionInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3807|3816|CountDown|class|com.animcogn.sonicScrewdriverMod.events.CountDown
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3817|3830|startInterval|method|com.animcogn.sonicScrewdriverMod.events.CountDown|startInterval|()V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3880|3886|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|absorbtion|(Lnet/minecraft/entity/player/EntityPlayer;)V|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3887|3906|setAbsorptionAmount|method|net.minecraft.entity.EntityLivingBase|setAbsorptionAmount|(F)V
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3920|3935|DisplayInterval|class|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3936|3954|absorbtionInterval|field|com.animcogn.sonicScrewdriverMod.events.CountDown.DisplayInterval|absorbtionInterval
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3968|3977|CountDown|class|com.animcogn.sonicScrewdriverMod.events.CountDown
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3978|3991|startInterval|method|com.animcogn.sonicScrewdriverMod.events.CountDown|startInterval|()V
    Method End: absorbtion(Lnet/minecraft/entity/player/EntityPlayer;)V
    Method Start: isWearingFullSet(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3121|3137|isWearingFullSet|method|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3138|3150|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3151|3157|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3159|3163|Item|class|net.minecraft.item.Item
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3164|3170|helmet|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|helmet|1
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3172|3176|Item|class|net.minecraft.item.Item
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3177|3187|chestplate|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|chestplate|2
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3189|3193|Item|class|net.minecraft.item.Item
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3194|3202|leggings|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|leggings|3
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3204|3208|Item|class|net.minecraft.item.Item
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3209|3214|boots|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|boots|4
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3227|3233|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3234|3243|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3244|3259|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3274|3280|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3281|3290|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3291|3306|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3310|3317|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3323|3329|helmet|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|helmet|1
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3337|3343|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3344|3353|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3354|3369|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3384|3390|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3391|3400|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3401|3416|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3420|3427|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3433|3443|chestplate|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|chestplate|2
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3451|3457|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3458|3467|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3468|3483|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3498|3504|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3505|3514|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3515|3530|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3534|3541|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3547|3555|leggings|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|leggings|3
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3563|3569|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3570|3579|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3580|3595|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3610|3616|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3617|3626|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3627|3642|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3646|3653|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|3659|3664|boots|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|boots|4
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4059|4075|isWearingFullSet|method|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4076|4088|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4089|4095|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4097|4101|Item|class|net.minecraft.item.Item
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4102|4108|helmet|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|helmet|1
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4110|4114|Item|class|net.minecraft.item.Item
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4115|4125|chestplate|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|chestplate|2
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4127|4131|Item|class|net.minecraft.item.Item
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4132|4140|leggings|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|leggings|3
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4142|4146|Item|class|net.minecraft.item.Item
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4147|4152|boots|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|boots|4
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4165|4171|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4172|4181|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4182|4197|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4212|4218|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4219|4228|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4229|4244|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4248|4255|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4261|4267|helmet|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|helmet|1
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4275|4281|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4282|4291|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4292|4307|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4322|4328|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4329|4338|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4339|4354|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4358|4365|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4371|4381|chestplate|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|chestplate|2
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4389|4395|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4396|4405|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4406|4421|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4436|4442|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4443|4452|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4453|4468|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4472|4479|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4485|4493|leggings|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|leggings|3
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4501|4507|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4508|4517|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4518|4533|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4548|4554|player|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4555|4564|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4565|4580|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4584|4591|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java|4597|4602|boots|param|com.animcogn.sonicScrewdriverMod.armor.TardisArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|boots|4
    Method End: isWearingFullSet(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z
 Class End  : com.animcogn.sonicScrewdriverMod.armor.TardisArmor
 endProcessing com/animcogn/sonicScrewdriverMod/armor/TardisArmor.java
@@ -490,103 +530,103 @@ Class Start: com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor
       @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|983|995|effectPlayer|method|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V
       @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|996|1002|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|onArmorTick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V|player|1
       @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1004|1010|Potion|class|net.minecraft.potion.Potion
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1011|1021|absorption|field|net.minecraft.potion.Potion|absorption
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1040|1049|itemStack|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|onArmorTick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V|itemStack|2
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1050|1057|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1063|1071|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1072|1092|timetravelerLeggings|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerLeggings
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1099|1111|effectPlayer|method|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1112|1118|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|onArmorTick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V|player|1
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1120|1126|Potion|class|net.minecraft.potion.Potion
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1127|1136|moveSpeed|field|net.minecraft.potion.Potion|moveSpeed
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1155|1164|itemStack|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|onArmorTick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V|itemStack|2
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1165|1172|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1178|1186|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1187|1204|timetravelerBoots|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerBoots
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1217|1229|effectPlayer|method|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1230|1236|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|onArmorTick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V|player|1
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1238|1244|Potion|class|net.minecraft.potion.Potion
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1245|1249|jump|field|net.minecraft.potion.Potion|jump
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1279|1295|isWearingFullSet|method|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1296|1302|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|onArmorTick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V|player|1
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1304|1312|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1313|1331|timetravelerHelmet|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerHelmet
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1333|1341|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1342|1364|timetravelerChestplate|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerChestplate
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1366|1374|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1375|1395|timetravelerLeggings|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerLeggings
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1397|1405|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1406|1423|timetravelerBoots|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerBoots
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1436|1448|effectPlayer|method|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1449|1455|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|onArmorTick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V|player|1
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1457|1463|Potion|class|net.minecraft.potion.Potion
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1464|1476|regeneration|field|net.minecraft.potion.Potion|regeneration
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1011|1022|digSlowdown|field|net.minecraft.potion.Potion|digSlowdown
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1041|1050|itemStack|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|onArmorTick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V|itemStack|2
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1051|1058|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1064|1072|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1073|1093|timetravelerLeggings|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerLeggings
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1100|1112|effectPlayer|method|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1113|1119|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|onArmorTick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V|player|1
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1121|1127|Potion|class|net.minecraft.potion.Potion
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1128|1137|moveSpeed|field|net.minecraft.potion.Potion|moveSpeed
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1156|1165|itemStack|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|onArmorTick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V|itemStack|2
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1166|1173|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1179|1187|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1188|1205|timetravelerBoots|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerBoots
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1218|1230|effectPlayer|method|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1231|1237|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|onArmorTick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V|player|1
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1239|1245|Potion|class|net.minecraft.potion.Potion
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1246|1250|jump|field|net.minecraft.potion.Potion|jump
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1280|1296|isWearingFullSet|method|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1297|1303|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|onArmorTick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V|player|1
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1305|1313|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1314|1332|timetravelerHelmet|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerHelmet
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1334|1342|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1343|1365|timetravelerChestplate|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerChestplate
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1367|1375|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1376|1396|timetravelerLeggings|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerLeggings
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1398|1406|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1407|1424|timetravelerBoots|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerBoots
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1437|1449|effectPlayer|method|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1450|1456|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|onArmorTick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V|player|1
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1458|1464|Potion|class|net.minecraft.potion.Potion
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1465|1477|regeneration|field|net.minecraft.potion.Potion|regeneration
    Method End: onArmorTick(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/ItemStack;)V
    Method Start: effectPlayer(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1508|1520|effectPlayer|method|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1521|1533|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1534|1540|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1542|1548|Potion|class|net.minecraft.potion.Potion
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1549|1555|potion|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|potion|1
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1561|1570|amplifier|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|amplifier|2
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1632|1638|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1639|1660|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1661|1667|potion|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|potion|1
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1680|1686|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1687|1708|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1709|1715|potion|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|potion|1
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1717|1728|getDuration|method|net.minecraft.potion.PotionEffect|getDuration|()I
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1748|1754|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1755|1770|addPotionEffect|method|net.minecraft.entity.EntityLivingBase|addPotionEffect|(Lnet/minecraft/potion/PotionEffect;)V
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1775|1787|PotionEffect|class|net.minecraft.potion.PotionEffect
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1788|1794|potion|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|potion|1
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1795|1797|id|field|net.minecraft.potion.Potion|id
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1804|1813|amplifier|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|amplifier|2
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1509|1521|effectPlayer|method|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1522|1534|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1535|1541|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1543|1549|Potion|class|net.minecraft.potion.Potion
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1550|1556|potion|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|potion|1
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1562|1571|amplifier|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|amplifier|2
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1633|1639|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1640|1661|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1662|1668|potion|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|potion|1
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1681|1687|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1688|1709|getActivePotionEffect|method|net.minecraft.entity.EntityLivingBase|getActivePotionEffect|(Lnet/minecraft/potion/Potion;)Lnet/minecraft/potion/PotionEffect;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1710|1716|potion|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|potion|1
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1718|1729|getDuration|method|net.minecraft.potion.PotionEffect|getDuration|()I
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1749|1755|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1756|1771|addPotionEffect|method|net.minecraft.entity.EntityLivingBase|addPotionEffect|(Lnet/minecraft/potion/PotionEffect;)V
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1776|1788|PotionEffect|class|net.minecraft.potion.PotionEffect
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1789|1795|potion|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|potion|1
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1796|1798|id|field|net.minecraft.potion.Potion|id
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1805|1814|amplifier|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|effectPlayer|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V|amplifier|2
    Method End: effectPlayer(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/potion/Potion;I)V
    Method Start: isWearingFullSet(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1851|1867|isWearingFullSet|method|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1868|1880|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1881|1887|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1889|1893|Item|class|net.minecraft.item.Item
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1894|1900|helmet|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|helmet|1
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1902|1906|Item|class|net.minecraft.item.Item
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1907|1917|chestplate|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|chestplate|2
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1919|1923|Item|class|net.minecraft.item.Item
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1924|1932|leggings|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|leggings|3
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1934|1938|Item|class|net.minecraft.item.Item
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1939|1944|boots|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|boots|4
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1957|1963|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1964|1973|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1974|1989|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2004|2010|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2011|2020|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2021|2036|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2040|2047|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2053|2059|helmet|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|helmet|1
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2067|2073|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2074|2083|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2084|2099|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2114|2120|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2121|2130|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2131|2146|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2150|2157|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2163|2173|chestplate|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|chestplate|2
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2181|2187|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2188|2197|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2198|2213|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2228|2234|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2235|2244|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2245|2260|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2264|2271|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2277|2285|leggings|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|leggings|3
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2293|2299|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2300|2309|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2310|2325|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2340|2346|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2347|2356|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2357|2372|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2376|2383|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2389|2394|boots|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|boots|4
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1852|1868|isWearingFullSet|method|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1869|1881|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1882|1888|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1890|1894|Item|class|net.minecraft.item.Item
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1895|1901|helmet|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|helmet|1
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1903|1907|Item|class|net.minecraft.item.Item
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1908|1918|chestplate|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|chestplate|2
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1920|1924|Item|class|net.minecraft.item.Item
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1925|1933|leggings|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|leggings|3
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1935|1939|Item|class|net.minecraft.item.Item
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1940|1945|boots|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|boots|4
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1958|1964|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1965|1974|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|1975|1990|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2005|2011|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2012|2021|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2022|2037|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2041|2048|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2054|2060|helmet|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|helmet|1
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2068|2074|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2075|2084|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2085|2100|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2115|2121|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2122|2131|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2132|2147|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2151|2158|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2164|2174|chestplate|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|chestplate|2
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2182|2188|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2189|2198|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2199|2214|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2229|2235|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2236|2245|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2246|2261|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2265|2272|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2278|2286|leggings|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|leggings|3
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2294|2300|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2301|2310|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2311|2326|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2341|2347|player|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|player|0
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2348|2357|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2358|2373|armorItemInSlot|method|net.minecraft.entity.player.InventoryPlayer|armorItemInSlot|(I)Lnet/minecraft/item/ItemStack;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2377|2384|getItem|method|net.minecraft.item.ItemStack|getItem|()Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java|2390|2395|boots|param|com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor|isWearingFullSet|(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z|boots|4
    Method End: isWearingFullSet(Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;Lnet/minecraft/item/Item;)Z
 Class End  : com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor
 endProcessing com/animcogn/sonicScrewdriverMod/armor/TimeTravelerArmor.java
@@ -1125,168 +1165,258 @@ Class Start: com.animcogn.sonicScrewdriverMod.client.render.items.ItemRenderRegi
 Class End  : com.animcogn.sonicScrewdriverMod.client.render.items.ItemRenderRegister
 endProcessing com/animcogn/sonicScrewdriverMod/client/render/items/ItemRenderRegister.java
 
-processing com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java
-@|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|8|49|com.animcogn.sonicScrewdriverMod.crafting|package|com.animcogn.sonicScrewdriverMod.crafting|(file)
-Class Start: com.animcogn.sonicScrewdriverMod.crafting.ModCrafting
-   Method Start: initCrafting()V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|439|451|initCrafting|method|com.animcogn.sonicScrewdriverMod.crafting.ModCrafting|initCrafting|()V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|477|489|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|490|499|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|509|518|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|519|527|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|528|544|sonicScrewdriver|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicScrewdriver
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|589|597|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|598|610|sonicPickaxe|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicPickaxe
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|621|626|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|627|634|emerald|field|net.minecraft.init.Items|emerald
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|645|653|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|654|664|sonicSword|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicSword
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|675|680|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|681|688|diamond|field|net.minecraft.init.Items|diamond
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|699|705|Blocks|class|net.minecraft.init.Blocks
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|706|714|obsidian|field|net.minecraft.init.Blocks|obsidian
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|725|733|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|734|745|sonicShovel|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicShovel
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|756|764|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|765|773|sonicAxe|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicAxe
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|784|792|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|793|809|timelordFragment|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timelordFragment
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|814|826|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|827|836|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|846|855|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|856|864|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|865|875|sonicSword|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicSword
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|920|928|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|929|945|timelordFragment|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timelordFragment
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|956|961|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|962|969|emerald|field|net.minecraft.init.Items|emerald
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|980|985|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|986|993|diamond|field|net.minecraft.init.Items|diamond
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1004|1009|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1010|1023|diamond_sword|field|net.minecraft.init.Items|diamond_sword
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1028|1040|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1041|1050|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1060|1069|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1070|1078|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1079|1090|sonicShovel|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicShovel
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1135|1143|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1144|1160|timelordFragment|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timelordFragment
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1171|1176|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1177|1184|emerald|field|net.minecraft.init.Items|emerald
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1195|1200|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1201|1208|diamond|field|net.minecraft.init.Items|diamond
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1219|1224|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1225|1239|diamond_shovel|field|net.minecraft.init.Items|diamond_shovel
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1244|1256|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1257|1266|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1276|1285|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1286|1294|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1295|1307|sonicPickaxe|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicPickaxe
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1352|1360|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1361|1377|timelordFragment|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timelordFragment
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1388|1393|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1394|1401|emerald|field|net.minecraft.init.Items|emerald
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1412|1417|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1418|1425|diamond|field|net.minecraft.init.Items|diamond
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1436|1441|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1442|1457|diamond_pickaxe|field|net.minecraft.init.Items|diamond_pickaxe
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1462|1474|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1475|1484|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1494|1503|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1504|1512|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1513|1521|sonicAxe|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicAxe
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1566|1574|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1575|1591|timelordFragment|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timelordFragment
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1602|1607|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1608|1615|emerald|field|net.minecraft.init.Items|emerald
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1626|1631|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1632|1639|diamond|field|net.minecraft.init.Items|diamond
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1650|1655|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1656|1667|diamond_axe|field|net.minecraft.init.Items|diamond_axe
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1696|1708|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1709|1718|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1728|1737|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1738|1746|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1747|1765|timetravelerHelmet|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerHelmet
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1811|1819|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1820|1841|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1852|1857|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1858|1872|diamond_helmet|field|net.minecraft.init.Items|diamond_helmet
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1877|1889|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1890|1899|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1909|1918|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1919|1927|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1928|1950|timetravelerChestplate|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerChestplate
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|1996|2004|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2005|2026|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2037|2042|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2043|2061|diamond_chestplate|field|net.minecraft.init.Items|diamond_chestplate
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2066|2078|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2079|2088|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2098|2107|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2108|2116|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2117|2137|timetravelerLeggings|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerLeggings
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2183|2191|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2192|2213|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2224|2229|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2230|2246|diamond_leggings|field|net.minecraft.init.Items|diamond_leggings
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2251|2263|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2264|2273|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2283|2292|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2293|2301|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2302|2319|timetravelerBoots|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerBoots
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2365|2373|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2374|2395|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2406|2411|Items|class|net.minecraft.init.Items
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2412|2425|diamond_boots|field|net.minecraft.init.Items|diamond_boots
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2445|2457|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2458|2476|addShapelessRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addShapelessRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2486|2495|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2496|2504|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2505|2524|timetravelerCluster|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerCluster
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2536|2545|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2546|2554|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2555|2576|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2587|2596|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2597|2605|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2606|2627|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2638|2647|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2648|2656|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2657|2678|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2685|2697|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2698|2716|addShapelessRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addShapelessRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2726|2735|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2736|2744|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2745|2763|unstableTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|unstableTimeEnergy
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2775|2784|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2785|2793|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2794|2814|stabalizedTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|stabalizedTimeEnergy
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2825|2834|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2835|2843|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2844|2864|stabalizedTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|stabalizedTimeEnergy
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2875|2884|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2885|2893|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java|2894|2914|stabalizedTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|stabalizedTimeEnergy
-   Method End: initCrafting()V
-Class End  : com.animcogn.sonicScrewdriverMod.crafting.ModCrafting
-endProcessing com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java
+processing com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java
+@|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|8|49|com.animcogn.sonicScrewdriverMod.crafting|package|com.animcogn.sonicScrewdriverMod.crafting|(file)
+Class Start: com.animcogn.sonicScrewdriverMod.crafting.ArmorCrafting
+   Method Start: initArmorCrafting()V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|346|363|initArmorCrafting|method|com.animcogn.sonicScrewdriverMod.crafting.ArmorCrafting|initArmorCrafting|()V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|391|403|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|404|413|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|423|432|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|433|441|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|442|460|timetravelerHelmet|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerHelmet
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|506|514|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|515|536|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|547|552|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|553|567|diamond_helmet|field|net.minecraft.init.Items|diamond_helmet
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|572|584|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|585|594|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|604|613|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|614|622|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|623|645|timetravelerChestplate|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerChestplate
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|691|699|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|700|721|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|732|737|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|738|756|diamond_chestplate|field|net.minecraft.init.Items|diamond_chestplate
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|761|773|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|774|783|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|793|802|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|803|811|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|812|832|timetravelerLeggings|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerLeggings
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|878|886|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|887|908|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|919|924|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|925|941|diamond_leggings|field|net.minecraft.init.Items|diamond_leggings
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|946|958|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|959|968|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|978|987|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|988|996|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|997|1014|timetravelerBoots|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerBoots
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1060|1068|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1069|1090|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1101|1106|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1107|1120|diamond_boots|field|net.minecraft.init.Items|diamond_boots
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1142|1154|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1155|1164|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1174|1183|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1184|1192|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1193|1207|timelordHelmet|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timelordHelmet
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1252|1260|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1261|1280|timetravelerCluster|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerCluster
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1291|1299|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1300|1318|timetravelerHelmet|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerHelmet
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1323|1335|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1336|1345|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1355|1364|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1365|1373|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1374|1392|timelordChestplate|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timelordChestplate
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1437|1445|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1446|1465|timetravelerCluster|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerCluster
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1476|1484|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1485|1507|timetravelerChestplate|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerChestplate
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1512|1524|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1525|1534|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1544|1553|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1554|1562|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1563|1579|timelordLeggings|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timelordLeggings
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1624|1632|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1633|1652|timetravelerCluster|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerCluster
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1663|1671|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1672|1692|timetravelerLeggings|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerLeggings
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1697|1709|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1710|1719|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1729|1738|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1739|1747|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1748|1761|timelordBoots|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timelordBoots
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1806|1814|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1815|1834|timetravelerCluster|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerCluster
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1845|1853|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1854|1871|timetravelerBoots|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timetravelerBoots
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1890|1902|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1903|1912|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1922|1931|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1932|1940|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1941|1953|tardisHelmet|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|tardisHelmet
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|1998|2006|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2007|2025|unstableTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|unstableTimeEnergy
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2036|2044|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2045|2059|timelordHelmet|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timelordHelmet
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2064|2076|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2077|2086|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2096|2105|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2106|2114|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2115|2131|tardisChestplate|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|tardisChestplate
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2176|2184|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2185|2203|unstableTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|unstableTimeEnergy
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2214|2222|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2223|2241|timelordChestplate|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timelordChestplate
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2246|2258|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2259|2268|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2278|2287|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2288|2296|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2297|2311|tardisLeggings|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|tardisLeggings
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2356|2364|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2365|2383|unstableTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|unstableTimeEnergy
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2394|2402|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2403|2419|timelordLeggings|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timelordLeggings
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2424|2436|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2437|2446|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2456|2465|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2466|2474|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2475|2486|tardisBoots|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|tardisBoots
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2531|2539|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2540|2558|unstableTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|unstableTimeEnergy
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2569|2577|ModArmor|class|com.animcogn.sonicScrewdriverMod.armor.ModArmor
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2578|2591|timelordBoots|field|com.animcogn.sonicScrewdriverMod.armor.ModArmor|timelordBoots
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2623|2635|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2636|2654|addShapelessRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addShapelessRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2664|2673|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2674|2682|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2683|2702|timetravelerCluster|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerCluster
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2714|2723|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2724|2732|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2733|2754|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2765|2774|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2775|2783|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2784|2805|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2816|2825|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2826|2834|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2835|2856|timetravelerReminisce|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerReminisce
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2863|2875|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2876|2894|addShapelessRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addShapelessRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2904|2913|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2914|2922|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2923|2941|unstableTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|unstableTimeEnergy
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2953|2962|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2963|2971|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|2972|2992|stabalizedTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|stabalizedTimeEnergy
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|3003|3012|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|3013|3021|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|3022|3042|stabalizedTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|stabalizedTimeEnergy
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|3053|3062|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|3063|3071|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java|3072|3092|stabalizedTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|stabalizedTimeEnergy
+   Method End: initArmorCrafting()V
+Class End  : com.animcogn.sonicScrewdriverMod.crafting.ArmorCrafting
+endProcessing com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java
 
-processing com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java
-@|com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java|8|49|com.animcogn.sonicScrewdriverMod.crafting|package|com.animcogn.sonicScrewdriverMod.crafting|(file)
-Class Start: com.animcogn.sonicScrewdriverMod.crafting.ModSmelting
-   Method Start: initSmelting()V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java|256|268|initSmelting|method|com.animcogn.sonicScrewdriverMod.crafting.ModSmelting|initSmelting|()V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java|275|287|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java|288|299|addSmelting|method|net.minecraftforge.fml.common.registry.GameRegistry|addSmelting|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;F)V
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java|309|318|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java|319|327|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java|328|347|timetravelerCluster|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerCluster
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java|359|368|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java|369|377|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java|378|398|stabalizedTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|stabalizedTimeEnergy
-   Method End: initSmelting()V
-Class End  : com.animcogn.sonicScrewdriverMod.crafting.ModSmelting
-endProcessing com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java
+processing com/animcogn/sonicScrewdriverMod/crafting/ArmorSmelting.java
+@|com/animcogn/sonicScrewdriverMod/crafting/ArmorSmelting.java|8|49|com.animcogn.sonicScrewdriverMod.crafting|package|com.animcogn.sonicScrewdriverMod.crafting|(file)
+Class Start: com.animcogn.sonicScrewdriverMod.crafting.ArmorSmelting
+   Method Start: initArmorSmelting()V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorSmelting.java|257|274|initArmorSmelting|method|com.animcogn.sonicScrewdriverMod.crafting.ArmorSmelting|initArmorSmelting|()V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorSmelting.java|281|293|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorSmelting.java|294|305|addSmelting|method|net.minecraftforge.fml.common.registry.GameRegistry|addSmelting|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/item/ItemStack;F)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorSmelting.java|315|324|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorSmelting.java|325|333|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorSmelting.java|334|353|timetravelerCluster|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerCluster
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorSmelting.java|365|374|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorSmelting.java|375|383|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ArmorSmelting.java|384|404|stabalizedTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|stabalizedTimeEnergy
+   Method End: initArmorSmelting()V
+Class End  : com.animcogn.sonicScrewdriverMod.crafting.ArmorSmelting
+endProcessing com/animcogn/sonicScrewdriverMod/crafting/ArmorSmelting.java
+
+processing com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java
+@|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|8|49|com.animcogn.sonicScrewdriverMod.crafting|package|com.animcogn.sonicScrewdriverMod.crafting|(file)
+Class Start: com.animcogn.sonicScrewdriverMod.crafting.ToolCrafting
+   Method Start: initToolCrafting()V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|379|395|initToolCrafting|method|com.animcogn.sonicScrewdriverMod.crafting.ToolCrafting|initToolCrafting|()V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|420|432|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|433|442|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|452|461|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|462|470|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|471|487|sonicScrewdriver|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicScrewdriver
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|532|540|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|541|553|sonicPickaxe|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicPickaxe
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|564|569|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|570|577|emerald|field|net.minecraft.init.Items|emerald
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|588|596|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|597|607|sonicSword|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicSword
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|618|623|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|624|631|diamond|field|net.minecraft.init.Items|diamond
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|642|648|Blocks|class|net.minecraft.init.Blocks
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|649|657|obsidian|field|net.minecraft.init.Blocks|obsidian
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|668|676|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|677|688|sonicShovel|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicShovel
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|699|707|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|708|716|sonicAxe|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicAxe
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|727|735|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|736|752|timelordFragment|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timelordFragment
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|757|769|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|770|779|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|789|798|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|799|807|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|808|818|sonicSword|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicSword
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|863|871|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|872|888|timelordFragment|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timelordFragment
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|899|904|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|905|912|emerald|field|net.minecraft.init.Items|emerald
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|923|928|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|929|936|diamond|field|net.minecraft.init.Items|diamond
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|947|952|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|953|966|diamond_sword|field|net.minecraft.init.Items|diamond_sword
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|971|983|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|984|993|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1003|1012|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1013|1021|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1022|1033|sonicShovel|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicShovel
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1078|1086|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1087|1103|timelordFragment|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timelordFragment
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1114|1119|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1120|1127|emerald|field|net.minecraft.init.Items|emerald
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1138|1143|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1144|1151|diamond|field|net.minecraft.init.Items|diamond
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1162|1167|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1168|1182|diamond_shovel|field|net.minecraft.init.Items|diamond_shovel
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1187|1199|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1200|1209|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1219|1228|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1229|1237|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1238|1250|sonicPickaxe|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicPickaxe
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1295|1303|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1304|1320|timelordFragment|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timelordFragment
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1331|1336|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1337|1344|emerald|field|net.minecraft.init.Items|emerald
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1355|1360|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1361|1368|diamond|field|net.minecraft.init.Items|diamond
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1379|1384|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1385|1400|diamond_pickaxe|field|net.minecraft.init.Items|diamond_pickaxe
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1405|1417|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1418|1427|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1437|1446|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1447|1455|ModTools|class|com.animcogn.sonicScrewdriverMod.tools.ModTools
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1456|1464|sonicAxe|field|com.animcogn.sonicScrewdriverMod.tools.ModTools|sonicAxe
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1509|1517|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1518|1534|timelordFragment|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timelordFragment
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1545|1550|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1551|1558|emerald|field|net.minecraft.init.Items|emerald
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1569|1574|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1575|1582|diamond|field|net.minecraft.init.Items|diamond
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1593|1598|Items|class|net.minecraft.init.Items
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java|1599|1610|diamond_axe|field|net.minecraft.init.Items|diamond_axe
+   Method End: initToolCrafting()V
+Class End  : com.animcogn.sonicScrewdriverMod.crafting.ToolCrafting
+endProcessing com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java
+
+processing com/animcogn/sonicScrewdriverMod/crafting/ToolSmelting.java
+@|com/animcogn/sonicScrewdriverMod/crafting/ToolSmelting.java|8|49|com.animcogn.sonicScrewdriverMod.crafting|package|com.animcogn.sonicScrewdriverMod.crafting|(file)
+Class Start: com.animcogn.sonicScrewdriverMod.crafting.ToolSmelting
+   Method Start: initToolSmelting()V
+      @|com/animcogn/sonicScrewdriverMod/crafting/ToolSmelting.java|101|117|initToolSmelting|method|com.animcogn.sonicScrewdriverMod.crafting.ToolSmelting|initToolSmelting|()V
+   Method End: initToolSmelting()V
+Class End  : com.animcogn.sonicScrewdriverMod.crafting.ToolSmelting
+endProcessing com/animcogn/sonicScrewdriverMod/crafting/ToolSmelting.java
 
 processing com/animcogn/sonicScrewdriverMod/events/AttackCountdown.java
 @|com/animcogn/sonicScrewdriverMod/events/AttackCountdown.java|8|47|com.animcogn.sonicScrewdriverMod.events|package|com.animcogn.sonicScrewdriverMod.events|(file)
@@ -1461,6 +1591,11 @@ Class Start: com.animcogn.sonicScrewdriverMod.items.ModItems
       @|com/animcogn/sonicScrewdriverMod/items/ModItems.java|1773|1785|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
       @|com/animcogn/sonicScrewdriverMod/items/ModItems.java|1786|1798|registerItem|method|net.minecraftforge.fml.common.registry.GameRegistry|registerItem|(Lnet/minecraft/item/Item;Ljava/lang/String;)V
       @|com/animcogn/sonicScrewdriverMod/items/ModItems.java|1799|1818|timetravelerCluster|field|com.animcogn.sonicScrewdriverMod.items.ModItems|timetravelerCluster
+      @|com/animcogn/sonicScrewdriverMod/items/ModItems.java|1849|1867|unstableTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|unstableTimeEnergy
+      @|com/animcogn/sonicScrewdriverMod/items/ModItems.java|1874|1892|UnstableTimeEnergy|class|com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy
+      @|com/animcogn/sonicScrewdriverMod/items/ModItems.java|1898|1910|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com/animcogn/sonicScrewdriverMod/items/ModItems.java|1911|1923|registerItem|method|net.minecraftforge.fml.common.registry.GameRegistry|registerItem|(Lnet/minecraft/item/Item;Ljava/lang/String;)V
+      @|com/animcogn/sonicScrewdriverMod/items/ModItems.java|1924|1942|unstableTimeEnergy|field|com.animcogn.sonicScrewdriverMod.items.ModItems|unstableTimeEnergy
    Method End: createItems()V
 Class End  : com.animcogn.sonicScrewdriverMod.items.ModItems
 endProcessing com/animcogn/sonicScrewdriverMod/items/ModItems.java
@@ -1482,12 +1617,29 @@ processing com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java
 @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|8|46|com.animcogn.sonicScrewdriverMod.items|package|com.animcogn.sonicScrewdriverMod.items|(file)
 Class Start: com.animcogn.sonicScrewdriverMod.items.TimeTravelerCluster
    Method Start: TimeTravelerCluster()V
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|186|205|TimeTravelerCluster|method|com.animcogn.sonicScrewdriverMod.items.TimeTravelerCluster|TimeTravelerCluster|()V
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|228|246|setUnlocalizedName|method|net.minecraft.item.Item|setUnlocalizedName|(Ljava/lang/String;)Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|278|292|setCreativeTab|method|net.minecraft.item.Item|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|293|301|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|302|318|tabSonicToolsMod|field|com.animcogn.sonicScrewdriverMod.items.ModItems|tabSonicToolsMod
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|296|315|TimeTravelerCluster|method|com.animcogn.sonicScrewdriverMod.items.TimeTravelerCluster|TimeTravelerCluster|()V
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|338|356|setUnlocalizedName|method|net.minecraft.item.Item|setUnlocalizedName|(Ljava/lang/String;)Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|388|402|setCreativeTab|method|net.minecraft.item.Item|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|403|411|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|412|428|tabSonicToolsMod|field|com.animcogn.sonicScrewdriverMod.items.ModItems|tabSonicToolsMod
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|438|453|setMaxStackSize|method|net.minecraft.item.Item|setMaxStackSize|(I)Lnet/minecraft/item/Item;
    Method End: TimeTravelerCluster()V
+   Method Start: addInformation(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|487|501|addInformation|method|net.minecraft.item.Item|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|502|511|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|512|525|par1ItemStack|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerCluster|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par1ItemStack|0
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|527|539|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|540|556|par2EntityPlayer|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerCluster|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par2EntityPlayer|1
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|558|562|List|class|java.util.List
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|563|571|par3List|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerCluster|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|581|585|par4|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerCluster|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par4|3
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|590|598|par3List|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerCluster|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|599|602|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|659|667|par3List|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerCluster|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|668|671|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|729|737|par3List|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerCluster|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java|738|741|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+   Method End: addInformation(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V
 Class End  : com.animcogn.sonicScrewdriverMod.items.TimeTravelerCluster
 endProcessing com/animcogn/sonicScrewdriverMod/items/TimeTravelerCluster.java
 
@@ -1500,22 +1652,23 @@ Class Start: com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce
       @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|395|409|setCreativeTab|method|net.minecraft.item.Item|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;
       @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|410|418|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
       @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|419|435|tabSonicToolsMod|field|com.animcogn.sonicScrewdriverMod.items.ModItems|tabSonicToolsMod
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|445|460|setMaxStackSize|method|net.minecraft.item.Item|setMaxStackSize|(I)Lnet/minecraft/item/Item;
    Method End: TimeTravelerReminisce()V
    Method Start: addInformation(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|466|480|addInformation|method|net.minecraft.item.Item|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|481|490|ItemStack|class|net.minecraft.item.ItemStack
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|491|504|par1ItemStack|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par1ItemStack|0
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|506|518|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|519|535|par2EntityPlayer|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par2EntityPlayer|1
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|537|541|List|class|java.util.List
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|542|550|par3List|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|560|564|par4|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par4|3
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|494|508|addInformation|method|net.minecraft.item.Item|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|509|518|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|519|532|par1ItemStack|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par1ItemStack|0
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|534|546|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|547|563|par2EntityPlayer|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par2EntityPlayer|1
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|565|569|List|class|java.util.List
       @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|570|578|par3List|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|579|582|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|630|638|par3List|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|639|642|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|687|695|par3List|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
-      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|696|699|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|588|592|par4|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par4|3
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|597|605|par3List|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|606|609|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|657|665|par3List|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|666|669|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|714|722|par3List|param|com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
+      @|com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java|723|726|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
    Method End: addInformation(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V
 Class End  : com.animcogn.sonicScrewdriverMod.items.TimeTravelerReminisce
 endProcessing com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java
@@ -1537,12 +1690,32 @@ processing com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java
 @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|8|46|com.animcogn.sonicScrewdriverMod.items|package|com.animcogn.sonicScrewdriverMod.items|(file)
 Class Start: com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy
    Method Start: UnstableTimeEnergy()V
-      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|185|203|UnstableTimeEnergy|method|com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy|UnstableTimeEnergy|()V
-      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|226|244|setUnlocalizedName|method|net.minecraft.item.Item|setUnlocalizedName|(Ljava/lang/String;)Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|275|289|setCreativeTab|method|net.minecraft.item.Item|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;
-      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|290|298|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
-      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|299|315|tabSonicToolsMod|field|com.animcogn.sonicScrewdriverMod.items.ModItems|tabSonicToolsMod
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|295|313|UnstableTimeEnergy|method|com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy|UnstableTimeEnergy|()V
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|336|354|setUnlocalizedName|method|net.minecraft.item.Item|setUnlocalizedName|(Ljava/lang/String;)Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|385|399|setCreativeTab|method|net.minecraft.item.Item|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|400|408|ModItems|class|com.animcogn.sonicScrewdriverMod.items.ModItems
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|409|425|tabSonicToolsMod|field|com.animcogn.sonicScrewdriverMod.items.ModItems|tabSonicToolsMod
    Method End: UnstableTimeEnergy()V
+   Method Start: addInformation(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|457|471|addInformation|method|net.minecraft.item.Item|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|472|481|ItemStack|class|net.minecraft.item.ItemStack
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|482|495|par1ItemStack|param|com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par1ItemStack|0
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|497|509|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|510|526|par2EntityPlayer|param|com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par2EntityPlayer|1
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|528|532|List|class|java.util.List
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|533|541|par3List|param|com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|551|555|par4|param|com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par4|3
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|560|568|par3List|param|com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|569|572|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|623|631|par3List|param|com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|632|635|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|688|696|par3List|param|com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|697|700|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|751|759|par3List|param|com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|760|763|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|816|824|par3List|param|com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy|addInformation|(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V|par3List|2
+      @|com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java|825|828|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+   Method End: addInformation(Lnet/minecraft/item/ItemStack;Lnet/minecraft/entity/player/EntityPlayer;Ljava/util/List;Z)V
 Class End  : com.animcogn.sonicScrewdriverMod.items.UnstableTimeEnergy
 endProcessing com/animcogn/sonicScrewdriverMod/items/UnstableTimeEnergy.java
 

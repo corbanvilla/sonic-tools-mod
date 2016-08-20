@@ -2203,7 +2203,7 @@ public abstract class World implements IBlockAccess
                 {
                     IBlockState iblockstate = this.getBlockState(blockpos$pooledmutableblockpos.set(k1, l1, i2));
 
-                    if (iblockstate.getBlock().isAir(iblockstate, this, new BlockPos(k1, l1, i2)))
+                    if (!iblockstate.getBlock().isAir(iblockstate, this, new BlockPos(k1, l1, i2)))
                     {
                         blockpos$pooledmutableblockpos.release();
                         return true;
@@ -2591,6 +2591,7 @@ public abstract class World implements IBlockAccess
 
     public void setTileEntity(BlockPos pos, TileEntity tileEntityIn)
     {
+        pos = pos.toImmutable(); // Forge - prevent mutable BlockPos leaks
         if (tileEntityIn != null && !tileEntityIn.isInvalid())
         {
             if (this.processingLoadedTiles)

@@ -1025,7 +1025,7 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
 
                     if (entity1 == this.gameController.thePlayer && !flag)
                     {
-                        this.gameController.ingameGUI.setRecordPlaying(I18n.format("mount.onboard", new Object[] {GameSettings.getKeyDisplayString(this.gameController.gameSettings.keyBindSneak.getKeyCode())}), false);
+                        this.gameController.ingameGUI.setRecordPlaying(I18n.format("mount.onboard", new Object[] {this.gameController.gameSettings.keyBindSneak.getDisplayName()}), false);
                     }
                 }
             }
@@ -1433,15 +1433,15 @@ public class NetHandlerPlayClient implements INetHandlerPlayClient
             }
             else if (f == 101.0F)
             {
-                this.gameController.ingameGUI.getChatGUI().printChatMessage(new TextComponentTranslation("demo.help.movement", new Object[] {GameSettings.getKeyDisplayString(gamesettings.keyBindForward.getKeyCode()), GameSettings.getKeyDisplayString(gamesettings.keyBindLeft.getKeyCode()), GameSettings.getKeyDisplayString(gamesettings.keyBindBack.getKeyCode()), GameSettings.getKeyDisplayString(gamesettings.keyBindRight.getKeyCode())}));
+                this.gameController.ingameGUI.getChatGUI().printChatMessage(new TextComponentTranslation("demo.help.movement", new Object[] {gamesettings.keyBindForward.getDisplayName(), gamesettings.keyBindLeft.getDisplayName(), gamesettings.keyBindBack.getDisplayName(), gamesettings.keyBindRight.getDisplayName()}));
             }
             else if (f == 102.0F)
             {
-                this.gameController.ingameGUI.getChatGUI().printChatMessage(new TextComponentTranslation("demo.help.jump", new Object[] {GameSettings.getKeyDisplayString(gamesettings.keyBindJump.getKeyCode())}));
+                this.gameController.ingameGUI.getChatGUI().printChatMessage(new TextComponentTranslation("demo.help.jump", new Object[] {gamesettings.keyBindJump.getDisplayName()}));
             }
             else if (f == 103.0F)
             {
-                this.gameController.ingameGUI.getChatGUI().printChatMessage(new TextComponentTranslation("demo.help.inventory", new Object[] {GameSettings.getKeyDisplayString(gamesettings.keyBindInventory.getKeyCode())}));
+                this.gameController.ingameGUI.getChatGUI().printChatMessage(new TextComponentTranslation("demo.help.inventory", new Object[] {gamesettings.keyBindInventory.getDisplayName()}));
             }
         }
         else if (i == 6)

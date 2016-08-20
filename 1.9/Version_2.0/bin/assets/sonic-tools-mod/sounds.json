@@ -1,3 +1,11 @@
 {
-   "sonicEffect": {"category": "master","sounds": [{"name": "sonicEffect","stream": false}]}
+    "sonicEffect": {
+        "category": "master",
+        "sounds": [
+            {
+                "name": "sonic-tools-mod:sounds/sonicEffect",
+                "stream": true
+            }
+        ]
+    }
 }

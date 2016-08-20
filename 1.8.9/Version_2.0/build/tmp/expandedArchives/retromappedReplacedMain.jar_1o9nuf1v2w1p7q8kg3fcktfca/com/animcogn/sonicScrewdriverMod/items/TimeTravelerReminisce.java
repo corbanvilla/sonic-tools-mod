@@ -13,11 +13,11 @@ public class TimeTravelerReminisce extends Item {
 		super();
 		this.func_77655_b("timetravelerReminisce");
 		this.func_77637_a(ModItems.tabSonicToolsMod);
+		this.func_77625_d(12);
 	}
 
 	@Override
-	public void func_77624_a(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4)
-	{
+	public void func_77624_a(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
 	par3List.add("\u00A75" + "Mysterious reminince of past ");
 	par3List.add("\u00A75" + "and future time travelers ");
 	par3List.add("\u00A75" + "found throughout all time and space");

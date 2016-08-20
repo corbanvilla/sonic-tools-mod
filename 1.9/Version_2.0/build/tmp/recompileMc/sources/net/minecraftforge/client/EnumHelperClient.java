@@ -10,8 +10,7 @@ import net.minecraft.util.Util.EnumOS;
 import net.minecraft.world.WorldSettings.GameType;
 public class EnumHelperClient extends EnumHelper
 {
-    @SuppressWarnings("rawtypes")
-    private static Class[][] clentTypes =
+    private static Class<?>[][] clientTypes =
     {
         {GameType.class, int.class, String.class},
         {Options.class, String.class, boolean.class, boolean.class},
@@ -35,6 +34,6 @@ public class EnumHelperClient extends EnumHelper
 
     public static <T extends Enum<? >> T addEnum(Class<T> enumType, String enumName, Object... paramValues)
     {
-        return addEnum(clentTypes, enumType, enumName, paramValues);
+        return addEnum(clientTypes, enumType, enumName, paramValues);
     }
 }

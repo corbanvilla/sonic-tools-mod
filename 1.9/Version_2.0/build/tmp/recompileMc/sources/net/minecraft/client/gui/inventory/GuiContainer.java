@@ -376,7 +376,7 @@ public abstract class GuiContainer extends GuiScreen
     protected void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException
     {
         super.mouseClicked(mouseX, mouseY, mouseButton);
-        boolean flag = mouseButton == this.mc.gameSettings.keyBindPickBlock.getKeyCode() + 100;
+        boolean flag = this.mc.gameSettings.keyBindPickBlock.isActiveAndMatches(mouseButton - 100);
         Slot slot = this.getSlotAtPosition(mouseX, mouseY);
         long i = Minecraft.getSystemTime();
         this.doubleClick = this.lastClickSlot == slot && i - this.lastClickTime < 250L && this.lastClickButton == mouseButton;
@@ -425,7 +425,7 @@ public abstract class GuiContainer extends GuiScreen
                 {
                     if (this.mc.thePlayer.inventory.getItemStack() == null)
                     {
-                        if (mouseButton == this.mc.gameSettings.keyBindPickBlock.getKeyCode() + 100)
+                        if (this.mc.gameSettings.keyBindPickBlock.isActiveAndMatches(mouseButton - 100))
                         {
                             this.handleMouseClick(slot, l, mouseButton, ClickType.CLONE);
                         }
@@ -463,7 +463,7 @@ public abstract class GuiContainer extends GuiScreen
                         {
                             this.dragSplittingLimit = 1;
                         }
-                        else if (mouseButton == this.mc.gameSettings.keyBindPickBlock.getKeyCode() + 100)
+                        else if (this.mc.gameSettings.keyBindPickBlock.isActiveAndMatches(mouseButton - 100))
                         {
                             this.dragSplittingLimit = 2;
                         }
@@ -649,7 +649,7 @@ public abstract class GuiContainer extends GuiScreen
             }
             else if (this.mc.thePlayer.inventory.getItemStack() != null)
             {
-                if (state == this.mc.gameSettings.keyBindPickBlock.getKeyCode() + 100)
+                if (this.mc.gameSettings.keyBindPickBlock.isActiveAndMatches(state - 100))
                 {
                     this.handleMouseClick(slot, k, state, ClickType.CLONE);
                 }
@@ -734,7 +734,7 @@ public abstract class GuiContainer extends GuiScreen
      */
     protected void keyTyped(char typedChar, int keyCode) throws IOException
     {
-        if (keyCode == 1 || keyCode == this.mc.gameSettings.keyBindInventory.getKeyCode())
+        if (keyCode == 1 || this.mc.gameSettings.keyBindInventory.isActiveAndMatches(keyCode))
         {
             this.mc.thePlayer.closeScreen();
         }
@@ -743,11 +743,11 @@ public abstract class GuiContainer extends GuiScreen
 
         if (this.theSlot != null && this.theSlot.getHasStack())
         {
-            if (keyCode == this.mc.gameSettings.keyBindPickBlock.getKeyCode())
+            if (this.mc.gameSettings.keyBindPickBlock.isActiveAndMatches(keyCode))
             {
                 this.handleMouseClick(this.theSlot, this.theSlot.slotNumber, 0, ClickType.CLONE);
             }
-            else if (keyCode == this.mc.gameSettings.keyBindDrop.getKeyCode())
+            else if (this.mc.gameSettings.keyBindDrop.isActiveAndMatches(keyCode))
             {
                 this.handleMouseClick(this.theSlot, this.theSlot.slotNumber, isCtrlKeyDown() ? 1 : 0, ClickType.THROW);
             }
@@ -767,7 +767,7 @@ public abstract class GuiContainer extends GuiScreen
         {
             for (int i = 0; i < 9; ++i)
             {
-                if (keyCode == this.mc.gameSettings.keyBindsHotbar[i].getKeyCode())
+                if (this.mc.gameSettings.keyBindsHotbar[i].isActiveAndMatches(keyCode))
                 {
                     this.handleMouseClick(this.theSlot, this.theSlot.slotNumber, i, ClickType.SWAP);
                     return true;

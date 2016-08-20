@@ -12,8 +12,6 @@
 
 package net.minecraftforge.fml.common.registry;
 
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
@@ -42,10 +40,6 @@ import net.minecraft.world.gen.structure.StructureComponent;
 import net.minecraft.world.gen.structure.StructureVillagePieces;
 import net.minecraft.world.gen.structure.StructureVillagePieces.PieceWeight;
 import net.minecraft.world.gen.structure.StructureVillagePieces.Village;
-import net.minecraftforge.fml.common.FMLLog;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-
 import net.minecraft.entity.passive.EntityVillager.EmeraldForItems;
 import net.minecraft.entity.passive.EntityVillager.ITradeList;
 import net.minecraft.entity.passive.EntityVillager.ItemAndEmeraldToItem;
@@ -66,9 +60,6 @@ public class VillagerRegistry
     private static final VillagerRegistry INSTANCE = new VillagerRegistry();
 
     private Map<Class<?>, IVillageCreationHandler> villageCreationHandlers = Maps.newHashMap();
-    private List<Integer> newVillagerIds = Lists.newArrayList();
-    @SideOnly(Side.CLIENT)
-    private Map<Integer, ResourceLocation> newVillagers;
 
     private VillagerRegistry()
     {
@@ -120,39 +111,6 @@ public class VillagerRegistry
     }
 
     /**
-     * Register your villager id
-     *
-     * @param id
-     */
-    @Deprecated // Doesn't work at all.
-    public void registerVillagerId(int id)
-    {
-        if (newVillagerIds.contains(id))
-        {
-            FMLLog.severe("Attempt to register duplicate villager id %d", id);
-            throw new RuntimeException();
-        }
-        newVillagerIds.add(id);
-    }
-
-    /**
-     * Register a new skin for a villager type
-     *
-     * @param villagerId
-     * @param villagerSkin
-     */
-    @SideOnly(Side.CLIENT)
-    @Deprecated // Doesn't work at all.
-    public void registerVillagerSkin(int villagerId, ResourceLocation villagerSkin)
-    {
-        if (newVillagers == null)
-        {
-            newVillagers = Maps.newHashMap();
-        }
-        newVillagers.put(villagerId, villagerSkin);
-    }
-
-    /**
      * Register a new village creation handler
      *
      * @param handler
@@ -160,34 +118,6 @@ public class VillagerRegistry
     public void registerVillageCreationHandler(IVillageCreationHandler handler)
     {
         villageCreationHandlers.put(handler.getComponentClass(), handler);
-    }
-
-    /**
-     * Callback to setup new villager types
-     *
-     * @param villagerType
-     * @param defaultSkin
-     */
-    @SideOnly(Side.CLIENT)
-    @Deprecated // Doesn't work at all.
-    public static ResourceLocation getVillagerSkin(int villagerType, ResourceLocation defaultSkin)
-    {
-        if (instance().newVillagers != null && instance().newVillagers.containsKey(villagerType))
-        {
-            return instance().newVillagers.get(villagerType);
-        }
-        return defaultSkin;
-    }
-
-    /**
-     * Returns a list of all added villager types
-     *
-     * @return newVillagerIds
-     */
-    @Deprecated // Doesn't work at all.
-    public static Collection<Integer> getRegisteredVillagers()
-    {
-        return Collections.unmodifiableCollection(instance().newVillagerIds);
     }
 
     public static void addExtraVillageComponents(List<PieceWeight> list, Random random, int i)
@@ -216,7 +146,8 @@ public class VillagerRegistry
     }
 
     private boolean hasInit = false;
-    private FMLControlledNamespacedRegistry<VillagerProfession> professions = PersistentRegistryManager.createRegistry(PROFESSIONS, VillagerProfession.class, null, 1024, 0, true, null);
+    private FMLControlledNamespacedRegistry<VillagerProfession> professions = PersistentRegistryManager.createRegistry(PROFESSIONS, VillagerProfession.class, null, 0, 1024, true, null, null, null);
+    public IForgeRegistry<VillagerProfession> getRegistry() { return this.professions; }
 
 
     private void init()
@@ -259,18 +190,17 @@ public class VillagerRegistry
         }
     }
 
-    public static class VillagerProfession
+    public static class VillagerProfession extends IForgeRegistryEntry.Impl<VillagerProfession>
     {
         private ResourceLocation name;
         private ResourceLocation texture;
         private List<VillagerCareer> careers = Lists.newArrayList();
-        public final RegistryDelegate<VillagerProfession> delegate = PersistentRegistryManager.makeDelegate(this, VillagerProfession.class);
 
         public VillagerProfession(String name, String texture)
         {
             this.name = new ResourceLocation(name);
             this.texture = new ResourceLocation(texture);
-            ((RegistryDelegate.Delegate<VillagerProfession>)delegate).setResourceName(this.name);
+            this.setRegistryName(this.name);
         }
 
         private void register(VillagerCareer career)
@@ -280,6 +210,22 @@ public class VillagerRegistry
             career.id = careers.size();
             careers.add(career);
         }
+
+        public ResourceLocation getSkin() { return this.texture; }
+        public VillagerCareer getCareer(int id)
+        {
+            for (VillagerCareer car : this.careers)
+            {
+                if (car.id == id)
+                    return car;
+            }
+            return this.careers.get(0);
+        }
+
+        public int getRandomCareer(Random rand)
+        {
+            return this.careers.get(rand.nextInt(this.careers.size())).id;
+        }
     }
 
     public static class VillagerCareer
@@ -287,6 +233,7 @@ public class VillagerRegistry
         private VillagerProfession profession;
         private String name;
         private int id;
+        private ITradeList[][] trades;
 
         public VillagerCareer(VillagerProfession parent, String name)
         {
@@ -295,8 +242,19 @@ public class VillagerRegistry
             parent.register(this);
         }
 
-        private VillagerCareer init(EntityVillager.ITradeList[][] traids)
+        public String getName()
         {
+            return this.name;
+        }
+
+        public ITradeList[][] getTrades()
+        {
+            return this.trades;
+        }
+
+        private VillagerCareer init(EntityVillager.ITradeList[][] trades)
+        {
+            this.trades = trades;
             return this;
         }
 
@@ -325,9 +283,30 @@ public class VillagerRegistry
     public static void setRandomProfession(EntityVillager entity, Random rand)
     {
         Set<ResourceLocation> entries = INSTANCE.professions.getKeys();
-        int prof = rand.nextInt(entries.size());
-        //TODO: Grab id range from internal registry
-        entity.setProfession(rand.nextInt(5));
+        entity.setProfession(rand.nextInt(entries.size()));
+    }
+
+    public static void onSetProfession(EntityVillager entity, VillagerProfession prof)
+    {
+        int network = INSTANCE.professions.getId(prof);
+        if (network == -1 || prof != INSTANCE.professions.getObjectById(network))
+        {
+            throw new RuntimeException("Attempted to set villager profession to unregistered profession: " + network + " " + prof);
+        }
+
+        if (network != entity.getProfession())
+            entity.setProfession(network);
+    }
+    public static void onSetProfession(EntityVillager entity, int network)
+    {
+        VillagerProfession prof = INSTANCE.professions.getObjectById(network);
+        if (prof == null || INSTANCE.professions.getId(prof) != network)
+        {
+            throw new RuntimeException("Attempted to set villager profession to unregistered profession: " + network + " " + prof);
+        }
+
+        if (prof != entity.getProfessionForge())
+            entity.setProfession(prof);
     }
 
     //TODO: Figure out a good generic system for this. Put on hold for Patches.

@@ -369,11 +369,11 @@ public abstract class WorldProvider
         int spawnFuzz = this.worldObj instanceof WorldServer ? terrainType.getSpawnFuzz((WorldServer)this.worldObj, this.worldObj.getMinecraftServer()) : 1;
         int border = MathHelper.floor_double(worldObj.getWorldBorder().getClosestDistance(ret.getX(), ret.getZ()));
         if (border < spawnFuzz) spawnFuzz = border;
-        if (spawnFuzz < 1) spawnFuzz = 1;
-        int spawnFuzzHalf = spawnFuzz / 2;
 
-        if (!getHasNoSky() && !isAdventure)
+        if (!getHasNoSky() && !isAdventure && spawnFuzz != 0)
         {
+            if (spawnFuzz < 2) spawnFuzz = 2;
+            int spawnFuzzHalf = spawnFuzz / 2;
             ret = worldObj.getTopSolidOrLiquidBlock(ret.add(worldObj.rand.nextInt(spawnFuzzHalf) - spawnFuzz, 0, worldObj.rand.nextInt(spawnFuzzHalf) - spawnFuzz));
         }
 

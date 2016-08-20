@@ -54,9 +54,9 @@ public abstract class CommandHandler implements ICommandManager
             net.minecraftforge.event.CommandEvent event = new net.minecraftforge.event.CommandEvent(icommand, sender, astring);
             if (net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(event))
             {
-                if (event.exception != null)
+                if (event.getException() != null)
                 {
-                    com.google.common.base.Throwables.propagateIfPossible(event.exception);
+                    com.google.common.base.Throwables.propagateIfPossible(event.getException());
                 }
                 return 1;
             }

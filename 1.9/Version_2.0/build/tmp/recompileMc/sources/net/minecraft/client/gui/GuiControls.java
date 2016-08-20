@@ -78,7 +78,7 @@ public class GuiControls extends GuiScreen
         {
             for (KeyBinding keybinding : this.mc.gameSettings.keyBindings)
             {
-                keybinding.setKeyCode(keybinding.getKeyCodeDefault());
+                keybinding.setToDefault();
             }
 
             KeyBinding.resetKeyBindingArrayAndHash();
@@ -97,6 +97,7 @@ public class GuiControls extends GuiScreen
     {
         if (this.buttonId != null)
         {
+            this.buttonId.setKeyModifierAndCode(net.minecraftforge.client.settings.KeyModifier.getActiveModifier(), -100 + mouseButton);
             this.options.setOptionKeyBinding(this.buttonId, -100 + mouseButton);
             this.buttonId = null;
             KeyBinding.resetKeyBindingArrayAndHash();
@@ -132,17 +133,21 @@ public class GuiControls extends GuiScreen
         {
             if (keyCode == 1)
             {
+                this.buttonId.setKeyModifierAndCode(net.minecraftforge.client.settings.KeyModifier.NONE, 0);
                 this.options.setOptionKeyBinding(this.buttonId, 0);
             }
             else if (keyCode != 0)
             {
+                this.buttonId.setKeyModifierAndCode(net.minecraftforge.client.settings.KeyModifier.getActiveModifier(), keyCode);
                 this.options.setOptionKeyBinding(this.buttonId, keyCode);
             }
             else if (typedChar > 0)
             {
+                this.buttonId.setKeyModifierAndCode(net.minecraftforge.client.settings.KeyModifier.getActiveModifier(), typedChar + 256);
                 this.options.setOptionKeyBinding(this.buttonId, typedChar + 256);
             }
 
+            if (!net.minecraftforge.client.settings.KeyModifier.isKeyCodeModifier(keyCode))
             this.buttonId = null;
             this.time = Minecraft.getSystemTime();
             KeyBinding.resetKeyBindingArrayAndHash();
@@ -169,7 +174,7 @@ public class GuiControls extends GuiScreen
 
         for (KeyBinding keybinding : this.options.keyBindings)
         {
-            if (keybinding.getKeyCode() != keybinding.getKeyCodeDefault())
+            if (!keybinding.isSetToDefaultValue())
             {
                 flag = false;
                 break;

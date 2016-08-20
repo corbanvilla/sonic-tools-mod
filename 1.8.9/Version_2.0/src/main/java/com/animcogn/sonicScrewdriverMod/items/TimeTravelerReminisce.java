@@ -13,11 +13,11 @@ public class TimeTravelerReminisce extends Item {
 		super();
 		this.setUnlocalizedName("timetravelerReminisce");
 		this.setCreativeTab(ModItems.tabSonicToolsMod);
+		this.setMaxStackSize(12);
 	}
 
 	@Override
-	public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4)
-	{
+	public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
 	par3List.add("\u00A75" + "Mysterious reminince of past ");
 	par3List.add("\u00A75" + "and future time travelers ");
 	par3List.add("\u00A75" + "found throughout all time and space");

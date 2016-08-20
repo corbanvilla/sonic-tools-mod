@@ -27,7 +27,7 @@ public class TimeTravelerArmor extends ItemArmor {
 		}
 		
 		if (itemStack.getItem() == ModArmor.timetravelerChestplate) {
-				effectPlayer(player, Potion.absorption, 0);
+				effectPlayer(player, Potion.digSlowdown, 0);
 		}
 		
 		if (itemStack.getItem() == ModArmor.timetravelerLeggings) {

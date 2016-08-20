@@ -47,5 +47,8 @@ public class ModItems {
 		timetravelerCluster = new TimeTravelerCluster();
 		GameRegistry.registerItem(timetravelerCluster, "timetravelerCluster");
 		
+		unstableTimeEnergy = new UnstableTimeEnergy();
+		GameRegistry.registerItem(unstableTimeEnergy, "unstableTimeEnergy");
+		
 		}
 }

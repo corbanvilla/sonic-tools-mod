@@ -4,9 +4,9 @@ import net.minecraft.util.registry.RegistryNamespaced;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class SoundEvent
+public class SoundEvent extends net.minecraftforge.fml.common.registry.IForgeRegistryEntry.Impl<SoundEvent>
 {
-    public static final RegistryNamespaced<ResourceLocation, SoundEvent> soundEventRegistry = new RegistryNamespaced();
+    public static final RegistryNamespaced<ResourceLocation, SoundEvent> soundEventRegistry = net.minecraftforge.fml.common.registry.GameData.getSoundEventRegistry();
     private final ResourceLocation soundName;
     private static int soundEventId = 0;
 

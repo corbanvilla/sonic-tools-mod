@@ -179,7 +179,7 @@ public class RenderChunk
                 }
 
                 for(BlockRenderLayer blockrenderlayer1 : BlockRenderLayer.values()) {
-                     if(!block.canRenderInLayer(blockrenderlayer1)) continue;
+                     if(!block.canRenderInLayer(iblockstate, blockrenderlayer1)) continue;
                      net.minecraftforge.client.ForgeHooksClient.setRenderLayer(blockrenderlayer1);
                 int j = blockrenderlayer1.ordinal();
 

@@ -117,7 +117,7 @@ public class BlockNote extends BlockContainer
     {
         net.minecraftforge.event.world.NoteBlockEvent.Play e = new net.minecraftforge.event.world.NoteBlockEvent.Play(worldIn, pos, state, eventParam, eventID);
         if (net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(e)) return false;
-        eventID = e.instrument.ordinal();
+        eventID = e.getInstrument().ordinal();
         eventParam = e.getVanillaNoteId();
         float f = (float)Math.pow(2.0D, (double)(eventParam - 12) / 12.0D);
         worldIn.playSound((EntityPlayer)null, pos, this.func_185576_e(eventID), SoundCategory.BLOCKS, 3.0F, f);

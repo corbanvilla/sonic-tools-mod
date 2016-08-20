@@ -738,7 +738,6 @@ public class NetHandlerPlayServer implements INetHandlerPlayServer, ITickable
 
         if (itemstack != null)
         {
-            //TODO: Hook interact event here... we don't know the type of itneration tho...
             this.playerEntity.interactionManager.processRightClick(this.playerEntity, worldserver, itemstack, enumhand);
             itemstack = this.playerEntity.getHeldItem(enumhand);
 
@@ -1077,6 +1076,7 @@ public class NetHandlerPlayServer implements INetHandlerPlayServer, ITickable
                 {
                     EnumHand enumhand1 = packetIn.getHand();
                     ItemStack itemstack1 = this.playerEntity.getHeldItem(enumhand1);
+                    if(net.minecraftforge.common.ForgeHooks.onInteractEntityAt(playerEntity, entity, packetIn.getHitVec(), itemstack1, enumhand1)) return;
                     entity.applyPlayerInteraction(this.playerEntity, packetIn.getHitVec(), itemstack1, enumhand1);
                 }
                 else if (packetIn.getAction() == CPacketUseEntity.Action.ATTACK)

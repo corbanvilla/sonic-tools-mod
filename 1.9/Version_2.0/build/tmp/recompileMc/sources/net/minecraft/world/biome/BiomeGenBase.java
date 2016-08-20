@@ -51,7 +51,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public abstract class BiomeGenBase
+public abstract class BiomeGenBase extends net.minecraftforge.fml.common.registry.IForgeRegistryEntry.Impl<BiomeGenBase>
 {
     private static final Logger logger = LogManager.getLogger();
     protected static final IBlockState STONE = Blocks.stone.getDefaultState();
@@ -455,21 +455,21 @@ public abstract class BiomeGenBase
     {
         net.minecraftforge.event.terraingen.BiomeEvent.GetWaterColor event = new net.minecraftforge.event.terraingen.BiomeEvent.GetWaterColor(this, waterColor);
         net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(event);
-        return event.newColor;
+        return event.getNewColor();
     }
 
     public int getModdedBiomeGrassColor(int original)
     {
         net.minecraftforge.event.terraingen.BiomeEvent.GetGrassColor event = new net.minecraftforge.event.terraingen.BiomeEvent.GetGrassColor(this, original);
         net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(event);
-        return event.newColor;
+        return event.getNewColor();
     }
 
     public int getModdedBiomeFoliageColor(int original)
     {
         net.minecraftforge.event.terraingen.BiomeEvent.GetFoliageColor event = new net.minecraftforge.event.terraingen.BiomeEvent.GetFoliageColor(this, original);
         net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(event);
-        return event.newColor;
+        return event.getNewColor();
     }
 
     /**

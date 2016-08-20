@@ -1,5 +1,5 @@
 Symbol range map extraction starting
-Processing 33 files
+Processing 35 files
 processing com/animcogn/sonicScrewdriverMod/ClientProxy.java
 processing com/animcogn/sonicScrewdriverMod/CommonProxy.java
 processing com/animcogn/sonicScrewdriverMod/Main.java
@@ -14,8 +14,10 @@ processing com/animcogn/sonicScrewdriverMod/blocks/TimeBlocks.java
 processing com/animcogn/sonicScrewdriverMod/blocks/TimeTravelerBlock.java
 processing com/animcogn/sonicScrewdriverMod/client/render/blocks/BlockRenderRegister.java
 processing com/animcogn/sonicScrewdriverMod/client/render/items/ItemRenderRegister.java
-processing com/animcogn/sonicScrewdriverMod/crafting/ModCrafting.java
-processing com/animcogn/sonicScrewdriverMod/crafting/ModSmelting.java
+processing com/animcogn/sonicScrewdriverMod/crafting/ArmorCrafting.java
+processing com/animcogn/sonicScrewdriverMod/crafting/ArmorSmelting.java
+processing com/animcogn/sonicScrewdriverMod/crafting/ToolCrafting.java
+processing com/animcogn/sonicScrewdriverMod/crafting/ToolSmelting.java
 processing com/animcogn/sonicScrewdriverMod/events/AttackCountdown.java
 processing com/animcogn/sonicScrewdriverMod/events/CountDown.java
 processing com/animcogn/sonicScrewdriverMod/events/MobsDropTimelordFragments.java

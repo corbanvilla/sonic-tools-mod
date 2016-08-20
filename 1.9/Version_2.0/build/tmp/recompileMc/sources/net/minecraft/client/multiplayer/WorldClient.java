@@ -60,7 +60,7 @@ public class WorldClient extends World
 
     public WorldClient(NetHandlerPlayClient netHandler, WorldSettings settings, int dimension, EnumDifficulty difficulty, Profiler profilerIn)
     {
-        super(new SaveHandlerMP(), new WorldInfo(settings, "MpServer"), DimensionType.getById(dimension).createDimension(), profilerIn, true);
+        super(new SaveHandlerMP(), new WorldInfo(settings, "MpServer"), net.minecraftforge.common.DimensionManager.createProviderFor(dimension), profilerIn, true);
         this.ambienceTicks = this.rand.nextInt(12000);
         this.viewableChunks = Sets.<ChunkCoordIntPair>newHashSet();
         this.sendQueue = netHandler;

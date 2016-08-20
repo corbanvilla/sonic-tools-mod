@@ -75,7 +75,7 @@ import com.google.gson.JsonParser;
 import net.minecraft.client.renderer.block.model.ItemCameraTransforms.TransformType;
 /*
  * Loader for Blitz3D models.
- * To enable for your mod call instance.addDomain(modid).
+ * To enable for your mod call instance.addDomain(modId).
  * If you need more control over accepted resources - extend the class, and register a new instance with ModelLoaderRegistry.
  */
 public enum B3DLoader implements ICustomModelLoader
@@ -140,7 +140,7 @@ public enum B3DLoader implements ICustomModelLoader
         {
             return new ModelWrapper(modelLocation, model, ImmutableSet.<String>of(), true, true, 1);
         }
-        return new ModelWrapper(modelLocation, model, ImmutableSet.of(((Node<Mesh>)model.getRoot()).getName()), true, true, 1);
+        return new ModelWrapper(modelLocation, model, ImmutableSet.of(model.getRoot().getName()), true, true, 1);
     }
 
     public static final class B3DState implements IModelState
@@ -209,7 +209,7 @@ public enum B3DLoader implements ICustomModelLoader
 
         public Optional<TRSRTransformation> apply(Optional<? extends IModelPart> part)
         {
-            // TODO optionify better
+            // TODO make more use of Optional
             if(!part.isPresent()) return parent.apply(part);
             if(!(part.get() instanceof NodeJoint))
             {
@@ -278,7 +278,7 @@ public enum B3DLoader implements ICustomModelLoader
                 // current node local pose
                 ret = ret.compose(new TRSRTransformation(key.getPos(), key.getRot(), key.getScale(), null));
                 // this part moved inside the model
-                // inverse bind of the curent node
+                // inverse bind of the current node
                 /*Matrix4f rm = new TRSRTransformation(node.getPos(), node.getRot(), node.getScale(), null).getMatrix();
                 rm.invert();
                 ret = ret.compose(new TRSRTransformation(rm));
@@ -723,6 +723,7 @@ public enum B3DLoader implements ICustomModelLoader
                 for(Face f : faces)
                 {
                     UnpackedBakedQuad.Builder quadBuilder = new UnpackedBakedQuad.Builder(format);
+                    quadBuilder.setContractUVs(true);
                     quadBuilder.setQuadOrientation(EnumFacing.getFacingFromVector(f.getNormal().x, f.getNormal().y, f.getNormal().z));
                     List<Texture> textures = null;
                     if(f.getBrush() != null) textures = f.getBrush().getTextures();

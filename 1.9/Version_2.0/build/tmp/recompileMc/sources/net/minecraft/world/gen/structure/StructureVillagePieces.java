@@ -1773,7 +1773,7 @@ public class StructureVillagePieces
             {
                 net.minecraftforge.event.terraingen.BiomeEvent.GetVillageBlockID event = new net.minecraftforge.event.terraingen.BiomeEvent.GetVillageBlockID(startPiece == null ? null : startPiece.biome, p_175847_1_);
                 net.minecraftforge.common.MinecraftForge.TERRAIN_GEN_BUS.post(event);
-                if (event.getResult() == net.minecraftforge.fml.common.eventhandler.Event.Result.DENY) return event.replacement;
+                if (event.getResult() == net.minecraftforge.fml.common.eventhandler.Event.Result.DENY) return event.getReplacement();
                 if (this.isDesertVillage)
                 {
                     if (p_175847_1_.getBlock() == Blocks.log || p_175847_1_.getBlock() == Blocks.log2)

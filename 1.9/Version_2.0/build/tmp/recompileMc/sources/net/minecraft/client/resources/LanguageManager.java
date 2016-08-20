@@ -73,7 +73,6 @@ public class LanguageManager implements IResourceManagerReloadListener
         }
 
         currentLocale.loadLocaleDataFiles(resourceManager, list);
-        net.minecraftforge.fml.common.registry.LanguageRegistry.instance().mergeLanguageTable(currentLocale.properties, this.currentLanguage);
         LanguageMap.replaceWith(currentLocale.properties);
     }
 

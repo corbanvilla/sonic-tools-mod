@@ -1,10 +1,12 @@
 package com.animcogn.sonicScrewdriverMod.events;
 
 import com.animcogn.sonicScrewdriverMod.items.ModItems;
+import com.animcogn.sonicScrewdriverMod.sounds.ModSounds;
 
-import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.text.event.ClickEvent.Action;
+import net.minecraft.world.World;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent.Action;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class OnRightClick {
@@ -12,11 +14,12 @@ public class OnRightClick {
 	@SubscribeEvent
 	public void onRightClick(PlayerInteractEvent event) {
 		
-		if (!(event.entityPlayer.getHeldItemMainhand() == null || event.entityPlayer.getHeldItemOffhand() == null))	{
-			if (event.entityPlayer.getHeldItemMainhand().getItem() == ModItems.sonicScrewdriver 
-					|| event.entityPlayer.getHeldItemOffhand().getItem() == ModItems.sonicScrewdriver 
+		if (!(event.getEntityPlayer().getHeldItemMainhand() == null || event.getEntityPlayer().getHeldItemOffhand() == null))	{
+			if (event.getEntityPlayer().getHeldItemMainhand().getItem() == ModItems.sonicScrewdriver 
+					|| event.getEntityPlayer().getHeldItemOffhand().getItem() == ModItems.sonicScrewdriver 
 					&& event.action == Action.RIGHT_CLICK_AIR) {
-				event.entityPlayer.playSound(null, 1.0F, 1.0F);
+				World world = event.getEntityLiving().worldObj;
+				world.playSound(event.getEntityPlayer(), event.getEntityPlayer().getPosition(), ModSounds.sonicEffect, SoundCategory.MASTER, 1.0F, 1.0F);
 //				System.out.println("let the geekyness comence"); //Just a friendly debug statement
 //				System.out.println("the show must go wrong"); //Another great debug statement that i'm way to lazy to take out. 
 //				However, i'm not lazy enough to delete this temp code :) Enable me to see what's your problem :)	

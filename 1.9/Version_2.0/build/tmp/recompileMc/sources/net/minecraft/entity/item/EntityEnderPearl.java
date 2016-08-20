@@ -103,9 +103,9 @@ public class EntityEnderPearl extends EntityThrowable
                         this.dismountRidingEntity();
                     }
 
-                    entitylivingbase.setPositionAndUpdate(event.targetX, event.targetY, event.targetZ);
+                    entitylivingbase.setPositionAndUpdate(event.getTargetX(), event.getTargetY(), event.getTargetZ());
                     entitylivingbase.fallDistance = 0.0F;
-                    entitylivingbase.attackEntityFrom(DamageSource.fall, event.attackDamage);
+                    entitylivingbase.attackEntityFrom(DamageSource.fall, event.getAttackDamage());
                     }
                 }
             }

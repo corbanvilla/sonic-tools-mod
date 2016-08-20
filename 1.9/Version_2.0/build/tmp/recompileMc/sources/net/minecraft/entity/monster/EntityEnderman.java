@@ -286,7 +286,7 @@ public class EntityEnderman extends EntityMob
     {
         net.minecraftforge.event.entity.living.EnderTeleportEvent event = new net.minecraftforge.event.entity.living.EnderTeleportEvent(this, x, y, z, 0);
         if (net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(event)) return false;
-        boolean flag = this.teleportTo_(event.targetX, event.targetY, event.targetZ);
+        boolean flag = this.teleportTo_(event.getTargetX(), event.getTargetY(), event.getTargetZ());
 
         if (flag)
         {

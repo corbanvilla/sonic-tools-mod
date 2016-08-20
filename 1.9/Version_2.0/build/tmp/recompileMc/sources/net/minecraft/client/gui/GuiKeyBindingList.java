@@ -65,7 +65,7 @@ public class GuiKeyBindingList extends GuiListExtended
 
     protected int getScrollBarX()
     {
-        return super.getScrollBarX() + 15;
+        return super.getScrollBarX() + 35;
     }
 
     /**
@@ -134,7 +134,7 @@ public class GuiKeyBindingList extends GuiListExtended
         {
             this.keybinding = name;
             this.keyDesc = I18n.format(name.getKeyDescription(), new Object[0]);
-            this.btnChangeKeyBinding = new GuiButton(0, 0, 0, 75, 20, I18n.format(name.getKeyDescription(), new Object[0]));
+            this.btnChangeKeyBinding = new GuiButton(0, 0, 0, 95, 20, I18n.format(name.getKeyDescription(), new Object[0]));
             this.btnReset = new GuiButton(0, 0, 0, 50, 20, I18n.format("controls.reset", new Object[0]));
         }
 
@@ -142,23 +142,24 @@ public class GuiKeyBindingList extends GuiListExtended
         {
             boolean flag = GuiKeyBindingList.this.field_148191_k.buttonId == this.keybinding;
             GuiKeyBindingList.this.mc.fontRendererObj.drawString(this.keyDesc, x + 90 - GuiKeyBindingList.this.maxListLabelWidth, y + slotHeight / 2 - GuiKeyBindingList.this.mc.fontRendererObj.FONT_HEIGHT / 2, 16777215);
-            this.btnReset.xPosition = x + 190;
+            this.btnReset.xPosition = x + 210;
             this.btnReset.yPosition = y;
-            this.btnReset.enabled = this.keybinding.getKeyCode() != this.keybinding.getKeyCodeDefault();
+            this.btnReset.enabled = !this.keybinding.isSetToDefaultValue();
             this.btnReset.drawButton(GuiKeyBindingList.this.mc, mouseX, mouseY);
             this.btnChangeKeyBinding.xPosition = x + 105;
             this.btnChangeKeyBinding.yPosition = y;
-            this.btnChangeKeyBinding.displayString = GameSettings.getKeyDisplayString(this.keybinding.getKeyCode());
+            this.btnChangeKeyBinding.displayString = this.keybinding.getDisplayName();
             boolean flag1 = false;
+            boolean keyCodeModifierConflict = true; // less severe form of conflict, like SHIFT conflicting with SHIFT+G
 
             if (this.keybinding.getKeyCode() != 0)
             {
                 for (KeyBinding keybinding : GuiKeyBindingList.this.mc.gameSettings.keyBindings)
                 {
-                    if (keybinding != this.keybinding && keybinding.getKeyCode() == this.keybinding.getKeyCode())
+                    if (keybinding != this.keybinding && keybinding.conflicts(this.keybinding))
                     {
                         flag1 = true;
-                        break;
+                        keyCodeModifierConflict &= keybinding.hasKeyCodeModifierConflict(this.keybinding);
                     }
                 }
             }
@@ -169,7 +170,7 @@ public class GuiKeyBindingList extends GuiListExtended
             }
             else if (flag1)
             {
-                this.btnChangeKeyBinding.displayString = TextFormatting.RED + this.btnChangeKeyBinding.displayString;
+                this.btnChangeKeyBinding.displayString = (keyCodeModifierConflict ? TextFormatting.GOLD : TextFormatting.RED) + this.btnChangeKeyBinding.displayString;
             }
 
             this.btnChangeKeyBinding.drawButton(GuiKeyBindingList.this.mc, mouseX, mouseY);
@@ -194,6 +195,7 @@ public class GuiKeyBindingList extends GuiListExtended
             }
             else if (this.btnReset.mousePressed(GuiKeyBindingList.this.mc, mouseX, mouseY))
             {
+                this.keybinding.setToDefault();
                 GuiKeyBindingList.this.mc.gameSettings.setOptionKeyBinding(this.keybinding, this.keybinding.getKeyCodeDefault());
                 KeyBinding.resetKeyBindingArrayAndHash();
                 return true;

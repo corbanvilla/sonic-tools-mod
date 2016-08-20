@@ -1,9 +1,13 @@
 package com.animcogn.sonicScrewdriverMod;
 
+import com.animcogn.sonicScrewdriverMod.AOE.AEODig;
+import com.animcogn.sonicScrewdriverMod.AOE.AOEKeyBinding;
 import com.animcogn.sonicScrewdriverMod.armor.ModArmor;
 import com.animcogn.sonicScrewdriverMod.blocks.ModBlocks;
-import com.animcogn.sonicScrewdriverMod.crafting.ModCrafting;
-import com.animcogn.sonicScrewdriverMod.crafting.ModSmelting;
+import com.animcogn.sonicScrewdriverMod.crafting.ArmorCrafting;
+import com.animcogn.sonicScrewdriverMod.crafting.ArmorSmelting;
+import com.animcogn.sonicScrewdriverMod.crafting.ToolCrafting;
+import com.animcogn.sonicScrewdriverMod.crafting.ToolSmelting;
 import com.animcogn.sonicScrewdriverMod.events.AttackCountdown;
 import com.animcogn.sonicScrewdriverMod.events.MobsDropTimelordFragments;
 import com.animcogn.sonicScrewdriverMod.events.OnRightClick;
@@ -27,11 +31,15 @@ public class CommonProxy {
     }
 
     public void init(FMLInitializationEvent e) {
-    	ModCrafting.initCrafting();
-    	ModSmelting.initSmelting();
+    	ArmorCrafting.initArmorCrafting();
+    	ArmorSmelting.initArmorSmelting();
+    	ToolCrafting.initToolCrafting();
+    	ToolSmelting.initToolSmelting();
     	MinecraftForge.EVENT_BUS.register(new MobsDropTimelordFragments());
 		MinecraftForge.EVENT_BUS.register(new OnRightClick());
 		MinecraftForge.EVENT_BUS.register(new AttackCountdown());
+		MinecraftForge.EVENT_BUS.register(new AOEKeyBinding());
+		MinecraftForge.EVENT_BUS.register(new AEODig());
     	GameRegistry.registerWorldGenerator(new WorldGen(), 0);
     }
 

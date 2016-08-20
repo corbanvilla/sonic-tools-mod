@@ -158,6 +158,7 @@ public class GameSettings
 
     public GameSettings(Minecraft mcIn, File optionsFileIn)
     {
+        setForgeKeybindProperties();
         this.keyBindings = (KeyBinding[])ArrayUtils.addAll(new KeyBinding[] {this.keyBindAttack, this.keyBindUseItem, this.keyBindForward, this.keyBindLeft, this.keyBindBack, this.keyBindRight, this.keyBindJump, this.keyBindSneak, this.keyBindSprint, this.keyBindDrop, this.keyBindInventory, this.keyBindChat, this.keyBindPlayerList, this.keyBindPickBlock, this.keyBindCommand, this.keyBindScreenshot, this.keyBindTogglePerspective, this.keyBindSmoothCamera, this.keyBindFullscreen, this.keyBindSpectatorOutlines, this.keyBindSwapHands}, this.keyBindsHotbar);
         this.difficulty = EnumDifficulty.NORMAL;
         this.lastServer = "";
@@ -182,6 +183,7 @@ public class GameSettings
 
     public GameSettings()
     {
+        setForgeKeybindProperties();
         this.keyBindings = (KeyBinding[])ArrayUtils.addAll(new KeyBinding[] {this.keyBindAttack, this.keyBindUseItem, this.keyBindForward, this.keyBindLeft, this.keyBindBack, this.keyBindRight, this.keyBindJump, this.keyBindSneak, this.keyBindSprint, this.keyBindDrop, this.keyBindInventory, this.keyBindChat, this.keyBindPlayerList, this.keyBindPickBlock, this.keyBindCommand, this.keyBindScreenshot, this.keyBindTogglePerspective, this.keyBindSmoothCamera, this.keyBindFullscreen, this.keyBindSpectatorOutlines, this.keyBindSwapHands}, this.keyBindsHotbar);
         this.difficulty = EnumDifficulty.NORMAL;
         this.lastServer = "";
@@ -882,6 +884,7 @@ public class GameSettings
                         if (astring[0].equals("key_" + keybinding.getKeyDescription()))
                         {
                             keybinding.setKeyCode(Integer.parseInt(astring[1]));
+                            if (astring.length == 3) keybinding.setKeyModifierAndCode(net.minecraftforge.client.settings.KeyModifier.valueFromString(astring[2]), Integer.parseInt(astring[1]));
                         }
                     }
 
@@ -998,7 +1001,8 @@ public class GameSettings
 
             for (KeyBinding keybinding : this.keyBindings)
             {
-                printwriter.println("key_" + keybinding.getKeyDescription() + ":" + keybinding.getKeyCode());
+                String keyString = "key_" + keybinding.getKeyDescription() + ":" + keybinding.getKeyCode();
+                printwriter.println(keybinding.getKeyModifier() != net.minecraftforge.client.settings.KeyModifier.NONE ? keyString + ":" + keybinding.getKeyModifier() : keyString);
             }
 
             for (SoundCategory soundcategory : SoundCategory.values())
@@ -1236,4 +1240,24 @@ public class GameSettings
             return value;
         }
     }
+
+    /******* Forge Start ***********/
+    private void setForgeKeybindProperties() {
+        net.minecraftforge.client.settings.KeyConflictContext inGame = net.minecraftforge.client.settings.KeyConflictContext.IN_GAME;
+        keyBindForward.setKeyConflictContext(inGame);
+        keyBindLeft.setKeyConflictContext(inGame);
+        keyBindBack.setKeyConflictContext(inGame);
+        keyBindRight.setKeyConflictContext(inGame);
+        keyBindJump.setKeyConflictContext(inGame);
+        keyBindSneak.setKeyConflictContext(inGame);
+        keyBindSprint.setKeyConflictContext(inGame);
+        keyBindAttack.setKeyConflictContext(inGame);
+        keyBindChat.setKeyConflictContext(inGame);
+        keyBindPlayerList.setKeyConflictContext(inGame);
+        keyBindCommand.setKeyConflictContext(inGame);
+        keyBindTogglePerspective.setKeyConflictContext(inGame);
+        keyBindSmoothCamera.setKeyConflictContext(inGame);
+        keyBindSwapHands.setKeyConflictContext(inGame);
+    }
+    /******* Forge End ***********/
 }

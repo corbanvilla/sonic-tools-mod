@@ -1,7 +1,11 @@
 package com.animcogn.sonicScrewdriverMod.items;
 
+import java.util.List;
+
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 public class UnstableTimeEnergy extends Item {
 
@@ -9,5 +13,14 @@ public class UnstableTimeEnergy extends Item {
 		super();
 		this.setUnlocalizedName("unstableTimeEnergy");
 		this.setCreativeTab(ModItems.tabSonicToolsMod);
+	}
+	
+	@Override
+	public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4) {
+	par3List.add("\u00A75" + "Unless you wear a timelords set ");
+	par3List.add("\u00A75" + "of armor, it may be impossible to ");
+	par3List.add("\u00A75" + "carry this incredibly heavy and ");
+	par3List.add("\u00A75" + "powerful unstable object. You have");
+	par3List.add("\u00A75" + "been warned!");
 	}
 }

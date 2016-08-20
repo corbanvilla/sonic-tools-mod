@@ -334,21 +334,6 @@ public class BlockPos extends Vec3i
         };
     }
 
-    /**
-     * Returns a version of this BlockPos that is guaranteed to be Immutable.
-     * In most cases this will return 'this', but if 'this' is an instance of
-     * MutableBlockPos it will return a new instance of BlockPos with the same values.
-     *
-     * When storing a parameter given to you for an extended period of time, make sure you
-     * use this in case the value is changed internally.
-     *
-     * @return An immutable BlockPos.
-     */
-    public BlockPos getImmutable()
-    {
-        return this;
-    }
-
     public static final class MutableBlockPos extends BlockPos
         {
             /** Mutable X Coordinate */
@@ -427,8 +412,6 @@ public class BlockPos extends Vec3i
             {
                 return new BlockPos(this);
             }
-
-            @Override public BlockPos getImmutable() { return new BlockPos(this); }
         }
 
     public static final class PooledMutableBlockPos extends BlockPos
@@ -549,6 +532,7 @@ public class BlockPos extends Vec3i
                 return this.set(this.x + facing.getFrontOffsetX(), this.y + facing.getFrontOffsetY(), this.z + facing.getFrontOffsetZ());
             }
 
-            @Override public BlockPos getImmutable() { return new BlockPos(this); }
+            // This method can safely be removed once vanilla adds it - MC-100165
+            @Override public BlockPos toImmutable() { return new BlockPos(this); }
         }
 }

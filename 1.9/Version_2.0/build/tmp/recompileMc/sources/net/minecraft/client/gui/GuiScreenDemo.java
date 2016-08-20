@@ -93,10 +93,10 @@ public class GuiScreenDemo extends GuiScreen
         this.fontRendererObj.drawString(I18n.format("demo.help.title", new Object[0]), i, j, 2039583);
         j = j + 12;
         GameSettings gamesettings = this.mc.gameSettings;
-        this.fontRendererObj.drawString(I18n.format("demo.help.movementShort", new Object[] {GameSettings.getKeyDisplayString(gamesettings.keyBindForward.getKeyCode()), GameSettings.getKeyDisplayString(gamesettings.keyBindLeft.getKeyCode()), GameSettings.getKeyDisplayString(gamesettings.keyBindBack.getKeyCode()), GameSettings.getKeyDisplayString(gamesettings.keyBindRight.getKeyCode())}), i, j, 5197647);
+        this.fontRendererObj.drawString(I18n.format("demo.help.movementShort", new Object[] {gamesettings.keyBindForward.getDisplayName(), gamesettings.keyBindLeft.getDisplayName(), gamesettings.keyBindBack.getDisplayName(), gamesettings.keyBindRight.getDisplayName()}), i, j, 5197647);
         this.fontRendererObj.drawString(I18n.format("demo.help.movementMouse", new Object[0]), i, j + 12, 5197647);
-        this.fontRendererObj.drawString(I18n.format("demo.help.jump", new Object[] {GameSettings.getKeyDisplayString(gamesettings.keyBindJump.getKeyCode())}), i, j + 24, 5197647);
-        this.fontRendererObj.drawString(I18n.format("demo.help.inventory", new Object[] {GameSettings.getKeyDisplayString(gamesettings.keyBindInventory.getKeyCode())}), i, j + 36, 5197647);
+        this.fontRendererObj.drawString(I18n.format("demo.help.jump", new Object[] {gamesettings.keyBindJump.getDisplayName()}), i, j + 24, 5197647);
+        this.fontRendererObj.drawString(I18n.format("demo.help.inventory", new Object[] {gamesettings.keyBindInventory.getDisplayName()}), i, j + 36, 5197647);
         this.fontRendererObj.drawSplitString(I18n.format("demo.help.fullWrapped", new Object[0]), i, j + 68, 218, 2039583);
         super.drawScreen(mouseX, mouseY, partialTicks);
     }

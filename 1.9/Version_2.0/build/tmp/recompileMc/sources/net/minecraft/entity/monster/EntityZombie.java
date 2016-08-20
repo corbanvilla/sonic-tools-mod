@@ -295,9 +295,9 @@ public class EntityZombie extends EntityMob
                 entitylivingbase != null && this.worldObj.getDifficulty() == EnumDifficulty.HARD && (double)this.rand.nextFloat() < this.getEntityAttribute(reinforcementChance).getAttributeValue() && this.worldObj.getGameRules().getBoolean("doMobSpawning"))
             {
                 EntityZombie entityzombie;
-                if (summonAid.customSummonedAid != null && summonAid.getResult() == net.minecraftforge.fml.common.eventhandler.Event.Result.ALLOW)
+                if (summonAid.getCustomSummonedAid() != null && summonAid.getResult() == net.minecraftforge.fml.common.eventhandler.Event.Result.ALLOW)
                 {
-                    entityzombie = summonAid.customSummonedAid;
+                    entityzombie = summonAid.getCustomSummonedAid();
                 }
                 else
                 {

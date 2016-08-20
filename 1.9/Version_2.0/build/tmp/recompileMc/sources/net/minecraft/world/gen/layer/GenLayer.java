@@ -220,7 +220,7 @@ public abstract class GenLayer
     {
         net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize event = new net.minecraftforge.event.terraingen.WorldTypeEvent.BiomeSize(worldType, original);
         net.minecraftforge.common.MinecraftForge.TERRAIN_GEN_BUS.post(event);
-        return event.newSize;
+        return event.getNewSize();
     }
     /* ========================================= FORGE END ======================================*/
 }

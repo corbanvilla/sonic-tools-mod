@@ -43,7 +43,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class Block
+public class Block extends net.minecraftforge.fml.common.registry.IForgeRegistryEntry.Impl<Block>
 {
     /** ResourceLocation for the Air block */
     private static final ResourceLocation AIR_ID = new ResourceLocation("air");
@@ -84,9 +84,6 @@ public class Block
     protected final BlockStateContainer blockState;
     private IBlockState defaultBlockState;
     private String unlocalizedName;
-
-    public final net.minecraftforge.fml.common.registry.RegistryDelegate<Block> delegate =
-            ((net.minecraftforge.fml.common.registry.FMLControlledNamespacedRegistry)blockRegistry).getDelegate(this, Block.class);
 
     public static int getIdFromBlock(Block blockIn)
     {
@@ -962,7 +959,8 @@ public class Block
     @Deprecated // Forge: Use more sensitive version below: getPickBlock
     public ItemStack getItem(World worldIn, BlockPos pos, IBlockState state)
     {
-        return new ItemStack(Item.getItemFromBlock(this), 1, this.damageDropped(state));
+        Item item = Item.getItemFromBlock(this);
+        return item == null ? null : new ItemStack(item, 1, this.damageDropped(state));
     }
 
     /**
@@ -1152,10 +1150,9 @@ public class Block
         if (base_state.isFullyOpaque() && side == EnumFacing.UP) // Short circuit to vanilla function if its true
             return true;
 
-        IBlockState state = this.getActualState(base_state, world, pos);
-
         if (this instanceof BlockSlab)
         {
+            IBlockState state = this.getActualState(base_state, world, pos);
             return base_state.isFullBlock()
                   || (state.getValue(BlockSlab.HALF) == BlockSlab.EnumBlockHalf.TOP    && side == EnumFacing.UP  )
                   || (state.getValue(BlockSlab.HALF) == BlockSlab.EnumBlockHalf.BOTTOM && side == EnumFacing.DOWN);
@@ -1166,6 +1163,7 @@ public class Block
         }
         else if (this instanceof BlockStairs)
         {
+            IBlockState state = this.getActualState(base_state, world, pos);
             boolean flipped = state.getValue(BlockStairs.HALF) == BlockStairs.EnumHalf.TOP;
             BlockStairs.EnumShape shape = (BlockStairs.EnumShape)state.getValue(BlockStairs.SHAPE);
             EnumFacing facing = (EnumFacing)state.getValue(BlockStairs.FACING);
@@ -1186,6 +1184,7 @@ public class Block
         }
         else if (this instanceof BlockSnow)
         {
+            IBlockState state = this.getActualState(base_state, world, pos);
             return ((Integer)state.getValue(BlockSnow.LAYERS)) >= 8;
         }
         else if (this instanceof BlockHopper && side == EnumFacing.UP)
@@ -1196,7 +1195,7 @@ public class Block
         {
             return true;
         }
-        return isNormalCube(state, world, pos);
+        return isNormalCube(base_state, world, pos);
     }
 
     /**
@@ -2162,13 +2161,24 @@ public class Block
 
      /**
      * Queries if this block should render in a given layer.
-     * ISmartBlockModel can use MinecraftForgeClient.getRenderLayer to alter their model based on layer
+     * ISmartBlockModel can use {@link MinecraftForgeClient#getRenderLayer()} to alter their model based on layer.
+     *
+     * @deprecated New method with state sensitivity: {@link #canRenderInLayer(IBlockState, BlockRenderLayer)}
      */
+    @Deprecated
     public boolean canRenderInLayer(BlockRenderLayer layer)
     {
         return getBlockLayer() == layer;
     }
 
+     /**
+     * Queries if this block should render in a given layer.
+     * ISmartBlockModel can use {@link MinecraftForgeClient#getRenderLayer()} to alter their model based on layer.
+     */
+    public boolean canRenderInLayer(IBlockState state, BlockRenderLayer layer)
+    {
+        return canRenderInLayer(layer);
+    }
     // For Internal use only to capture droped items inside getDrops
     protected static ThreadLocal<Boolean> captureDrops = new ThreadLocal<Boolean>()
     {
@@ -2193,53 +2203,15 @@ public class Block
         }
     }
 
-    private ResourceLocation registryName = null;
     /**
-     * Sets a unique name for this Block. This should be used for uniquely identify the instance of the Block.
-     * This is the valid replacement for the atrocious 'getUnlocalizedName().substring(6)' stuff that everyone does.
-     * Unlocalized names have NOTHING to do with unique identifiers. As demonstrated by vanilla blocks and items.
-     *
-     * The supplied name will be prefixed with the currently active mod's modId.
-     * If the supplied name already has a prefix that is different, it will be used and a warning will be logged.
-     *
-     * If a name already exists, or this Block is already registered in a registry, then an IllegalStateException is thrown.
-     *
-     * Returns 'this' to allow for chaining.
-     *
-     * @param name Unique registry name
-     * @return This instance
+     * Add information to the blocks tooltip, called from the default implementation of {@link ItemBlock#addInformation(ItemStack, EntityPlayer, List, boolean)}
+     * @param stack The stack the tooltip is being retrieved for
+     * @param player The player retrieving the tooltip
+     * @param tooltip The lines to be displayed on the tooltip
+     * @param advanced If the client has advanced debug tooltips enabled
      */
-    public final Block setRegistryName(String name)
+    public void addInformation(ItemStack stack, EntityPlayer player, List<String> tooltip, boolean advanced)
     {
-        if (getRegistryName() != null)
-            throw new IllegalStateException("Attempted to set registry name on block with exisiting registry name! New: " + name + " Old: " + getRegistryName());
-        int index = name.lastIndexOf(':');
-        String oldPrefix = index == -1 ? "" : name.substring(0, index);
-        name = index == -1 ? name : name.substring(index + 1);
-        net.minecraftforge.fml.common.ModContainer mc = net.minecraftforge.fml.common.Loader.instance().activeModContainer();
-        String prefix = mc == null ? "minecraft" : mc.getModId();
-        if (!oldPrefix.equals(prefix) && oldPrefix.length() > 0)
-        {
-            net.minecraftforge.fml.common.FMLLog.bigWarning("Dangerous alternative prefix %s for name %s, invalid registry invocation/invalid name?", oldPrefix, name);
-            prefix = oldPrefix;
-        }
-        this.registryName = new ResourceLocation(prefix, name);
-        return this;
-    }
-    public final Block setRegistryName(ResourceLocation name){ return setRegistryName(name.toString()); }
-    public final Block setRegistryName(String modID, String name){ return setRegistryName(modID + ":" + name); }
-
-    /**
-     * A unique identifier for this block, if this block is registered in the game registry it will return that name.
-     * Otherwise it will return the name set in setRegistryName().
-     * If neither are valid null is returned.
-     *
-     * @return Unique identifier or null.
-     */
-    public final String getRegistryName()
-    {
-        if (delegate.getResourceName() != null) return delegate.getResourceName().toString();
-        return registryName != null ? registryName.toString() : null;
     }
     /* ========================================= FORGE END ======================================*/
 

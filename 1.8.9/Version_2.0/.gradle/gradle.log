@@ -11,20 +11,20 @@ This mapping 'stable_20' was designed for MC 1.8.8! Use at your own peril.This m
 #################################################
 :deobfCompileDummyTask
 :deobfProvidedDummyTask
-:sourceApiJava
+:sourceApiJava UP-TO-DATE
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
 :sourceMainJava
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
-Note: /Users/Corban/Desktop/sonic-tools-mod/1.8.9/Version_2.0/build/sources/main/java/com/animcogn/sonicScrewdriverMod/items/TimeTravelerReminisce.java uses unchecked or unsafe operations.
+Note: Some input files use unchecked or unsafe operations.
 Note: Recompile with -Xlint:unchecked for details.
 1 warning
 
 :processResources
 :classes
 :jar
-:sourceTestJava
+:sourceTestJava UP-TO-DATE
 :compileTestJava UP-TO-DATE
 :processTestResources UP-TO-DATE
 :testClasses UP-TO-DATE
@@ -46,4 +46,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 57.511 secs
+Total time: 32.79 secs

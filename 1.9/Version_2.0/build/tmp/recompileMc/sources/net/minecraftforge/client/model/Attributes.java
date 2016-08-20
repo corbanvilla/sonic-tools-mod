@@ -35,7 +35,7 @@ public class Attributes
 
         int padding = 0;
         int j = 0;
-        for(VertexFormatElement firstAttr : (List<VertexFormatElement>)first.getElements())
+        for(VertexFormatElement firstAttr : first.getElements())
         {
             while(j < second.getElementCount() && second.getElement(j).getUsage() == EnumUsage.PADDING)
             {

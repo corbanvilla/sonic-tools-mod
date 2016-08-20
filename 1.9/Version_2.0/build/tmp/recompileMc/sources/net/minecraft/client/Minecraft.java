@@ -500,7 +500,7 @@ public class Minecraft implements IThreadListener, ISnooperInfo
             {
                 try
                 {
-                    return String.format(str, new Object[] {GameSettings.getKeyDisplayString(Minecraft.this.gameSettings.keyBindInventory.getKeyCode())});
+                    return String.format(str, new Object[] {Minecraft.this.gameSettings.keyBindInventory.getDisplayName()});
                 }
                 catch (Exception exception)
                 {
@@ -976,7 +976,7 @@ public class Minecraft implements IThreadListener, ISnooperInfo
 
         if (net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(event)) return;
 
-        guiScreenIn = event.gui;
+        guiScreenIn = event.getGui();
         if (old != null && guiScreenIn != old)
         {
             old.onGuiClosed();
@@ -1576,7 +1576,7 @@ public class Minecraft implements IThreadListener, ISnooperInfo
                         switch (this.objectMouseOver.typeOfHit)
                         {
                             case ENTITY:
-
+                                if(!net.minecraftforge.common.ForgeHooks.onInteractEntityAt(thePlayer, objectMouseOver.entityHit, objectMouseOver, thePlayer.getHeldItem(enumhand), enumhand))
                                 if (this.playerController.func_187102_a(this.thePlayer, this.objectMouseOver.entityHit, this.objectMouseOver, this.thePlayer.getHeldItem(enumhand), enumhand) == EnumActionResult.SUCCESS)
                                 {
                                     return;
@@ -1619,7 +1619,7 @@ public class Minecraft implements IThreadListener, ISnooperInfo
                     }
 
                     ItemStack itemstack1 = this.thePlayer.getHeldItem(enumhand);
-
+                    if (itemstack1 == null) net.minecraftforge.common.ForgeHooks.onEmptyClick(this.thePlayer, enumhand);
                     if (itemstack1 != null && this.playerController.processRightClick(this.thePlayer, this.theWorld, itemstack1, enumhand) == EnumActionResult.SUCCESS)
                     {
                         this.entityRenderer.itemRenderer.resetEquippedProgress(enumhand);
@@ -3102,15 +3102,16 @@ public class Minecraft implements IThreadListener, ISnooperInfo
             {
                 if (Keyboard.getEventKeyState())
                 {
-                    if (i == this.gameSettings.keyBindFullscreen.getKeyCode())
+                    if (this.gameSettings.keyBindFullscreen.isActiveAndMatches(i))
                     {
                         this.toggleFullscreen();
                     }
-                    else if (i == this.gameSettings.keyBindScreenshot.getKeyCode())
+                    else if (this.gameSettings.keyBindScreenshot.isActiveAndMatches(i))
                     {
                         this.ingameGUI.getChatGUI().printChatMessage(ScreenShotHelper.saveScreenshot(this.mcDataDir, this.displayWidth, this.displayHeight, this.framebufferMc));
                     }
                 }
+                else if (this.currentScreen instanceof GuiControls) ((GuiControls)this.currentScreen).buttonId = null;
             }
         }
     }

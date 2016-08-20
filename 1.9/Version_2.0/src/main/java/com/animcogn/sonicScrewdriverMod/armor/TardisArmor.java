@@ -20,8 +20,8 @@ import net.minecraftforge.event.brewing.PotionBrewEvent;
 
 public class TardisArmor extends ItemArmor {
 	
-	public TardisArmor(String unlocalizedName, ArmorMaterial material, int renderIndex, EntityEquipmentSlot armorType) {
-		 super(material, renderIndex, armorType);
+	public TardisArmor(String unlocalizedName, ArmorMaterial material, int renderIndex, EntityEquipmentSlot i) {
+		 super(material, renderIndex, i);
 		 this.setUnlocalizedName(unlocalizedName);
 		 this.setCreativeTab(ModItems.tabSonicToolsMod);
 	}

@@ -111,7 +111,7 @@ public class FMLProxyPacket implements Packet<INetHandler> {
             catch (Throwable t)
             {
                 FMLLog.log(Level.ERROR, t, "There was a critical exception handling a packet on channel %s", channel);
-                dispatcher.rejectHandshake("A fatal error has occured, this connection is terminated");
+                dispatcher.rejectHandshake("A fatal error has occurred, this connection is terminated");
             }
         }
     }
@@ -134,6 +134,7 @@ public class FMLProxyPacket implements Packet<INetHandler> {
     }
 
     static final int PART_SIZE = 0x1000000 - 0x50; // Make it a constant so that it gets inlined below.
+    // FIXME int overflow
     public static final int MAX_LENGTH = PART_SIZE * 255;
     public List<Packet<INetHandlerPlayClient>> toS3FPackets() throws IOException
     {

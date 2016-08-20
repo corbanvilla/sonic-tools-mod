@@ -192,4 +192,13 @@ public class ItemBlock extends Item
 
         return true;
     }
+
+    /**
+     * allows items to add custom lines of information to the mouseover description
+     */
+    @SideOnly(Side.CLIENT)
+    public void addInformation(ItemStack stack, EntityPlayer playerIn, List<String> tooltip, boolean advanced)
+    {
+        block.addInformation(stack, playerIn, tooltip, advanced);
+    }
 }

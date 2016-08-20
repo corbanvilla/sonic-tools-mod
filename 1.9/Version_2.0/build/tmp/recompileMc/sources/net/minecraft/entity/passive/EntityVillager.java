@@ -74,6 +74,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class EntityVillager extends EntityAgeable implements IMerchant, INpc
 {
     private static final DataParameter<Integer> PROFESSION = EntityDataManager.<Integer>createKey(EntityVillager.class, DataSerializers.VARINT);
+    private static final DataParameter<String> PROFESSION_STR = EntityDataManager.<String>createKey(EntityVillager.class, DataSerializers.STRING);
     private int randomTickDivider;
     private boolean isMating;
     private boolean isPlaying;
@@ -253,6 +254,7 @@ public class EntityVillager extends EntityAgeable implements IMerchant, INpc
     {
         super.entityInit();
         this.dataWatcher.register(PROFESSION, Integer.valueOf(0));
+        this.dataWatcher.register(PROFESSION_STR, "minecraft:farmer");
     }
 
     /**
@@ -262,6 +264,7 @@ public class EntityVillager extends EntityAgeable implements IMerchant, INpc
     {
         super.writeEntityToNBT(tagCompound);
         tagCompound.setInteger("Profession", this.getProfession());
+        tagCompound.setString("ProfessionName", this.getProfessionForge().getRegistryName().toString());
         tagCompound.setInteger("Riches", this.wealth);
         tagCompound.setInteger("Career", this.careerId);
         tagCompound.setInteger("CareerLevel", this.careerLevel);
@@ -294,6 +297,14 @@ public class EntityVillager extends EntityAgeable implements IMerchant, INpc
     {
         super.readEntityFromNBT(tagCompund);
         this.setProfession(tagCompund.getInteger("Profession"));
+        if (tagCompund.hasKey("ProfessionName"))
+        {
+            net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerProfession p =
+                net.minecraftforge.fml.common.registry.VillagerRegistry.instance().getRegistry().getValue(new net.minecraft.util.ResourceLocation(tagCompund.getString("ProfessionName")));
+            if (p == null)
+                p = net.minecraftforge.fml.common.registry.VillagerRegistry.instance().getRegistry().getValue(new net.minecraft.util.ResourceLocation("minecraft:farmer"));
+            this.setProfession(p);
+        }
         this.wealth = tagCompund.getInteger("Riches");
         this.careerId = tagCompund.getInteger("Career");
         this.careerLevel = tagCompund.getInteger("CareerLevel");
@@ -347,11 +358,33 @@ public class EntityVillager extends EntityAgeable implements IMerchant, INpc
     public void setProfession(int professionId)
     {
         this.dataWatcher.set(PROFESSION, Integer.valueOf(professionId));
+        net.minecraftforge.fml.common.registry.VillagerRegistry.onSetProfession(this, professionId);
     }
 
     public int getProfession()
     {
         return Math.max(((Integer)this.dataWatcher.get(PROFESSION)).intValue() % 5, 0);
+    }
+
+    private net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerProfession prof;
+    public void setProfession(net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerProfession prof)
+    {
+        this.dataWatcher.set(PROFESSION_STR, prof.getRegistryName().toString());
+        this.prof = prof;
+        net.minecraftforge.fml.common.registry.VillagerRegistry.onSetProfession(this, prof);
+    }
+
+    public net.minecraftforge.fml.common.registry.VillagerRegistry.VillagerProfession getProfessionForge()
+    {
+        if (this.prof == null)
+        {
+            String p = this.dataWatcher.get(PROFESSION_STR);
+            net.minecraft.util.ResourceLocation res = new net.minecraft.util.ResourceLocation(p == null ? "minecraft:farmer" : p);
+            this.prof = net.minecraftforge.fml.common.registry.VillagerRegistry.instance().getRegistry().getValue(res);
+            if (this.prof == null)
+                return net.minecraftforge.fml.common.registry.VillagerRegistry.instance().getRegistry().getValue(new net.minecraft.util.ResourceLocation("minecraft:farmer"));
+        }
+        return this.prof;
     }
 
     public boolean isMating()
@@ -563,16 +596,13 @@ public class EntityVillager extends EntityAgeable implements IMerchant, INpc
 
     private void populateBuyingList()
     {
-        //TODO: Hook into VillagerRegistry
-        EntityVillager.ITradeList[][][] aentityvillager$itradelist = DEFAULT_TRADE_LIST_MAP[this.getProfession()];
-
         if (this.careerId != 0 && this.careerLevel != 0)
         {
             ++this.careerLevel;
         }
         else
         {
-            this.careerId = this.rand.nextInt(aentityvillager$itradelist.length) + 1;
+            this.careerId = this.getProfessionForge().getRandomCareer(this.rand) + 1;
             this.careerLevel = 1;
         }
 
@@ -583,7 +613,7 @@ public class EntityVillager extends EntityAgeable implements IMerchant, INpc
 
         int i = this.careerId - 1;
         int j = this.careerLevel - 1;
-        EntityVillager.ITradeList[][] aentityvillager$itradelist1 = aentityvillager$itradelist[i];
+        EntityVillager.ITradeList[][] aentityvillager$itradelist1 = this.getProfessionForge().getCareer(i).getTrades();
 
         if (j >= 0 && j < aentityvillager$itradelist1.length)
         {
@@ -681,10 +711,14 @@ public class EntityVillager extends EntityAgeable implements IMerchant, INpc
                     }
             }
 
+            if (s1 == null)
+                s1 = this.getProfessionForge().getCareer(this.careerId).getName();
+            else
+                s1 = "entity.Villager." + s1;
             //TODO: Hook into VillagerRegistry to get name
             if (s1 != null)
             {
-                TextComponentTranslation textcomponenttranslation = new TextComponentTranslation("entity.Villager." + s1, new Object[0]);
+                TextComponentTranslation textcomponenttranslation = new TextComponentTranslation(s1, new Object[0]);
                 textcomponenttranslation.getChatStyle().setChatHoverEvent(this.getHoverEvent());
                 textcomponenttranslation.getChatStyle().setInsertion(this.getUniqueID().toString());
 

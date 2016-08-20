@@ -71,8 +71,18 @@ public class TardisArmor extends ItemArmor {
 					player.setAbsorptionAmount(2.0F);
 					DisplayInterval.absorbtionInterval = true;
 					CountDown.startInterval();
+				}	
+				else if (absorbtion == 1.0F) {
+					player.setAbsorptionAmount(2.0F);
+					DisplayInterval.absorbtionInterval = true;
+					CountDown.startInterval();
 				}
 				else if (absorbtion == 2.0F) {
+					player.setAbsorptionAmount(4.0F);
+					DisplayInterval.absorbtionInterval = true;
+					CountDown.startInterval();
+				}
+				else if (absorbtion == 3.0F) {
 					player.setAbsorptionAmount(4.0F);
 					DisplayInterval.absorbtionInterval = true;
 					CountDown.startInterval();
@@ -82,7 +92,27 @@ public class TardisArmor extends ItemArmor {
 					DisplayInterval.absorbtionInterval = true;
 					CountDown.startInterval();
 				}
+				else if (absorbtion == 5.0F) {
+					player.setAbsorptionAmount(6.0F);
+					DisplayInterval.absorbtionInterval = true;
+					CountDown.startInterval();
+				}
 				else if (absorbtion == 6.0F) {
+					player.setAbsorptionAmount(8.0F);
+					DisplayInterval.absorbtionInterval = true;
+					CountDown.startInterval();
+				}
+				else if (absorbtion == 7.0F) {
+					player.setAbsorptionAmount(8.0F);
+					DisplayInterval.absorbtionInterval = true;
+					CountDown.startInterval();
+				}
+				else if (absorbtion == 8.0F) {
+					player.setAbsorptionAmount(10.0F);
+					DisplayInterval.absorbtionInterval = true;
+					CountDown.startInterval();
+				}
+				else {
 					return;
 				}
 			}

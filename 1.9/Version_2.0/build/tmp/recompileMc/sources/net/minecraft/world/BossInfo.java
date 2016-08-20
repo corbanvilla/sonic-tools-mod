@@ -2,8 +2,6 @@ package net.minecraft.world;
 
 import java.util.UUID;
 import net.minecraft.util.text.ITextComponent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public abstract class BossInfo
 {
@@ -35,7 +33,6 @@ public abstract class BossInfo
         return this.name;
     }
 
-    @SideOnly(Side.CLIENT)
     public void setName(ITextComponent nameIn)
     {
         this.name = nameIn;
@@ -56,7 +53,6 @@ public abstract class BossInfo
         return this.color;
     }
 
-    @SideOnly(Side.CLIENT)
     public void setColor(BossInfo.Color colorIn)
     {
         this.color = colorIn;
@@ -67,7 +63,6 @@ public abstract class BossInfo
         return this.overlay;
     }
 
-    @SideOnly(Side.CLIENT)
     public void setOverlay(BossInfo.Overlay overlayIn)
     {
         this.overlay = overlayIn;

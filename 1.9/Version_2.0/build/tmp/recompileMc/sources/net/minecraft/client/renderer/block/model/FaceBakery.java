@@ -155,8 +155,8 @@ public class FaceBakery
         faceData[i + 1] = Float.floatToRawIntBits(position.y);
         faceData[i + 2] = Float.floatToRawIntBits(position.z);
         faceData[i + 3] = shadeColor;
-        faceData[i + 4] = Float.floatToRawIntBits(sprite.getInterpolatedU((double)faceUV.getVertexU(vertexIndex)));
-        faceData[i + 4 + 1] = Float.floatToRawIntBits(sprite.getInterpolatedV((double)faceUV.getVertexV(vertexIndex)));
+        faceData[i + 4] = Float.floatToRawIntBits(sprite.getInterpolatedU((double)faceUV.getVertexU(vertexIndex) * .999 + faceUV.getVertexU((vertexIndex + 2) % 4) * .001));
+        faceData[i + 4 + 1] = Float.floatToRawIntBits(sprite.getInterpolatedV((double)faceUV.getVertexV(vertexIndex) * .999 + faceUV.getVertexV((vertexIndex + 2) % 4) * .001));
     }
 
     private void rotatePart(Vector3f p_178407_1_, BlockPartRotation partRotation)

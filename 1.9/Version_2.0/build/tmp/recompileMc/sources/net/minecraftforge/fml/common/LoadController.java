@@ -63,7 +63,14 @@ public class LoadController
     public LoadController(Loader loader)
     {
         this.loader = loader;
-        this.masterChannel = new EventBus("FMLMainChannel");
+        this.masterChannel = new EventBus(new SubscriberExceptionHandler()
+        {
+            @Override
+            public void handleException(Throwable exception, SubscriberExceptionContext context)
+            {
+                FMLLog.log("FMLMainChannel", Level.ERROR, exception, "Could not dispatch event: %s to %s", context.getEvent(), context.getSubscriberMethod());
+            }
+        });
         this.masterChannel.register(this);
 
         state = LoaderState.NOINIT;
@@ -159,8 +166,8 @@ public class LoadController
             else
             {
                 FMLLog.severe("The ForgeModLoader state engine has become corrupted. Probably, a state was missed by and invalid modification to a base class" +
-                		"ForgeModLoader depends on. This is a critical error and not recoverable. Investigate any modifications to base classes outside of" +
-                		"ForgeModLoader, especially Optifine, to see if there are fixes available.");
+                        "ForgeModLoader depends on. This is a critical error and not recoverable. Investigate any modifications to base classes outside of" +
+                        "ForgeModLoader, especially Optifine, to see if there are fixes available.");
                 throw new RuntimeException("The ForgeModLoader state engine is invalid");
             }
             if (toThrow != null && toThrow instanceof RuntimeException)
@@ -237,7 +244,7 @@ public class LoadController
 
     public ImmutableBiMap<ModContainer, Object> buildModObjectList()
     {
-        ImmutableBiMap.Builder<ModContainer, Object> builder = ImmutableBiMap.<ModContainer, Object>builder();
+        ImmutableBiMap.Builder<ModContainer, Object> builder = ImmutableBiMap.builder();
         for (ModContainer mc : activeModList)
         {
             if (!mc.isImmutable() && mc.getMod()!=null)
@@ -265,7 +272,7 @@ public class LoadController
     {
         if (exception instanceof InvocationTargetException)
         {
-            errors.put(modContainer.getModId(), ((InvocationTargetException)exception).getCause());
+            errors.put(modContainer.getModId(), exception.getCause());
         }
         else
         {
@@ -327,9 +334,9 @@ public class LoadController
         return this.state == state;
     }
 
-	boolean hasReachedState(LoaderState state) {
-		return this.state.ordinal()>=state.ordinal() && this.state!=LoaderState.ERRORED;
-	}
+    boolean hasReachedState(LoaderState state) {
+        return this.state.ordinal()>=state.ordinal() && this.state!=LoaderState.ERRORED;
+    }
 
     void forceState(LoaderState newState)
     {

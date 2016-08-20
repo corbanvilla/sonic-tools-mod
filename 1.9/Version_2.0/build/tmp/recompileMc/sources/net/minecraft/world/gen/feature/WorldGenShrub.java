@@ -25,7 +25,7 @@ public class WorldGenShrub extends WorldGenTrees
         do
         {
             IBlockState state = worldIn.getBlockState(position);
-            if (!state.getBlock().isLeaves(state, worldIn, position) && !state.getBlock().isLeaves(state, worldIn, position)) break;
+            if (!state.getBlock().isAir(state, worldIn, position) && !state.getBlock().isLeaves(state, worldIn, position)) break;
             position = position.down();
         } while (position.getY() > 0);
 

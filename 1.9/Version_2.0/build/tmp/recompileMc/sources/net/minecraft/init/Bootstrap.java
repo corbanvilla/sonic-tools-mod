@@ -627,6 +627,7 @@ public class Bootstrap
             StatList.init();
             BiomeGenBase.registerBiomes();
             registerDispenserBehaviors();
+            net.minecraftforge.fml.common.registry.GameData.vanillaSnapshot();
         }
     }
 

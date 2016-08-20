@@ -1,5 +1,8 @@
 package com.animcogn.sonicScrewdriverMod.items;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import com.animcogn.sonicScrewdriverMod.armor.TardisArmor;
 import com.animcogn.sonicScrewdriverMod.armor.TimeTravelerArmor;
 import com.animcogn.sonicScrewdriverMod.armor.TimelordArmor;
@@ -10,15 +13,16 @@ import com.animcogn.sonicScrewdriverMod.tools.SonicShovel;
 import com.animcogn.sonicScrewdriverMod.tools.SonicSword;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.SoundEvent;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ModItems {
+	
+	public static final Set<Item> items = new HashSet<Item>();
 	
 	//Tools
 	public static Item sonicScrewdriver;
@@ -61,6 +65,7 @@ public class ModItems {
 	
 	public static void createItems() {		  
 		
+
 	//Tool Materials
 		ToolMaterial Pickaxe = EnumHelper.addToolMaterial("Pickaxe", 4, 3000, 10.0F, 6.0F, 30);
 		ToolMaterial Shovel = EnumHelper.addToolMaterial("Shovel", 4, 3000, 10.0F, 6.0F, 30);
@@ -108,38 +113,27 @@ public class ModItems {
 		tardisChestplate = new TardisArmor("tardisChestplate", Tardis, 1, 1);
 		GameRegistry.registerItem(tardisChestplate, "tardisChestplate");
 		
-		tardisLeggings = new TardisArmor("tardisLeggings", Tardis, 2, 2);
-		GameRegistry.registerItem(tardisLeggings, "tardisLeggings");
-		//Sonic Tools
+		tardisLeggings = registerItem(new TardisArmor(null, Tardis, 0, EntityEquipmentSlot.HEAD));
 		
-		sonicScrewdriver = new SonicScrewdriver(SonicScrewdriver);
-		GameRegistry.registerItem(sonicScrewdriver, "sonicScrewdriver");
-			
-		sonicPickaxe = new SonicPickaxe(Pickaxe);
-		GameRegistry.registerItem(sonicPickaxe, "sonicPic");
-			
-		sonicShovel = new SonicShovel(Shovel);
-		GameRegistry.registerItem(sonicShovel, "sonicShovel");
-			
-		sonicSword = new SonicSword(Sword);
-		GameRegistry.registerItem(sonicSword, "sonicSword"); 
-			
-		sonicAxe = new SonicAxe(Axe);
-		GameRegistry.registerItem(sonicAxe, "sonicAxe");
+		//Sonic Tools
+		sonicScrewdriver = registerItem(new SonicScrewdriver(SonicScrewdriver));
+		sonicPickaxe = registerItem(new SonicPickaxe(Pickaxe));
+		sonicShovel = registerItem(new SonicShovel(Shovel));
+		sonicSword = registerItem(new SonicSword(Sword));
+		sonicAxe = registerItem(new SonicAxe(Axe));
 		
 		//Items
-		
-		timelordFragment = new TimelordFragment();
-		GameRegistry.registerItem(timelordFragment, "timelordFragment");
-		
-		timetravelerReminisce = new TimeTravelerReminisce();
-		GameRegistry.registerItem(timetravelerReminisce, "timetravelerReminisce");
-		
-		stabalizedTimeEnergy = new StabilizedTimeEnergy();
-		GameRegistry.registerItem(stabalizedTimeEnergy, "stabalizedTimeEnergy");
-		
-		timetravelerCluster = new TimeTravelerCluster();
-		GameRegistry.registerItem(timetravelerCluster, "timetravelerCluster");
+		timelordFragment = registerItem(new TimelordFragment());
+		timetravelerReminisce = registerItem(new TimeTravelerReminisce());
+		stabalizedTimeEnergy = registerItem(new StabilizedTimeEnergy());
+		timetravelerCluster = registerItem(new TimeTravelerCluster());
 		
 		}
+	
+	private static <T extends Item> T registerItem(T item) {
+		GameRegistry.register(item);
+		items.add(item);
+
+		return item;
+	}
 }

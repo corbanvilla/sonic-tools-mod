@@ -16,7 +16,7 @@ public class AttackCountdown {
 
 	@SubscribeEvent
 	public boolean attackCountdown(LivingAttackEvent event) {
-		if(event.entity instanceof EntityPlayer && !event.entity.worldObj.isRemote) {	
+		if(event.getEntity() instanceof EntityPlayer && !event.getEntity().worldObj.isRemote) {	
 //			System.out.println("player is sick :("); //MO DEBUG JUNK STUFF
 			CountDown.startTimer();
 			

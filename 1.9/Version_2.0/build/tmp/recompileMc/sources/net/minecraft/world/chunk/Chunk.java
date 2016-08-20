@@ -830,7 +830,7 @@ public class Chunk
             }
             else if (p_177424_2_ == Chunk.EnumCreateEntityType.QUEUED)
             {
-                this.tileEntityPosQueue.add(pos.getImmutable());
+                this.tileEntityPosQueue.add(pos.toImmutable());
             }
         }
 

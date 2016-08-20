@@ -47,7 +47,7 @@ public class RenderVillager extends RenderLiving<EntityVillager>
             case 4:
                 return butcherVillagerTextures;
             default:
-                return net.minecraftforge.fml.common.registry.VillagerRegistry.getVillagerSkin(entity.getProfession(), villagerTextures);
+                return entity.getProfessionForge().getSkin();
         }
     }
 

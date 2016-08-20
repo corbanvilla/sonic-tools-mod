@@ -340,7 +340,7 @@ public class Loader
             }
             catch (Exception e)
             {
-                FMLLog.log(Level.ERROR, e, "A problem occured instantiating the injected mod container %s", cont);
+                FMLLog.log(Level.ERROR, e, "A problem occurred instantiating the injected mod container %s", cont);
                 throw new LoaderException(e);
             }
             mods.add(new InjectedModContainer(mc,mc.getSource()));
@@ -979,7 +979,7 @@ public class Loader
             }
         }
 
-        return PersistentRegistryManager.processIdRematches(missingMappings.values(), isLocalWorld, remapBlocks, remapItems);
+        return PersistentRegistryManager.processIdRematches(missingMappings.values(), isLocalWorld, missingBlocks, missingItems, remapBlocks, remapItems);
     }
 
     public void fireRemapEvent(Map<ResourceLocation, Integer[]> remapBlocks, Map<ResourceLocation, Integer[]> remapItems, boolean isFreezing)

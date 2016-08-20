@@ -358,6 +358,9 @@ public class SoundManager
     {
         if (this.loaded)
         {
+            p_sound = net.minecraftforge.client.ForgeHooksClient.playSound(this, p_sound);
+            if (p_sound == null) return;
+
             SoundEventAccessor soundeventaccessor = p_sound.func_184366_a(this.sndHandler);
             ResourceLocation resourcelocation = p_sound.getSoundLocation();
 
@@ -370,9 +373,6 @@ public class SoundManager
             }
             else
             {
-                p_sound = net.minecraftforge.client.ForgeHooksClient.playSound(this, p_sound);
-                if (p_sound == null) return;
-
                 if (!this.field_188777_o.isEmpty())
                 {
                     for (ISoundEventListener isoundeventlistener : this.field_188777_o)

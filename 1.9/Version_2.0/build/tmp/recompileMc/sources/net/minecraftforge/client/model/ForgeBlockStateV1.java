@@ -474,7 +474,7 @@ public class ForgeBlockStateV1 extends Marker
                     for (Entry<String, JsonElement> e : json.get("textures").getAsJsonObject().entrySet())
                     {
                         if (e.getValue().isJsonNull())
-                            ret.textures.put(e.getKey(), ""); // We have to use "" because ImmutibleMaps don't allow nulls -.-
+                            ret.textures.put(e.getKey(), ""); // We have to use "" because ImmutableMaps don't allow nulls -.-
                         else
                             ret.textures.put(e.getKey(), e.getValue().getAsString());
                     }
@@ -511,7 +511,7 @@ public class ForgeBlockStateV1 extends Marker
                             builder.put(TransformType.THIRD_PERSON_RIGHT_HAND, thirdperson);
                             builder.put(TransformType.THIRD_PERSON_LEFT_HAND,  leftify(thirdperson));
                             builder.put(TransformType.FIRST_PERSON_RIGHT_HAND, get(0, 0, 0, 0, 45, 0, 0.4f));
-                            builder.put(TransformType.FIRST_PERSON_LEFT_HAND,  get(0, 0, 0, 0, 255, 0, 0.4f));
+                            builder.put(TransformType.FIRST_PERSON_LEFT_HAND,  get(0, 0, 0, 0, 225, 0, 0.4f));
                             ret.state = Optional.<IModelState>of(new SimpleModelState(builder.build()));
                         }
                         // item/generated
@@ -750,7 +750,7 @@ public class ForgeBlockStateV1 extends Marker
 
     public static class TRSRDeserializer implements JsonDeserializer<TRSRTransformation>
     {
-        public static TRSRDeserializer INSTANCE = new TRSRDeserializer();
+        public static final TRSRDeserializer INSTANCE = new TRSRDeserializer();
 
         public TRSRTransformation deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException
         {

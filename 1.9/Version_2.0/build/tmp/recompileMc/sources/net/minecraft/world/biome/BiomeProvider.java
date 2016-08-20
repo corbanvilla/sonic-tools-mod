@@ -228,6 +228,6 @@ public class BiomeProvider
     {
         net.minecraftforge.event.terraingen.WorldTypeEvent.InitBiomeGens event = new net.minecraftforge.event.terraingen.WorldTypeEvent.InitBiomeGens(worldType, seed, original);
         net.minecraftforge.common.MinecraftForge.TERRAIN_GEN_BUS.post(event);
-        return event.newBiomeGens;
+        return event.getNewBiomeGens();
     }
 }

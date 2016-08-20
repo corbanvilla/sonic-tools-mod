@@ -50,12 +50,10 @@ public class TextureAtlasSprite
         this.originX = originInX;
         this.originY = originInY;
         this.rotated = rotatedIn;
-        float f = (float)(0.009999999776482582D / (double)inX);
-        float f1 = (float)(0.009999999776482582D / (double)inY);
-        this.minU = (float)originInX / (float)((double)inX) + f;
-        this.maxU = (float)(originInX + this.width) / (float)((double)inX) - f;
-        this.minV = (float)originInY / (float)inY + f1;
-        this.maxV = (float)(originInY + this.height) / (float)inY - f1;
+        this.minU = (float)originInX / (float)inX;
+        this.maxU = (float)(originInX + this.width) / (float)inX;
+        this.minV = (float)originInY / (float)inY;
+        this.maxV = (float)(originInY + this.height) / (float)inY;
     }
 
     public void copyFrom(TextureAtlasSprite atlasSpirit)

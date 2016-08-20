@@ -2,5 +2,26 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.items.ModItems"/>
 <fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.tools.ModTools"/>
+<fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.crafting.ToolCrafting"/>
+<fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.crafting.ToolSmelting"/>
 <fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.armor.ModArmor"/>
+<fullyQualifiedTypeName name="net.minecraft.item.ItemRecord"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="net.minecraftforge.event.entity.player.PlayerInteractEvent"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.player.EntityPlayer"/>
+<fullyQualifiedTypeName name="net.minecraft.util.ChatComponentText"/>
+<fullyQualifiedTypeName name="net.minecraft.util.EnumChatFormatting"/>
+<fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.tools.AOE"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.Side"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.SideOnly"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.eventhandler.EventPriority"/>
+<fullyQualifiedTypeName name="scala.swing.event.Key"/>
+<fullyQualifiedTypeName name="org.lwjgl.input.Keyboard"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.client.registry.ClientRegistry"/>
+<fullyQualifiedTypeName name="net.minecraft.client.settings.KeyBinding"/>
+<fullyQualifiedTypeName name="net.minecraftforge.event.world.BlockEvent.BreakEvent"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

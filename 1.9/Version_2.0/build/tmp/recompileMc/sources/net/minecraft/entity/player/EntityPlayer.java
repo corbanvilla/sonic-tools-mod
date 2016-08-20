@@ -1152,10 +1152,9 @@ public abstract class EntityPlayer extends EntityLivingBase
         {
             damageAmount = net.minecraftforge.common.ForgeHooks.onLivingHurt(this, damageSrc, damageAmount);
             if (damageAmount <= 0) return;
-            damageAmount = this.applyArmorCalculations(damageSrc, damageAmount);
-            damageAmount = this.applyPotionDamageCalculations(damageSrc, damageAmount);
             damageAmount = net.minecraftforge.common.ISpecialArmor.ArmorProperties.applyArmor(this, inventory.armorInventory, damageSrc, damageAmount);
             if (damageAmount <= 0) return;
+            damageAmount = this.applyPotionDamageCalculations(damageSrc, damageAmount);
             float f = damageAmount;
             damageAmount = Math.max(damageAmount - this.getAbsorptionAmount(), 0.0F);
             this.setAbsorptionAmount(this.getAbsorptionAmount() - (f - damageAmount));
@@ -1223,7 +1222,7 @@ public abstract class EntityPlayer extends EntityLivingBase
         }
         else
         {
-            if (!net.minecraftforge.event.ForgeEventFactory.canInteractWith(this, entityIn, stack, hand)) return EnumActionResult.PASS;
+            if (net.minecraftforge.common.ForgeHooks.onInteractEntity(this, entityIn, stack, hand)) return EnumActionResult.PASS;
             ItemStack itemstack = stack != null ? stack.copy() : null;
 
             if (!entityIn.processInitialInteract(this, stack, hand))

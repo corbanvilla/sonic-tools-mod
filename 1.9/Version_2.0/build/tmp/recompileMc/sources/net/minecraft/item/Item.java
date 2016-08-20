@@ -56,7 +56,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class Item
+public class Item extends net.minecraftforge.fml.common.registry.IForgeRegistryEntry.Impl<Item>
 {
     public static final RegistryNamespaced<ResourceLocation, Item> itemRegistry = net.minecraftforge.fml.common.registry.GameData.getItemRegistry();;
     private static final Map<Block, Item> BLOCK_TO_ITEM = net.minecraftforge.fml.common.registry.GameData.getBlockItemMap();
@@ -109,9 +109,6 @@ public class Item
     private Item containerItem;
     /** The unlocalized name of this item. */
     private String unlocalizedName;
-
-    public final net.minecraftforge.fml.common.registry.RegistryDelegate<Item> delegate =
-            ((net.minecraftforge.fml.common.registry.FMLControlledNamespacedRegistry)itemRegistry).getDelegate(this, Item.class);
 
     public static int getIdFromItem(Item itemIn)
     {
@@ -1083,56 +1080,7 @@ public class Item
      */
     public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged)
     {
-        return !ItemStack.areItemStacksEqual(oldStack, newStack);
-    }
-
-    private ResourceLocation registryName = null;
-    /**
-     * Sets a unique name for this Item. This should be used for uniquely identify the instance of the Item.
-     * This is the valid replacement for the atrocious 'getUnlocalizedName().substring(6)' stuff that everyone does.
-     * Unlocalized names have NOTHING to do with unique identifiers. As demonstrated by vanilla blocks and items.
-     *
-     * The supplied name will be prefixed with the currently active mod's modId.
-     * If the supplied name already has a prefix that is different, it will be used and a warning will be logged.
-     *
-     * If a name already exists, or this Item is already registered in a registry, then an IllegalStateException is thrown.
-     *
-     * Returns 'this' to allow for chaining.
-     *
-     * @param name Unique registry name
-     * @return This instance
-     */
-    public final Item setRegistryName(String name)
-    {
-        if (getRegistryName() != null)
-            throw new IllegalStateException("Attempted to set registry name on block with exisiting registry name! New: " + name + " Old: " + getRegistryName());
-        int index = name.lastIndexOf(':');
-        String oldPrefix = index == -1 ? "" : name.substring(0, index);
-        name = index == -1 ? name : name.substring(index + 1);
-        net.minecraftforge.fml.common.ModContainer mc = net.minecraftforge.fml.common.Loader.instance().activeModContainer();
-        String prefix = mc == null ? "minecraft" : mc.getModId();
-        if (!oldPrefix.equals(prefix) && oldPrefix.length() > 0)
-        {
-            net.minecraftforge.fml.common.FMLLog.bigWarning("Dangerous alternative prefix %s for name %s, invalid registry invocation/invalid name?", oldPrefix, name);
-            prefix = oldPrefix;
-        }
-        this.registryName = new ResourceLocation(prefix, name);
-        return this;
-    }
-    public final Item setRegistryName(ResourceLocation name){ return setRegistryName(name.toString()); }
-    public final Item setRegistryName(String modID, String name){ return setRegistryName(modID + ":" + name); }
-
-    /**
-     * A unique identifier for this block, if this block is registered in the game registry it will return that name.
-     * Otherwise it will return the name set in setRegistryName().
-     * If neither are valid null is returned.
-     *
-     * @return Unique identifier or null.
-     */
-    public final String getRegistryName()
-    {
-        if (delegate.getResourceName() != null) return delegate.getResourceName().toString();
-        return registryName != null ? registryName.toString() : null;
+        return !oldStack.equals(newStack); //!ItemStack.areItemStacksEqual(oldStack, newStack);
     }
 
     /**

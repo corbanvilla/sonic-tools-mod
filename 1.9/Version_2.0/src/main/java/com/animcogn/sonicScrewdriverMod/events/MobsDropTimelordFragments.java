@@ -16,7 +16,7 @@ public class MobsDropTimelordFragments {
 	
 	@SubscribeEvent
 	public void dropDiamonds(LivingDeathEvent event) {
-		if (event.entity instanceof EntityPlayer) {
+		if (event.getEntity() instanceof EntityPlayer) {
 			return;
 		}
 		
@@ -25,8 +25,8 @@ public class MobsDropTimelordFragments {
 		chance = random.nextInt(25);
 		
 		if (chance == 10) {
-			if (!event.entity.worldObj.isRemote) {
-				event.entity.dropItem(ModItems.timelordFragment, chance);
+			if (!event.getEntity().worldObj.isRemote) {
+				event.getEntity().dropItem(ModItems.timelordFragment, chance);
 			}
 		}
 	}

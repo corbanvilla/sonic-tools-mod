@@ -21,7 +21,7 @@ import net.minecraft.util.registry.RegistryNamespaced;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class Potion
+public class Potion extends net.minecraftforge.fml.common.registry.IForgeRegistryEntry.Impl<Potion>
 {
     public static final RegistryNamespaced<ResourceLocation, Potion> potionRegistry = net.minecraftforge.fml.common.registry.GameData.getPotionRegistry();
     private final Map<IAttribute, AttributeModifier> attributeModifierMap = Maps.<IAttribute, AttributeModifier>newHashMap();

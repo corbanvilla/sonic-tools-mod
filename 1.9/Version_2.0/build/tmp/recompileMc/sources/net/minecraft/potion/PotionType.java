@@ -8,10 +8,11 @@ import net.minecraft.util.registry.RegistryNamespacedDefaultedByKey;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class PotionType
+public class PotionType extends net.minecraftforge.fml.common.registry.IForgeRegistryEntry.Impl<PotionType>
 {
+    @Deprecated // unused
     private static final ResourceLocation WATER = new ResourceLocation("water");
-    public static final RegistryNamespacedDefaultedByKey<ResourceLocation, PotionType> potionTypeRegistry = new RegistryNamespacedDefaultedByKey(WATER);
+    public static final RegistryNamespacedDefaultedByKey<ResourceLocation, PotionType> potionTypeRegistry = net.minecraftforge.fml.common.registry.GameData.getPotionTypesRegistry();
     private static int nextPotionTypeId;
     private final String name;
     private final ImmutableList<PotionEffect> effects;

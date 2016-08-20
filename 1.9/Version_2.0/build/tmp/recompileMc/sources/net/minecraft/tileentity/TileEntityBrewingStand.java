@@ -188,7 +188,7 @@ public class TileEntityBrewingStand extends TileEntityLockable implements ITicka
 
     private void brewPotions()
     {
-        if (net.minecraftforge.event.ForgeEventFactory.onPotionAttemptBreaw(brewingItemStacks)) return;
+        if (net.minecraftforge.event.ForgeEventFactory.onPotionAttemptBrew(brewingItemStacks)) return;
         ItemStack itemstack = this.brewingItemStacks[3];
 
         net.minecraftforge.common.brewing.BrewingRecipeRegistry.brewPotions(brewingItemStacks, brewingItemStacks[3], outputSlots);

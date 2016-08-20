@@ -12,6 +12,7 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.BlockRenderLayer;
@@ -34,7 +35,6 @@ import com.google.common.collect.Maps;
  * It is highly recommended that you extend this class or one of the Forge-provided child classes.
  *
  */
-@SuppressWarnings("unchecked")
 public abstract class BlockFluidBase extends Block implements IFluidBlock
 {
     protected final static Map<Block, Boolean> defaultDisplacements = Maps.newHashMap();
@@ -88,19 +88,18 @@ public abstract class BlockFluidBase extends Block implements IFluidBlock
     public static final PropertyInteger LEVEL = PropertyInteger.create("level", 0, 15);
     public static final PropertyFloat[] LEVEL_CORNERS = new PropertyFloat[4];
     public static final PropertyFloat FLOW_DIRECTION = new PropertyFloat("flow_direction");
-    public static final IUnlistedProperty<Float>[] FLUID_RENDER_PROPS;
+    public static final ImmutableList<IUnlistedProperty<Float>> FLUID_RENDER_PROPS;
 
     static
     {
-        @SuppressWarnings("rawtypes")
-        ImmutableList.Builder<IUnlistedProperty> builder = ImmutableList.builder();
+        ImmutableList.Builder<IUnlistedProperty<Float>> builder = ImmutableList.builder();
         builder.add(FLOW_DIRECTION);
         for(int i = 0; i < 4; i++)
         {
             LEVEL_CORNERS[i] = new PropertyFloat("level_corner_" + i);
             builder.add(LEVEL_CORNERS[i]);
         }
-        FLUID_RENDER_PROPS = builder.build().toArray(new IUnlistedProperty[0]);
+        FLUID_RENDER_PROPS = builder.build();
     }
 
     protected int quantaPerBlock = 8;
@@ -144,7 +143,7 @@ public abstract class BlockFluidBase extends Block implements IFluidBlock
     @Override
     protected BlockStateContainer createBlockState()
     {
-        return new ExtendedBlockState(this, new IProperty[] { LEVEL }, FLUID_RENDER_PROPS);
+        return new ExtendedBlockState(this, new IProperty[] { LEVEL }, FLUID_RENDER_PROPS.toArray(new IUnlistedProperty<?>[0]));
     }
 
     /**
@@ -659,5 +658,11 @@ public abstract class BlockFluidBase extends Block implements IFluidBlock
         float remaining = quantaRemaining / quantaPerBlockFloat;
         if (remaining > 1) remaining = 1.0f;
         return remaining * (density > 0 ? 1 : -1);
+    }
+
+    @Override
+    public AxisAlignedBB getSelectedBoundingBox(IBlockState blockState, World worldIn, BlockPos pos)
+    {
+        return null;
     }
 }

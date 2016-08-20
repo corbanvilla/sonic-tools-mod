@@ -9,8 +9,6 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.network.play.server.SPacketUpdateEntityNBT;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.text.ITextComponent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BossInfoServer extends BossInfo
 {
@@ -34,7 +32,6 @@ public class BossInfoServer extends BossInfo
         }
     }
 
-    @SideOnly(Side.CLIENT)
     public void setColor(BossInfo.Color colorIn)
     {
         if (colorIn != this.color)
@@ -44,7 +41,6 @@ public class BossInfoServer extends BossInfo
         }
     }
 
-    @SideOnly(Side.CLIENT)
     public void setOverlay(BossInfo.Overlay overlayIn)
     {
         if (overlayIn != this.overlay)
@@ -87,7 +83,6 @@ public class BossInfoServer extends BossInfo
         return this;
     }
 
-    @SideOnly(Side.CLIENT)
     public void setName(ITextComponent nameIn)
     {
         if (!Objects.equal(nameIn, this.name))

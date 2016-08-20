@@ -109,7 +109,7 @@ public class GuiSpectator extends Gui implements ISpectatorMenuRecipient
             GlStateManager.color(f, f, f, p_175266_4_);
             p_175266_5_.func_178663_a(f, i);
             GlStateManager.popMatrix();
-            String s = String.valueOf((Object)GameSettings.getKeyDisplayString(this.mc.gameSettings.keyBindsHotbar[p_175266_1_].getKeyCode()));
+            String s = String.valueOf(this.mc.gameSettings.keyBindsHotbar[p_175266_1_].getDisplayName());
 
             if (i > 3 && p_175266_5_.func_178662_A_())
             {

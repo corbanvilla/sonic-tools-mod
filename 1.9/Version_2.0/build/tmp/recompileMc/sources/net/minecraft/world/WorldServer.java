@@ -1149,7 +1149,7 @@ public class WorldServer extends World implements IThreadListener
     {
         for (Entity entity : Lists.newArrayList(entityCollection))
         {
-            if (this.func_184165_i(entity))
+            if (this.func_184165_i(entity) && !net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(new net.minecraftforge.event.entity.EntityJoinWorldEvent(entity, this)))
             {
                 this.loadedEntityList.add(entity);
                 this.onEntityAdded(entity);

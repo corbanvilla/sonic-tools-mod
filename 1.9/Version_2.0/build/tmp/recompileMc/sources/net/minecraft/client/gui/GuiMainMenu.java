@@ -88,6 +88,8 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
      * drawn at the same time). May be null.
      */
     private GuiScreen realmsNotification;
+    private GuiButton modButton;
+    private net.minecraftforge.client.gui.NotificationModUpdateScreen modUpdateNotification;
 
     public GuiMainMenu()
     {
@@ -248,6 +250,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
             this.realmsNotification.setGuiSize(this.width, this.height);
             this.realmsNotification.initGui();
         }
+        modUpdateNotification = net.minecraftforge.client.gui.NotificationModUpdateScreen.init(this, modButton);
     }
 
     /**
@@ -258,7 +261,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
         this.buttonList.add(new GuiButton(1, this.width / 2 - 100, p_73969_1_, I18n.format("menu.singleplayer", new Object[0])));
         this.buttonList.add(new GuiButton(2, this.width / 2 - 100, p_73969_1_ + p_73969_2_ * 1, I18n.format("menu.multiplayer", new Object[0])));
         this.buttonList.add(this.realmsButton = new GuiButton(14, this.width / 2 + 2, p_73969_1_ + p_73969_2_ * 2, 98, 20, I18n.format("menu.online", new Object[0]).replace("Minecraft", "").trim()));
-        this.buttonList.add(new GuiButton(6, this.width / 2 - 100, p_73969_1_ + p_73969_2_ * 2, 98, 20, I18n.format("fml.menu.mods")));
+        this.buttonList.add(modButton = new GuiButton(6, this.width / 2 - 100, p_73969_1_ + p_73969_2_ * 2, 98, 20, I18n.format("fml.menu.mods")));
     }
 
     /**
@@ -613,6 +616,7 @@ public class GuiMainMenu extends GuiScreen implements GuiYesNoCallback
         {
             this.realmsNotification.drawScreen(mouseX, mouseY, partialTicks);
         }
+        modUpdateNotification.drawScreen(mouseX, mouseY, partialTicks);
     }
 
     /**

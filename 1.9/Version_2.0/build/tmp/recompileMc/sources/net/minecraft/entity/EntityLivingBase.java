@@ -226,8 +226,7 @@ public abstract class EntityLivingBase extends Entity
         {
             float f = (float)MathHelper.ceiling_float_int(this.fallDistance - 3.0F);
 
-            if (state.getMaterial() != Material.air)
-            if (state.getBlock().isAir(state, worldObj, pos))
+            if (!state.getBlock().isAir(state, worldObj, pos))
             {
                 double d0 = Math.min((double)(0.2F + f / 15.0F), 2.5D);
                 int i = (int)(150.0D * d0);

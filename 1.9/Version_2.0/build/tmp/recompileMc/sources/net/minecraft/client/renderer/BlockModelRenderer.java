@@ -140,7 +140,14 @@ public class BlockModelRenderer
             p_187492_8_.updateVertexBrightness(p_187492_1_, p_187492_2_, p_187492_3_, bakedquad.getFace(), p_187492_6_, p_187492_7_);
             p_187492_4_.addVertexData(bakedquad.getVertexData());
             p_187492_4_.putBrightness4(p_187492_8_.vertexBrightness[0], p_187492_8_.vertexBrightness[1], p_187492_8_.vertexBrightness[2], p_187492_8_.vertexBrightness[3]);
-
+            if(bakedquad.shouldApplyDiffuseLighting())
+            {
+                float diffuse = net.minecraftforge.client.model.pipeline.LightUtil.diffuseLight(bakedquad.getFace());
+                p_187492_8_.vertexColorMultiplier[0] *= diffuse;
+                p_187492_8_.vertexColorMultiplier[1] *= diffuse;
+                p_187492_8_.vertexColorMultiplier[2] *= diffuse;
+                p_187492_8_.vertexColorMultiplier[3] *= diffuse;
+            }
             if (bakedquad.hasTintIndex())
             {
                 int k = this.blockColors.colorMultiplier(p_187492_2_, p_187492_1_, p_187492_3_, bakedquad.getTintIndex());
@@ -289,10 +296,25 @@ public class BlockModelRenderer
                 float f = (float)(l >> 16 & 255) / 255.0F;
                 float f1 = (float)(l >> 8 & 255) / 255.0F;
                 float f2 = (float)(l & 255) / 255.0F;
+                if(bakedquad.shouldApplyDiffuseLighting())
+                {
+                    float diffuse = net.minecraftforge.client.model.pipeline.LightUtil.diffuseLight(bakedquad.getFace());
+                    f *= diffuse;
+                    f1 *= diffuse;
+                    f2 *= diffuse;
+                }
                 p_187496_6_.putColorMultiplier(f, f1, f2, 4);
                 p_187496_6_.putColorMultiplier(f, f1, f2, 3);
                 p_187496_6_.putColorMultiplier(f, f1, f2, 2);
                 p_187496_6_.putColorMultiplier(f, f1, f2, 1);
+            }
+            else if(bakedquad.shouldApplyDiffuseLighting())
+            {
+                float diffuse = net.minecraftforge.client.model.pipeline.LightUtil.diffuseLight(bakedquad.getFace());
+                p_187496_6_.putColorMultiplier(diffuse, diffuse, diffuse, 4);
+                p_187496_6_.putColorMultiplier(diffuse, diffuse, diffuse, 3);
+                p_187496_6_.putColorMultiplier(diffuse, diffuse, diffuse, 2);
+                p_187496_6_.putColorMultiplier(diffuse, diffuse, diffuse, 1);
             }
 
             p_187496_6_.putPosition(d0, d1, d2);

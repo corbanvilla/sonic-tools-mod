@@ -29,8 +29,8 @@ public class ModArmor {
 
 		//Armor Materials
 		ArmorMaterial Timetraveler = EnumHelper.addArmorMaterial("Timetraveler", "sonic-tools-mod:timetraveler", 38, new int[] {4, 8, 6, 3}, 30);
-		ArmorMaterial Timelord = EnumHelper.addArmorMaterial("Timelord", "sonic-tools-mod:timelord", 44, new int[] {5, 8, 6, 4}, 40);
-		ArmorMaterial Tardis = EnumHelper.addArmorMaterial("Tardis", "sonic-tools-mod:tardis", 100, new int[] {5, 8, 6, 5}, 80);
+		ArmorMaterial Timelord = EnumHelper.addArmorMaterial("Timelord", "sonic-tools-mod:timelord", 44, new int[] {4, 8, 6, 3}, 40);
+		ArmorMaterial Tardis = EnumHelper.addArmorMaterial("Tardis", "sonic-tools-mod:tardis", 100, new int[] {4, 8, 6, 3}, 80);
 
 		//Armor
 		//Time Armor

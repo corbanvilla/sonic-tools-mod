@@ -246,14 +246,17 @@ public class PlayerControllerMP
                 }
 
                 this.netClientHandler.addToSendQueue(new CPacketPlayerDigging(CPacketPlayerDigging.Action.START_DESTROY_BLOCK, loc, face));
+                net.minecraftforge.event.entity.player.PlayerInteractEvent.LeftClickBlock event = net.minecraftforge.common.ForgeHooks.onLeftClickBlock(this.mc.thePlayer, loc, face, net.minecraftforge.common.ForgeHooks.rayTraceEyeHitVec(this.mc.thePlayer, getBlockReachDistance() + 1));
+
                 IBlockState iblockstate = this.mc.theWorld.getBlockState(loc);
                 boolean flag = iblockstate.getMaterial() != Material.air;
 
                 if (flag && this.curBlockDamageMP == 0.0F)
                 {
+                    if (event.getUseBlock() != net.minecraftforge.fml.common.eventhandler.Event.Result.DENY)
                     iblockstate.getBlock().onBlockClicked(this.mc.theWorld, loc, this.mc.thePlayer);
                 }
-
+                if (event.getUseItem() == net.minecraftforge.fml.common.eventhandler.Event.Result.DENY) return true;
                 if (flag && iblockstate.getPlayerRelativeBlockHardness(this.mc.thePlayer, this.mc.thePlayer.worldObj, loc) >= 1.0F)
                 {
                     this.func_187103_a(loc);
@@ -409,6 +412,16 @@ public class PlayerControllerMP
         }
         else
         {
+            net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock event = net.minecraftforge.common.ForgeHooks
+                    .onRightClickBlock(player, hand, stack, pos, facing, net.minecraftforge.common.ForgeHooks.rayTraceEyeHitVec(player, getBlockReachDistance() + 1));
+            if (event.isCanceled())
+            {
+                // Give the server a chance to fire event as well. That way server event is not dependant on client event.
+                this.netClientHandler.addToSendQueue(new CPacketPlayerTryUseItem(pos, facing, hand, f, f1, f2));
+                return EnumActionResult.PASS;
+            }
+            EnumActionResult result = EnumActionResult.PASS;
+
             if (this.currentGameType != WorldSettings.GameType.SPECTATOR)
             {
                 net.minecraft.item.Item item = stack == null ? null : stack.getItem();
@@ -420,9 +433,11 @@ public class PlayerControllerMP
                 for (ItemStack s : new ItemStack[]{player.getHeldItemMainhand(), player.getHeldItemOffhand()}) //TODO: Expand to more hands? player.inv.getHands()?
                     bypass = bypass && (s == null || s.getItem().doesSneakBypassUse(s, worldIn, pos, player));
 
-                if (!player.isSneaking() || bypass)
+                if (!player.isSneaking() || bypass || event.getUseBlock() == net.minecraftforge.fml.common.eventhandler.Event.Result.ALLOW)
                 {
+                    if(event.getUseBlock() != net.minecraftforge.fml.common.eventhandler.Event.Result.DENY)
                     flag = iblockstate.getBlock().onBlockActivated(worldIn, pos, iblockstate, player, hand, stack, facing, f, f1, f2);
+                    if(flag) result = EnumActionResult.SUCCESS;
                 }
 
                 if (!flag && stack != null && stack.getItem() instanceof ItemBlock)
@@ -438,7 +453,7 @@ public class PlayerControllerMP
 
             this.netClientHandler.addToSendQueue(new CPacketPlayerTryUseItem(pos, facing, hand, f, f1, f2));
 
-            if (!flag && this.currentGameType != WorldSettings.GameType.SPECTATOR)
+            if (!flag && this.currentGameType != WorldSettings.GameType.SPECTATOR || event.getUseItem() == net.minecraftforge.fml.common.eventhandler.Event.Result.ALLOW)
             {
                 if (stack == null)
                 {
@@ -456,16 +471,19 @@ public class PlayerControllerMP
                 {
                     int i = stack.getMetadata();
                     int j = stack.stackSize;
+                    if (event.getUseItem() != net.minecraftforge.fml.common.eventhandler.Event.Result.DENY) {
                     EnumActionResult enumactionresult = stack.onItemUse(player, worldIn, pos, hand, facing, f, f1, f2);
                     stack.setItemDamage(i);
                     stack.stackSize = j;
                     return enumactionresult;
+                    } else return result;
                 }
                 else
                 {
-                    EnumActionResult ret = stack.onItemUse(player, worldIn, pos, hand, facing, f, f1, f2);
+                    if (event.getUseItem() != net.minecraftforge.fml.common.eventhandler.Event.Result.DENY)
+                    result = stack.onItemUse(player, worldIn, pos, hand, facing, f, f1, f2);
                     if (stack.stackSize <= 0) net.minecraftforge.event.ForgeEventFactory.onPlayerDestroyItem(player, stack, hand);
-                    return ret;
+                    return result;
                 }
             }
             else
@@ -492,6 +510,7 @@ public class PlayerControllerMP
             }
             else
             {
+                if (net.minecraftforge.common.ForgeHooks.onItemRightClick(player, hand, stack)) return net.minecraft.util.EnumActionResult.PASS;
                 int i = stack.stackSize;
                 ActionResult<ItemStack> actionresult = stack.useItemRightClick(worldIn, player, hand);
                 ItemStack itemstack = (ItemStack)actionresult.getResult();

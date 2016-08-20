@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.common.registry.GameRegistry"/>
+<fullyQualifiedTypeName name="net.minecraft.util.ResourceLocation"/>
+<fullyQualifiedTypeName name="net.minecraft.util.SoundEvent"/>
+<fullyQualifiedTypeName name="net.minecraft.client.Minecraft"/>
+<fullyQualifiedTypeName name="net.minecraft.client.audio.PositionedSoundRecord"/>
+<fullyQualifiedTypeName name="net.minecraft.util.text.event.ClickEvent.Action"/>
+<fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.Main"/>
+<fullyQualifiedTypeName name="com.animcogn.sonicScrewdriverMod.sounds.ModSounds"/>
+<fullyQualifiedTypeName name="net.minecraft.util.SoundCategory"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+</qualifiedTypeNameHistroy>

@@ -6,9 +6,9 @@ import com.animcogn.sonicScrewdriverMod.armor.TimelordArmor;
 import com.animcogn.sonicScrewdriverMod.tools.ModTools;
 import com.animcogn.sonicScrewdriverMod.tools.SonicAxe;
 import com.animcogn.sonicScrewdriverMod.tools.SonicPickaxe;
-import com.animcogn.sonicScrewdriverMod.tools.SonicScrewdriver;
 import com.animcogn.sonicScrewdriverMod.tools.SonicShovel;
 import com.animcogn.sonicScrewdriverMod.tools.SonicSword;
+import com.animcogn.sonicScrewdriverMod.tools.sonicscrewdriver.SonicScrewdriver;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -46,6 +46,9 @@ public class ModItems {
 		
 		timetravelerCluster = new TimeTravelerCluster();
 		GameRegistry.registerItem(timetravelerCluster, "timetravelerCluster");
+		
+		unstableTimeEnergy = new UnstableTimeEnergy();
+		GameRegistry.registerItem(unstableTimeEnergy, "unstableTimeEnergy");
 		
 		}
 }

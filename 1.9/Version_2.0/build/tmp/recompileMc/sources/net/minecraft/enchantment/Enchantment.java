@@ -12,9 +12,9 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.RegistryNamespaced;
 import net.minecraft.util.text.translation.I18n;
 
-public abstract class Enchantment
+public abstract class Enchantment extends net.minecraftforge.fml.common.registry.IForgeRegistryEntry.Impl<Enchantment>
 {
-    public static final RegistryNamespaced<ResourceLocation, Enchantment> enchantmentRegistry = new RegistryNamespaced();
+    public static final RegistryNamespaced<ResourceLocation, Enchantment> enchantmentRegistry = net.minecraftforge.fml.common.registry.GameData.getEnchantmentRegistry();
     /** Where this enchantment has an effect, e.g. offhand, pants */
     private final EntityEquipmentSlot[] applicableEquipmentTypes;
     private final Enchantment.Rarity weight;
